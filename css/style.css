@@ -62,9 +62,9 @@ ul.y-ul {
     list-style-type: none;
 }
 
-ul.y-ul li:before {
-    content: ">";
-    margin-right: .75rem;
+ul.y-ul .y-tips {
+    margin-right: .2rem;
+    font-weight: bolder;
 }
 
 

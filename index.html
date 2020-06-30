@@ -10,6 +10,12 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/popper.js/2.4.2/cjs/popper.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 
+    <!-- axios -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.19.2/axios.min.js"></script> -->
+
+    <!-- vue -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
+
     <!-- style -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -22,45 +28,28 @@
                 <div class="y-top">
                     <h1 class="display-1"><img class="y-logo" src="./img/tem.jpg">Yi Ru</h1>
                     <h3>— 春眠不觉晓 —</h3>
-                    <p>Last Update: 2020.06.29</p>
+                    <p>Last Update: {{ data.updateTime | daf }}</p>
                 </div>
             </div>
             <div class="y-divider" style="margin-bottom: 1rem;"></div>
 
             <!-- content -->
             <div class="row">
-                <div class="col-md-6 y-content y-border-right">
-                    <h4 class="y-title">最近在看</h4>
+                <div v-for="(c, i) in data.content" :class="{
+                    'col-md-6': true,
+                    'y-content': true,
+                    'y-border-right': i%2==0 /* 索引为偶数时, 出现右边框 */
+                }">
+                    <h4 class="y-title">{{ c.title }}</h4>
                     <ul class="y-ul">
-                        <li>[直播] <a href="https://www.huya.com/lastpriest" target="_blank">老中医 @虎牙</a> 炉石传说</li>
-                        <li>[直播] <a href="https://live.bilibili.com/528" target="_blank">痒局长 @Bilibili</a> 绝地求生 狼人杀</li>
+                        <li v-for="(li, j) in c.list">
+                            <span class="y-tips" :title="daf(li.updateTime)" :style="{
+                                color: cacStyle(li.updateTime)
+                            }">&gt;</span>
+                            <span v-html="li.content"></span>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-md-6 y-content">
-                    <h4 class="y-title">最近在看</h4>
-                    <ul class="y-ul">
-                        <li>[直播] <a href="https://www.huya.com/lastpriest" target="_blank">老中医 @虎牙</a> 炉石传说</li>
-                        <li>[直播] <a href="https://live.bilibili.com/528" target="_blank">痒局长 @Bilibili</a> 绝地求生 狼人杀</li>
-                    </ul>
-                </div>
-                <div class="col-md-6 y-content y-border-right">
-                    <h4 class="y-title">最近在看</h4>
-                    <ul class="y-ul">
-                        <li>[直播] <a href="https://www.huya.com/lastpriest" target="_blank">老中医 @虎牙</a> 炉石传说</li>
-                        <li>[直播] <a href="https://live.bilibili.com/528" target="_blank">痒局长 @Bilibili</a> 绝地求生 狼人杀</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6 y-content">
-                    <h4 class="y-title">最近在玩</h4>
-                    <ul class="y-ul">
-                        <li>英雄联盟 League of Legends</li>
-                        <li>我的世界 Minecraft</li>
-                        <li>过山车之星 Planet Coaster</li>
-                        <li>星际争霸2 Starcraft II</li>
-                    </ul>
-                </div>
-
             </div>
 
             <div class="y-divider" style="margin-bottom: 1rem;"></div>
@@ -73,6 +62,12 @@
             </div>
         </div>
     </div>
+    <!-- util -->
+    <script src="./js/util.js"></script>
+    <!-- load data -->
+    <script src="./js/data.js"></script>
+    <!-- main javascript -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
