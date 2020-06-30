@@ -1,0 +1,96 @@
+/* basic */
+
+body {
+    font-family: "Microsoft Yahei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #e9686b;
+    font-weight: 400;
+    transition: all 1s;
+}
+
+a:hover {
+    color: #ec0004;
+}
+
+
+/* top */
+
+.y-top {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* divider */
+
+.y-divider {
+    background-color: rgba(0, 0, 0, .12);
+    height: 1px;
+    margin: -1px 0 0 0;
+    border: none;
+}
+
+.y-border-right {
+    border-right: none;
+}
+
+@media (min-width: 768px) {
+    .y-border-right {
+        border-right: 1px solid rgba(0, 0, 0, .12);
+    }
+}
+
+
+/* content */
+
+.y-content {
+    margin-bottom: 3rem;
+}
+
+
+/* ul */
+
+ul.y-ul {
+    list-style-type: none;
+}
+
+ul.y-ul li:before {
+    content: ">";
+    margin-right: .75rem;
+}
+
+
+/* title */
+
+.y-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+
+/* footer */
+
+.y-footer {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+/* logo */
+
+img.y-logo {
+    width: 6rem;
+    height: 6rem;
+    padding: 0 0;
+    border-radius: 3rem;
+    margin-right: 3rem;
+}
