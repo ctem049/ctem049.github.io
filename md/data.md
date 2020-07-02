@@ -7,7 +7,8 @@
 * [2020-06-30] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
 * [2020-06-30] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
 * [2020-06-28] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
-* [2020-06-28] (直播) [LPL @Bilibili](https://live.bilibili.com/6) 英雄联盟
+* [2020-07-01] (直播) [LPL @Bilibili](https://live.bilibili.com/6) 英雄联盟
+* [2020-07-01] (视频) [【星际老男孩】谐星语录之真正的教父](https://www.bilibili.com/video/BV1zi4y1G7Vn)
 
 # 最近在听
 
