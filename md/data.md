@@ -1,4 +1,4 @@
-- updateTime: 2020-06-30
+- updateTime: 2020-07-02
 
 # 最近在看
 
@@ -14,6 +14,10 @@
 - type: music
 
 * [2020-06-28] [椎名豪, 中川奈美 - 竈門炭治郎のうた](https://y.qq.com/n/yqq/song/001jyikY2o3FrL.html)
+* [2020-06-20] [曲锦楠 - 霞光](https://y.qq.com/n/yqq/song/003p3ky81zgV0H.html)
+* [2020-06-18] [G2er, 黄诗扶, 国风堂 - 杨花落尽子规啼](https://music.163.com/#/song?id=1375935067)
+* [2020-06-24] [王力宏 - 缘分一道桥](https://y.qq.com/n/yqq/song/004NXwuk36ixAW.html)
+* [2020-05-19] [周深 - 大鱼](https://y.qq.com/n/yqq/song/004OQ5Mt0EmEzv.html)
 
 # 最近在玩
 

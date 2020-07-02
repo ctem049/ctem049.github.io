@@ -5,7 +5,7 @@ var mddata = `- updateTime: 2020-06-30
 
 - type: video
 
-* [2020-06-30] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
+* [2020-06-10] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
 * [2020-06-30] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
 
 # 最近在听
@@ -130,4 +130,10 @@ function toJSO(mddata) {
 }
 
 var data = toJSO(mddata);
+
+// 排序处理
+for (var i in data.content) {
+    data.content[i].list = data.content[i].list.sort((a,b)=> Date.parse(b.updateTime) - Date.parse(a.updateTime));
+}
+
 console.log(data);

@@ -10,8 +10,8 @@ var app = new Vue({
          * @returns {number} 0%~100%
          */
         cacColor(date) {
-            var now = new Date(data.updateTime).getTime();
-            var d = new Date(date).getTime();
+            var now = Date.parse(data.updateTime);
+            var d = Date.parse(date);
             var time = Math.log(now - d);
             // 18 ~ 24
             if (time <= 18) {
