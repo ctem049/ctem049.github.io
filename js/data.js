@@ -31,7 +31,7 @@ var mddata = `- updateTime: 2020-06-30
 
 function getData() {
     var oReq = new XMLHttpRequest();
-    oReq.open("GET", "./md/data.md", false); // 同步请求
+    oReq.open("GET", "./md/data.md?"+new Date().getTime(), false); // 同步请求
     oReq.send(null);//发送数据需要自定义，这里发送的是JSON结构
     var result = oReq.responseText;//响应结果
     return result;
