@@ -1,14 +1,15 @@
-- updateTime: 2020-07-02
+- updateTime: 2020-07-15
 
 # 最近在看
 
 - type: video
 
-* [2020-06-30] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
-* [2020-06-30] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
-* [2020-06-28] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
-* [2020-07-01] (直播) [LPL @Bilibili](https://live.bilibili.com/6) 英雄联盟
-* [2020-07-01] (视频) [【星际老男孩】谐星语录之真正的教父](https://www.bilibili.com/video/BV1zi4y1G7Vn)
+* [2020-07-12] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
+* [2020-07-12] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
+* [2020-07-13] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
+* [2020-07-14] (直播) [LPL @Bilibili](https://live.bilibili.com/6) 英雄联盟
+* [2020-07-15] (视频) [【星际老男孩】谐星语录之错觉](https://www.bilibili.com/video/BV16K4y1s7vZ)
+* [2020-07-11] (视频) [【狼 人 杀 谈 判 专 家】](https://www.bilibili.com/video/BV1bD4y1S7hY)
 * [2020-06-23] (视频) [谋 权 篡 位 4](https://www.bilibili.com/video/BV1ug4y1q7YH)
 
 # 最近在听
@@ -25,8 +26,9 @@
 
 - type: game
 
-* [2020-06-30] [英雄联盟](https://lol.qq.com) League of Legends
-* [2020-06-24] [我的世界](https://mc.163.com) Minecraft
+* [2020-07-14] [英雄联盟](https://lol.qq.com) League of Legends
+* [2020-07-12] [我的世界](https://mc.163.com) Minecraft
+* [2020-06-15] [炉石传说](https://hs.blizzard.cn) Hearth Stone
 * [2020-06-08] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster
 * [2019-12-25] [星际争霸](https://sc2.blizzard.cn) StarCraft II
 
