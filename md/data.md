@@ -18,7 +18,7 @@
 
 - type: music
 
-* [2020-07-30] [卷珠帘](https://y.qq.com/n/yqq/song/003BXELh0qM5bI.html)
+* [2020-07-30] [霍尊 - 卷珠帘](https://y.qq.com/n/yqq/song/003BXELh0qM5bI.html)
 * [2020-07-21] [音阙诗听, 锦零 - 空山新雨后](https://music.163.com/#/song?id=1352002513)
 * [2020-07-22] [司南 - 冬眠](https://music.163.com/#/song?id=1398663411)
 * [2020-07-22] [徐秉龙, 桃十五 - 青柠](https://music.163.com/#/song?id=504624714)
