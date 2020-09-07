@@ -1,13 +1,13 @@
-- updateTime: 2020-09-01
+- updateTime: 2020-09-07
 
 # 最近在看
 
 - type: video
 
-* [2020-08-24] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111)
+* [2020-09-05] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111)
 * [2020-07-25] (电视剧) [隐秘的角落.The Bad Kids](https://www.iqiyi.com/v_2ffkws0bgr0.html)
 * [2020-07-23] (电视剧) [安家.I Will Find You a Better Home](https://v.qq.com/detail/i/ihhsfwvvhcm16nd.html)
-* [2020-08-30] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
+* [2020-09-06] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
 * [2020-08-20] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
 * [2020-08-25] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
 * [2020-08-31] (直播) [LPL @Bilibili](https://live.bilibili.com/6) 英雄联盟
@@ -19,6 +19,7 @@
 
 - type: music
 
+* [2020-09-05] [许嵩 - 雨幕](https://y.qq.com/n/yqq/song/001BKGVe1BctBv.html)
 * [2020-07-30] [霍尊 - 卷珠帘](https://y.qq.com/n/yqq/song/003BXELh0qM5bI.html)
 * [2020-07-21] [音阙诗听, 锦零 - 空山新雨后](https://music.163.com/#/song?id=1352002513)
 * [2020-07-22] [司南 - 冬眠](https://music.163.com/#/song?id=1398663411)
@@ -33,9 +34,9 @@
 
 - type: game
 
-* [2020-09-01] [英雄联盟](https://lol.qq.com) League of Legends
+* [2020-09-06] [英雄联盟](https://lol.qq.com) League of Legends
 * [2020-07-12] [我的世界](https://mc.163.com) Minecraft
-* [2020-08-31] [炉石传说](https://hs.blizzard.cn) Hearth Stone
+* [2020-09-05] [炉石传说](https://hs.blizzard.cn) Hearth Stone
 * [2020-06-08] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster
 * [2020-08-18] [星际争霸](https://sc2.blizzard.cn) StarCraft II
 
