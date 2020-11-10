@@ -4,16 +4,18 @@
 
 - type: video
 
+* [2020-11-03] (视频) [【官方双语】汉明码Pa■t1，如何克服噪■](https://www.bilibili.com/video/BV1WK411N7kz?t=1183)
+* [2020-11-07] (视频) [Class 8《无限♾》龙亦瑞生日公演](https://live.48.cn/Index/invideo/club/3/id/3903)
 * [2020-09-24] (视频) [【snh48】轻松一刻II（1）](https://www.bilibili.com/video/BV1jz4y1Z7Ae?t=584)
-* [2020-09-25] (视频) [【逗鱼时刻】第270期 你把手往这一伸](https://www.bilibili.com/video/BV1JA411J7bw)
-* [2020-10-08] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
+* [2020-11-05] (视频) [【逗鱼时刻】第275期 我每天下班后都在钻研暴雪代码](https://www.bilibili.com/video/BV1Sa4y1s7r4)
+* [2020-10-18] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
 * [2020-07-25] (电视剧) [隐秘的角落.The Bad Kids](https://www.iqiyi.com/v_2ffkws0bgr0.html)
 * [2020-07-23] (电视剧) [安家.I Will Find You a Better Home](https://v.qq.com/detail/i/ihhsfwvvhcm16nd.html)
 * [2020-09-25] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
 * [2020-08-20] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
 * [2020-08-25] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
-* [2020-10-10] (直播) [LOL 2020全球总决赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
-* [2020-07-15] (视频) [【星际老男孩】谐星语录之错觉](https://www.bilibili.com/video/BV16K4y1s7vZ)
+* [2020-10-31] (直播) [LOL 2020全球总决赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
+* [2020-11-01] (视频) [【星际老男孩】谐星语录之鱼死网破](https://www.bilibili.com/video/BV13f4y1q7ui)
 * [2020-07-11] (视频) [【狼 人 杀 谈 判 专 家】](https://www.bilibili.com/video/BV1bD4y1S7hY)
 * [2020-06-23] (视频) [谋 权 篡 位 4](https://www.bilibili.com/video/BV1ug4y1q7YH)
 
@@ -21,6 +23,7 @@
 
 - type: music
 
+* [2020-11-05] [周深 - 化身孤岛的鲸](https://y.qq.com/n/yqq/song/0004adDk3wsULz.html)
 * [2020-10-02] [欧得洋 - 孤单北半球](https://y.qq.com/n/yqq/song/00029Buj0clcBE.html)
 * [2020-09-27] [杨沛宜 - 左手右手](https://y.qq.com/n/yqq/song/000KDPfR0FMjQR.html)
 * [2020-09-12] [许嵩, 刘美麟 - 温泉](https://y.qq.com/n/yqq/song/001KQ3zX0N2rVR.html)
@@ -39,6 +42,7 @@
 
 - type: game
 
+* [2020-11-03] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics
 * [2020-10-10] [英雄联盟](https://lol.qq.com) League of Legends
 * [2020-07-12] [我的世界](https://mc.163.com) Minecraft
 * [2020-10-06] [炉石传说](https://hs.blizzard.cn) Hearth Stone
