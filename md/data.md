@@ -19,6 +19,7 @@
 * [2020-11-01] (视频) [【星际老男孩】谐星语录之鱼死网破](https://www.bilibili.com/video/BV13f4y1q7ui)
 * [2020-07-11] (视频) [【狼 人 杀 谈 判 专 家】](https://www.bilibili.com/video/BV1bD4y1S7hY)
 * [2020-06-23] (视频) [谋 权 篡 位 4](https://www.bilibili.com/video/BV1ug4y1q7YH)
+* [2020-09-07] (电影) [信条.Tenet](https://www.tenetfilm.net/)
 
 # 最近在听
 
