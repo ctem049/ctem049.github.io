@@ -1,4 +1,4 @@
-- updateTime: 2020-11-10
+- updateTime: 2020-12-03
 
 # 最近在看
 
@@ -24,6 +24,7 @@
 
 - type: music
 
+* [2020-11-22] [许嵩, 金莎 - 半城烟沙(合唱版)](https://music.163.com/#/song?id=1496833377)
 * [2020-11-05] [周深 - 化身孤岛的鲸](https://y.qq.com/n/yqq/song/0004adDk3wsULz.html)
 * [2020-10-02] [欧得洋 - 孤单北半球](https://y.qq.com/n/yqq/song/00029Buj0clcBE.html)
 * [2020-09-27] [杨沛宜 - 左手右手](https://y.qq.com/n/yqq/song/000KDPfR0FMjQR.html)
