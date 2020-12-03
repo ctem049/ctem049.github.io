@@ -4,14 +4,15 @@
 
 - type: video
 
+* [2020-12-01] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
 * [2020-11-03] (视频) [【官方双语】汉明码Pa■t1，如何克服噪■](https://www.bilibili.com/video/BV1WK411N7kz?t=1183)
 * [2020-11-07] (视频) [Class 8《无限♾》龙亦瑞生日公演](https://live.48.cn/Index/invideo/club/3/id/3903)
 * [2020-09-24] (视频) [【snh48】轻松一刻II（1）](https://www.bilibili.com/video/BV1jz4y1Z7Ae?t=584)
 * [2020-11-05] (视频) [【逗鱼时刻】第275期 我每天下班后都在钻研暴雪代码](https://www.bilibili.com/video/BV1Sa4y1s7r4)
-* [2020-10-18] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
+* [2020-11-30] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
 * [2020-07-25] (电视剧) [隐秘的角落.The Bad Kids](https://www.iqiyi.com/v_2ffkws0bgr0.html)
 * [2020-07-23] (电视剧) [安家.I Will Find You a Better Home](https://v.qq.com/detail/i/ihhsfwvvhcm16nd.html)
-* [2020-09-25] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
+* [2020-11-29] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
 * [2020-08-20] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
 * [2020-08-25] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
 * [2020-10-31] (直播) [LOL 2020全球总决赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
@@ -42,12 +43,13 @@
 
 - type: game
 
-* [2020-11-03] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics
-* [2020-10-10] [英雄联盟](https://lol.qq.com) League of Legends
+* [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc.
+* [2020-11-24] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics
+* [2020-12-02] [英雄联盟](https://lol.qq.com) League of Legends
 * [2020-07-12] [我的世界](https://mc.163.com) Minecraft
 * [2020-10-06] [炉石传说](https://hs.blizzard.cn) Hearth Stone
 * [2020-06-08] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster
-* [2020-08-18] [星际争霸](https://sc2.blizzard.cn) StarCraft II
+* [2020-12-02] [星际争霸](https://sc2.blizzard.cn) StarCraft II
 
 # 最近在读
 
