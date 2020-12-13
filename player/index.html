@@ -83,7 +83,7 @@
                     this.sor = this.urls[0].title;
                 },
                 play(playlist) {
-                    if (!deced) return false
+                    if (!this.deced) return false
                     var scmpl = []
                     var pre = this.urls.filter(v => v.title == this.sor)[0].pre
                     var suf = this.urls.filter(v => v.title == this.sor)[0].suf
