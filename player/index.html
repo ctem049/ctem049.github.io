@@ -42,7 +42,7 @@
 <body>
 
     <div class="container" id="app">
-        <div class="form">PassWord: <input v-model="pass" type="text"> <span v-if="passtest">√</span>
+        <div class="form">PassWord: <input v-model="pass" type="password"> <span v-if="passtest">√</span>
             <select v-model="sor">
                 <option v-for="o in this.urls" :value="o.title">{{o.title}}</option>
             </select>
@@ -96,10 +96,12 @@
             },
             computed: {
                 passtest() {
+                    if (this.deced) return true
                     if (CryptoJS.HmacMD5(this.pass, "ctem049") == this.passmd5) {
                         if (!this.deced) {
-                            this.dec();
-                            this.deced = true;
+                            this.dec()
+                            this.deced = true
+                            this.pass = ''
                         }
                         return true;
                     } else {
