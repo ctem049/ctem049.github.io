@@ -88,7 +88,7 @@
                     var pre = this.urls.filter(v => v.title == this.sor)[0].pre
                     var suf = this.urls.filter(v => v.title == this.sor)[0].suf
                     playlist.map(v => {
-                        scmpl.push({ title: v, url: pre + encodeURI(v) + suf })
+                        scmpl.push({ title: v, url: decodeURI(pre + encodeURI(v) + suf)})
                     })
                     SCM.loadPlaylist(scmpl)
                     console.log(scmpl)
