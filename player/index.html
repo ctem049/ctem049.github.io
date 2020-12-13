@@ -6,7 +6,10 @@
     <title>Yiru's PlayList</title>
     <!-- vue -->
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
+    <!-- crypto -->
     <script src="https://cdn.bootcdn.net/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <!-- aplayer -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
     <style>
         :root {
             --c-hlight: pink;
@@ -36,33 +39,56 @@
             grid-gap: 4px;
             grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
         }
+
+        .inputpass {
+            max-width: 8rem;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="container" id="app">
-        <div class="form">PassWord: <input v-model="pass" type="password"> <span v-if="passtest">√</span>
-            <select v-model="sor">
-                <option v-for="o in this.urls" :value="o.title">{{o.title}}</option>
-            </select>
-        </div>
-        <div class="playlists">
-            <div v-for="pl in playlists" v-key="pl.name" class="playlist">
-                <h3 class="plname" @click="play(pl.content)">{{ pl.name }}</h3>
-                <ul>
-                    <li v-for="mu in pl.content">
-                        {{ mu }}
-                    </li>
-                </ul>
+    <div class="container">
+        <div id="aplayer" style="max-width: 1080px; margin: 0 auto;"></div>
+        <div id="app">
+            <div class="form">PassWord: <input class="inputpass" v-model="pass" type="password"> <span
+                    v-if="passtest">√</span>
+                <select v-model="sor">
+                    <option v-for="o in this.urls" :value="o.title">{{o.title}}</option>
+                </select>
+            </div>
+            <div class="playlists">
+                <div v-for="pl in playlists" v-key="pl.name" class="playlist">
+                    <h3 class="plname" @click="play(pl.content)">{{ pl.name }}</h3>
+                    <ul>
+                        <li v-for="mu in pl.content">
+                            {{ mu }}
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="./playlist.js"></script>
+    <!-- APlayer -->
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script>
+        var debug
+        const ap = new APlayer({
+            container: document.getElementById('aplayer'),
+            audio: [],
+            customAudioType: {
+                customFlac(audioElement, audio, player) {
+                    audioElement.src = audio.url
+                    debug = audioElement
+                    console.log(audioElement, audio, player)
+                }
+            }
+        });
+    </script>
     <script>
         var uenc = [{ "title": "inr", "pre": "U2FsdGVkX193ctHoXYQwS6J+G/t16KrwtwQPY470cjz2c8TOfWEtPuIYpT/RfUGTSgTYwU+MA2exKAD21+Yui9/tbeeSZvTdjZV4TkkZrr6b3j9YYdWQOxHzX6BXeBpO", "suf": "U2FsdGVkX1+xs1tuZqrNb7BChPMrXl4MGnESHMdjsgU=" }, { "title": "inp", "pre": "U2FsdGVkX19VML8KZ2Zv+qFdkOEEHl8haAGLm0CwnSC+f0Avtz+HRyQXBFYgGPuXjlJeNzbIJa2yDObEQp7IH8uX1OkyxMFdK+uV+1xFYP+haJr/yskD5ww1aXugynk1", "suf": "U2FsdGVkX1/2pmNQtx0xxb9l0Einb8lNF4XFbXNXwhV/wMrxL5pYZWqfPz7Akr2L" }, { "title": "iai", "pre": "U2FsdGVkX1+qXukInzBLvKsRkaXk12geJS1vD71q2aWqz0+TUShzzeyka2hlO2ix", "suf": "U2FsdGVkX19KbxhnPBAo4eb81nhexkjkSdMK5tNVVTA=" }];
-
         var app = new Vue({
             el: "#app",
             data: {
@@ -84,14 +110,14 @@
                 },
                 play(playlist) {
                     if (!this.deced) return false
-                    var scmpl = []
+                    var appl = []
                     var pre = this.urls.filter(v => v.title == this.sor)[0].pre
                     var suf = this.urls.filter(v => v.title == this.sor)[0].suf
                     playlist.map(v => {
-                        scmpl.push({ title: v, url: decodeURI(pre + encodeURI(v) + suf)})
+                        appl.push({ name: v, url: pre + encodeURI(v) + suf })
                     })
-                    SCM.loadPlaylist(scmpl)
-                    console.log(scmpl)
+                    ap.list.clear()
+                    ap.list.add(appl);
                 }
             },
             computed: {
@@ -111,11 +137,6 @@
             }
         });
     </script>
-
-    <!-- SCM Music Player https://www.scmplayer.net -->
-    <script type="text/javascript" src="https://www.scmplayer.net/script.js"
-        data-config="{'skin':'skins/simpleBlack/skin.css','volume':50,'autoplay':true,'shuffle':true,'repeat':1,'placement':'bottom','showplaylist':true,'playlist':[]}"></script>
-    <!-- SCM Music Player script end -->
 </body>
 
 </html>
