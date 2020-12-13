@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yiru's PlayList</title>
+    <!-- vue -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        PassWord: <input id="pass" type="text">
+        <button>Go</button>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {},
+            methods: {}
+        });
+    </script>
+
+    <!-- SCM Music Player https://www.scmplayer.net -->
+    <script type="text/javascript" src="https://www.scmplayer.net/script.js"
+        data-config="{'skin':'skins/simpleBlack/skin.css','volume':50,'autoplay':true,'shuffle':true,'repeat':1,'placement':'bottom','showplaylist':true,'playlist':[]}"></script>
+    <!-- SCM Music Player script end -->
+</body>
+
+</html>
