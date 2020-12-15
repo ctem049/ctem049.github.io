@@ -86,7 +86,7 @@
         });
     </script>
     <script>
-        var uenc = [{"title":"inr","pre":"U2FsdGVkX1+5IxFIMwPhfWDfqpw/znCn7Ohg50cF4eXuhTuZ6zYWT9yrLXMG/3c+w45Oej8hI1oNmX2pPuCVS5HrytsMAhu8xfqChdwqGRwfabAp3/Bd0Or4qmEJi4jY","suf":"U2FsdGVkX1+TAPIzOaUgBMcxMwXKZ/E57W8GLDd5fW8="},{"title":"inp","pre":"U2FsdGVkX1+kni7WEI1MdtOqRH0wnRDgnf6n24KjmNpj7V0ovnJfml9DlPhJoYRGVebl71/cQIwlw4zlEepgmxS/Qpehwuoi9beDKsTimWBoi1mOsQ/6nD238qv1T2Vd","suf":"U2FsdGVkX1+2E4wJS7PjH6IR75ZVgietIfC2akPxjrehyYmmJxmcT+COn5s1ZSDd"},{"title":"iai","pre":"U2FsdGVkX1+gf/k71kLg1nFDzna1taOnwDuPq0loxS/yjvww+6KVCGxb2IvF2qMx","suf":""}]
+        var uenc = 'U2FsdGVkX18JgHHCFr6y5KA8Bhp1gxC9StFDyScYRucSOJgsN+m5ZVRE1mlIsV8GU8e47AtH7Yk+SNxRVCLJU2+h3Js30f/zHHQu7Xls5kUwaA/u4TyR9VCtlTDc/nlfNGvQy5NNh6WVGf2uYc2pHoVoNuW1HdUsOJrh0oQFEMRfwWSGi9y7jccq62P9zeZulzEmt/r0zQHA6FW/uH6B0AJ3EyxKpSiiZOtf9ILyChvNEKGxJxCeHds7i4HgI7HSjg+4Uo0fWYT+PnakSo9M1cZsCrxfGq3v9t5GI25M8GmgZgAxVqGqtFLYV6htm3HWDRsPzyIZSGUNBjPpPyH3F6UMmpBO7ZsEC5tZXviwjiWzhmX7b5DDXi0mCh8ZUJOrhJ0pUzZkivgFCfCzYcF8H0OC56bZ5kpXzXn2LbCryeuZAjDfVZrT63haoAbh5Pb0ODGQX6r7tAe4d64miAq8dbwQ28FSvnUPD12j3tWvBf0ubJUbCaFecIUMgIoY1m2r2ySMhhzlDy7ZIWKyvyacL6AbGTY9l9IbhmKmlIj6FPwcY8IHFV9AttdwY2Xt0jGlSSAWBoMszCqPuTrlPs2+3BZJvfWfnbdryug7wp1CHrsAyeBcooAWyshgZHaTEJpnkh+FxnFRIWv7772n09lD3xmlKimyuYLSOVUxKBtsHCow44zPsselfE+bKZxiRylKhtCd/zeso5FYg0hxkluqhtdN20E7odaINZnJ3i7OmprwVts3bT3QUHSHAuUQ1Ymw0YFqyaAkejQEuwgtPMrLtVXunLD1Pjnh0+uqccSmEOI='
         var app = new Vue({
             el: "#app",
             data: {
@@ -101,24 +101,24 @@
             },
             methods: {
                 dec() {
-                    uenc.map(v => {
-                        if (v.suf != "") v.suf = CryptoJS.AES.decrypt(v.suf, this.key).toString(CryptoJS.enc.Utf8);
-                        if (v.pre != "") v.pre = CryptoJS.AES.decrypt(v.pre, this.key).toString(CryptoJS.enc.Utf8);
-                    })
                     console.log('PassOK', CryptoJS.HmacMD5(this.key, "ctem049").toString())
-                    this.urls = uenc
+                    this.urls = JSON.parse(CryptoJS.AES.decrypt(uenc, this.key).toString(CryptoJS.enc.Utf8))
                     this.sor = this.urls[0].title
                 },
                 play(playlist) {
                     if (!this.deced) return false
                     var appl = []
-                    var pre = this.urls.filter(v => v.title == this.sor)[0].pre
-                    var suf = this.urls.filter(v => v.title == this.sor)[0].suf
+                    var u = this.urls.filter(v => v.title == this.sor)[0].urls
                     playlist.map(v => {
-                        appl.push({ name: v.name, artist: v.artist, url: pre + encodeURI(v.filename) + suf, cover: v.cover})
+                        appl.push({ name: v.name, artist: v.artist, url: this.getFileUrl(encodeURI(v.filename),u), cover: v.cover})
                     })
                     ap.list.clear()
                     ap.list.add(appl);
+                },
+                getFileUrl(filename, u) {
+                    var fsuf = filename.split('.').pop()
+                    var uurl = u.filter(v => v.type == fsuf)[0]
+                    return uurl.pre + filename + uurl.suf
                 }
             },
             computed: {
