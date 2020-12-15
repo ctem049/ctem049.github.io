@@ -2,7 +2,7 @@
 
 |artist|name|filename|lyric|cover|
 |-----|-----|-----|-----|-----|
-|银临,云の泣|锦鲤抄|银临、云の泣 - 锦鲤抄.flac||https://y.gtimg.cn/music/photo_new/T002R300x300M000001ojbuJ1JoQA1_1.jpg|
+|银临,云の泣|锦鲤抄|银临、云の泣 - 锦鲤抄.flac|银临、云の泣 - 锦鲤抄.lrc|https://y.gtimg.cn/music/photo_new/T002R300x300M000001ojbuJ1JoQA1_1.jpg|
 |李荣浩|不将就|李荣浩 - 不将就.flac|||
 |许美静|城里的月光|许美静 - 城里的月光.flac|||
 |周深|大鱼|周深 - 大鱼.flac|||
