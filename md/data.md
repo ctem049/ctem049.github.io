@@ -50,7 +50,7 @@
 * [2020-12-15] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics
 * [2020-12-14] [英雄联盟](https://lol.qq.com) League of Legends
 * [2020-12-13] [我的世界](https://mc.163.com) Minecraft
-* [2020-10-06] [炉石传说](https://hs.blizzard.cn) Hearth Stone
+* [2020-12-16] [炉石传说](https://hs.blizzard.cn) Hearth Stone
 * [2020-12-15] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster
 * [2020-12-02] [星际争霸](https://sc2.blizzard.cn) StarCraft II
 
