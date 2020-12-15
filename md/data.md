@@ -1,4 +1,4 @@
-- updateTime: 2020-12-03
+- updateTime: 2020-12-16
 
 # 最近在看
 
@@ -12,7 +12,7 @@
 * [2020-11-30] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
 * [2020-07-25] (电视剧) [隐秘的角落.The Bad Kids](https://www.iqiyi.com/v_2ffkws0bgr0.html)
 * [2020-07-23] (电视剧) [安家.I Will Find You a Better Home](https://v.qq.com/detail/i/ihhsfwvvhcm16nd.html)
-* [2020-12-16] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
+* [2020-12-15] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
 * [2020-08-20] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
 * [2020-08-25] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
 * [2020-10-31] (直播) [LOL 2020全球总决赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
@@ -45,13 +45,13 @@
 
 - type: game
 
-* [2020-12-16] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat
+* [2020-12-15] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat
 * [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc.
-* [2020-12-16] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics
-* [2020-12-15] [英雄联盟](https://lol.qq.com) League of Legends
-* [2020-12-14] [我的世界](https://mc.163.com) Minecraft
+* [2020-12-15] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics
+* [2020-12-14] [英雄联盟](https://lol.qq.com) League of Legends
+* [2020-12-13] [我的世界](https://mc.163.com) Minecraft
 * [2020-10-06] [炉石传说](https://hs.blizzard.cn) Hearth Stone
-* [2020-12-16] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster
+* [2020-12-15] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster
 * [2020-12-02] [星际争霸](https://sc2.blizzard.cn) StarCraft II
 
 # 最近在读
