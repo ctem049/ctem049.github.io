@@ -81,12 +81,12 @@
     <script>
         var debug
         const ap = new APlayer({
-            container: document.getElementById('aplayer'),
+            container: document.getElementById('aplayer'), lrcType: 3,
             audio: [/* {name: 'name', artist: 'artist', url: 'url.mp3', cover: 'cover.jpg'} */]
         });
     </script>
     <script>
-        var uenc = 'U2FsdGVkX18NnRDuCDAcrrdiZsRNrT0hfrkqSvQIgpIgmkfWy156C6/dr4Yu3MnwW39bjzRVFXH59hQJv0mym8w1qMrERdhy0bGcI5AcTfsWJGxn3oJBAMhkZ+TEBUUsMYX1GAD/PgEQS+MhDbIk0rOw2kRSH9TMuOIwBAWOP+NnC9JWXnpp1sth7lqDesys+IoBSp3hHBXl8MropAoLOU/ziBcA35ISBiLVF/UFW2h3n7B4hY4/AFVZ/DtHMh/mdrABaIdVTKLa/xzwQQbdRFW+rvi3Sel2eMCYEqLHdaeUYoNEW6tv7e1cqavNj2YB7iL4uYAzoiwe2ms1hD1x+2dtmz3t1Mt0bb6h44nORV44i8cUNymsNvmalS+yZYqNbb92XA1BMJRyltKG10kRozvczGWgZBX1gfNDP3LOcgD8eVfEuRU3P0mw+2JceeewNdEC7Uob3MEcoVXLi6UccNANln0nGefJzUbEXjS6x45Qw9NXgoero+OmmYmawXMu/URNfTGUWdY9Pa5bG1fvUoLJrEcEYHszY1HwMtDars5gFj/sBAEWKlDi+NujfWCtuJkQC84Gd2Pe36mxNv9+8vqHPmuwpycrzQfVsT47NHDv8Q7GQsSiodrcMMCfSxXN0gKI0ZWcL+RtYwHAoHFa6vAEUjYjQnSvyiJr42HIb0ibYCQDqeiuCFp7/sOyjpt+8oqMiCG4Mp8nlb8SQfj3eaUtTpMhuF90JVbzUM9wBm6YmyBzgKjxUFWuaO60AU5KcPZLDt1/yhifbib6dhA9QSx48wHtkxBwt2TM5CW8l1qHY4ihmFUD7dC5GWXSi2FXyfujrqybbull5dpnb4KuTxB0gViYpaYmBVQaF4Pw341gZC/3Y/cNcm1/Up8AC9Jm'
+        var uenc = 'U2FsdGVkX188RHqfd4WPXBGnBO6UccRJNs1nTJdTesAATRSjWm49jYR9M6Olyhg7hkTKizOvKm7zFbgLtW4OsGjOSvVqRivhlMk60ZcNxt/tlU7kJFBrMxGbCp5/Hmk+NNhzgjfpeyyb62q5n2UTbQoZcaNIn+Plgt3mnlffygg398w3g3GpYstpQVl3OEKI/qCIoRbKHA5qC6eTW9L6XeXz30tcL3uzSnHdIDmdwPO+SoWt6xNzGQJpO3s1kqnrY5FQ8HRT5EieJDeexjQv4iKLN8oLAuy8wX6DLNROBF0v3fxqMhINb5MueUR7kfoDzvnpDPknFG9KaBrt/EhM8Q1pzwg5chIwIAJHhGsXoi5G0W7tZRYWxlgvQ1zwLqFg8FhG4o+V8ZU/MbRViUVnLsQ0jooVOV4lBxCWqBlGzaf/JQgihY7bMjHcOVB6q+bLiiVvYvnFSRPPP74TuFSxLhFRMjfEITZ8QIIMIwFVWcxRBykooPzLbjMDBW3gKtFnBv/W9mTagioo+l+vOFHqRY+6wvcbWsCe+gdkYxJcs8Sj9ElZwTzjIkErVRVEYdV/HSBlNQCJGl3/3wGWQ9aZ1meIOr+/2smop2QeeZxjGsXhPtkAmaVHJieDNMax3Rm80h/yRWc2cuf5nf6ZXgUqHx7U1+bSsGGE7HxXX90jTQF6FzjBbpSYJEPx5k3e9qD7DpBwbmfKZZ9Pzj3uqcYt9+N6HtpVzhz+N8nm+KIvNj3kpjQCL9CMV9QA/EXntYbBFd8Loh3CWHNXAIGgJJsjgZDhZ1Ry4De3uI6+g9bE7JNz/SLeN20KbTqyvqjdk7GN+J0hwa1+0a+3kJ3pwdvvUW4glCTlZmza57ac9P3YFWZZWwwJzeg7I0/26jiS6JD3'
         var app = new Vue({
             el: "#app",
             data: {
@@ -110,7 +110,9 @@
                     var appl = []
                     var u = this.urls.filter(v => v.title == this.sor)[0].urls
                     playlist.map(v => {
-                        appl.push({ name: v.name, artist: v.artist, url: this.getFileUrl(encodeURI(v.filename),u), cover: v.cover})
+                        var s = { name: v.name, artist: v.artist, url: this.getFileUrl(encodeURI(v.filename), u), cover: v.cover }
+                        if (v.lyric != "") { s.lrc = this.getFileUrl(encodeURI(v.lyric), u) }
+                        appl.push(s)
                     })
                     ap.list.clear()
                     ap.list.add(appl);
