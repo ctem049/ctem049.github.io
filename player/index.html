@@ -17,7 +17,7 @@
 
         .container {
             max-width: 1280px;
-            margin: 0 auto;
+            margin: 5rem auto;
         }
 
         .form {
@@ -43,6 +43,11 @@
         .inputpass {
             max-width: 8rem;
         }
+
+        .selector {
+            width: 6rem;
+            font-size: 1.5em;
+        }
     </style>
 </head>
 
@@ -51,9 +56,9 @@
     <div class="container">
         <div id="aplayer" style="max-width: 1080px; margin: 0 auto;"></div>
         <div id="app">
-            <div class="form">PassWord: <input class="inputpass" v-model="pass" type="password"> <span
-                    v-if="passtest">√</span>
-                <select v-model="sor">
+            <div class="form"><span v-show="!passtest">PassWord: <input class="inputpass" v-model="pass"
+                        type="password"></span><span v-if="passtest">Pass√</span>
+                <select class="selector" v-model="sor">
                     <option v-for="o in this.urls" :value="o.title">{{o.title}}</option>
                 </select>
             </div>
@@ -62,7 +67,7 @@
                     <h3 class="plname" @click="play(pl.content)">{{ pl.name }}</h3>
                     <ul>
                         <li v-for="mu in pl.content">
-                            {{ mu }}
+                            {{ mu.artist }} - {{ mu.name }}
                         </li>
                     </ul>
                 </div>
@@ -77,22 +82,17 @@
         var debug
         const ap = new APlayer({
             container: document.getElementById('aplayer'),
-            audio: [],
-            customAudioType: {
-                customFlac(audioElement, audio, player) {
-                    audioElement.src = audio.url
-                    debug = audioElement
-                    console.log(audioElement, audio, player)
-                }
-            }
+            audio: [/* {name: 'name', artist: 'artist', url: 'url.mp3', cover: 'cover.jpg'} */]
         });
     </script>
     <script>
-        var uenc = [{ "title": "inr", "pre": "U2FsdGVkX193ctHoXYQwS6J+G/t16KrwtwQPY470cjz2c8TOfWEtPuIYpT/RfUGTSgTYwU+MA2exKAD21+Yui9/tbeeSZvTdjZV4TkkZrr6b3j9YYdWQOxHzX6BXeBpO", "suf": "U2FsdGVkX1+xs1tuZqrNb7BChPMrXl4MGnESHMdjsgU=" }, { "title": "inp", "pre": "U2FsdGVkX19VML8KZ2Zv+qFdkOEEHl8haAGLm0CwnSC+f0Avtz+HRyQXBFYgGPuXjlJeNzbIJa2yDObEQp7IH8uX1OkyxMFdK+uV+1xFYP+haJr/yskD5ww1aXugynk1", "suf": "U2FsdGVkX1/2pmNQtx0xxb9l0Einb8lNF4XFbXNXwhV/wMrxL5pYZWqfPz7Akr2L" }, { "title": "iai", "pre": "U2FsdGVkX1+qXukInzBLvKsRkaXk12geJS1vD71q2aWqz0+TUShzzeyka2hlO2ix", "suf": "U2FsdGVkX19KbxhnPBAo4eb81nhexkjkSdMK5tNVVTA=" }];
+        var uenc = [{"title":"inr","pre":"U2FsdGVkX1+5IxFIMwPhfWDfqpw/znCn7Ohg50cF4eXuhTuZ6zYWT9yrLXMG/3c+w45Oej8hI1oNmX2pPuCVS5HrytsMAhu8xfqChdwqGRwfabAp3/Bd0Or4qmEJi4jY","suf":"U2FsdGVkX1+TAPIzOaUgBMcxMwXKZ/E57W8GLDd5fW8="},{"title":"inp","pre":"U2FsdGVkX1+kni7WEI1MdtOqRH0wnRDgnf6n24KjmNpj7V0ovnJfml9DlPhJoYRGVebl71/cQIwlw4zlEepgmxS/Qpehwuoi9beDKsTimWBoi1mOsQ/6nD238qv1T2Vd","suf":"U2FsdGVkX1+2E4wJS7PjH6IR75ZVgietIfC2akPxjrehyYmmJxmcT+COn5s1ZSDd"},{"title":"iai","pre":"U2FsdGVkX1+gf/k71kLg1nFDzna1taOnwDuPq0loxS/yjvww+6KVCGxb2IvF2qMx","suf":""}]
         var app = new Vue({
             el: "#app",
             data: {
-                passmd5: '9320411ffacc73ab423fa4b2e8903b74',
+                key: '',
+                keyaes: ['U2FsdGVkX1/qa5HqCSdaIEWPElruyFynRhFmEBhVeeE=', 'U2FsdGVkX19hTCkEb5fCD4XWAbcOKGP8ZUWnr2wGPHM='],
+                keymd5: '5e8aa4aa4f6a5cfe4e4849f203d39261',
                 urls: [],
                 pass: '',
                 deced: false,
@@ -102,11 +102,12 @@
             methods: {
                 dec() {
                     uenc.map(v => {
-                        if (v.suf != "") v.suf = CryptoJS.AES.decrypt(v.suf, this.pass).toString(CryptoJS.enc.Utf8);
-                        if (v.pre != "") v.pre = CryptoJS.AES.decrypt(v.pre, this.pass).toString(CryptoJS.enc.Utf8);
+                        if (v.suf != "") v.suf = CryptoJS.AES.decrypt(v.suf, this.key).toString(CryptoJS.enc.Utf8);
+                        if (v.pre != "") v.pre = CryptoJS.AES.decrypt(v.pre, this.key).toString(CryptoJS.enc.Utf8);
                     })
-                    this.urls = uenc;
-                    this.sor = this.urls[0].title;
+                    console.log('PassOK', CryptoJS.HmacMD5(this.key, "ctem049").toString())
+                    this.urls = uenc
+                    this.sor = this.urls[0].title
                 },
                 play(playlist) {
                     if (!this.deced) return false
@@ -114,7 +115,7 @@
                     var pre = this.urls.filter(v => v.title == this.sor)[0].pre
                     var suf = this.urls.filter(v => v.title == this.sor)[0].suf
                     playlist.map(v => {
-                        appl.push({ name: v, url: pre + encodeURI(v) + suf })
+                        appl.push({ name: v.name, artist: v.artist, url: pre + encodeURI(v.filename) + suf, cover: v.cover})
                     })
                     ap.list.clear()
                     ap.list.add(appl);
@@ -123,16 +124,20 @@
             computed: {
                 passtest() {
                     if (this.deced) return true
-                    if (CryptoJS.HmacMD5(this.pass, "ctem049") == this.passmd5) {
-                        if (!this.deced) {
+                    this.keyaes.map(v => {
+                        try { var keyl = CryptoJS.AES.decrypt(v, this.pass).toString(CryptoJS.enc.Utf8) }
+                        catch (e) { }
+                        if (CryptoJS.HmacMD5(keyl, "ctem049") == this.keymd5) {
+                            // if the key is right
+                            this.key = keyl
                             this.dec()
                             this.deced = true
                             this.pass = ''
+                            return true
                         }
-                        return true;
-                    } else {
-                        return false
-                    }
+                    })
+                    if (this.deced) return true
+                    return false
                 }
             }
         });
