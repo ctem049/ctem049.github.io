@@ -6,7 +6,7 @@
 
 * [2020-12-30] (直播) [神超 @虎牙](https://www.huya.com/102411) 云顶之弈
 * [2021-01-01] (电影) [拆弹专家2.Shock.Wave.2](https://movie.douban.com/subject/30171424)
-* [2020-01-03] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
+* [2021-01-03] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
 * [2020-11-03] (视频) [【官方双语】汉明码Pa■t1，如何克服噪■](https://www.bilibili.com/video/BV1WK411N7kz?t=1183)
 * [2020-11-07] (视频) [Class 8《无限♾》龙亦瑞生日公演](https://live.48.cn/Index/invideo/club/3/id/3903)
 * [2020-09-24] (视频) [【snh48】轻松一刻II（1）](https://www.bilibili.com/video/BV1jz4y1Z7Ae?t=584)
@@ -27,7 +27,7 @@
 
 - type: music
 
-* [2020-01-03] [本兮 - 下雪的季节](https://y.qq.com/n/yqq/song/003jfrVm0z7H1i.html)
+* [2021-01-03] [本兮 - 下雪的季节](https://y.qq.com/n/yqq/song/003jfrVm0z7H1i.html)
 * [2020-11-22] [许嵩, 金莎 - 半城烟沙(合唱版)](https://music.163.com/#/song?id=1496833377)
 * [2020-11-05] [周深 - 化身孤岛的鲸](https://y.qq.com/n/yqq/song/0004adDk3wsULz.html)
 * [2020-10-02] [欧得洋 - 孤单北半球](https://y.qq.com/n/yqq/song/00029Buj0clcBE.html)
