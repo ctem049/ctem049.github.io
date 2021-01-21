@@ -62,7 +62,7 @@
             padding-top: 1rem;
             display: grid;
             grid-gap: 4px;
-            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
         }
 
         .c-border-right {
@@ -72,6 +72,16 @@
         /* 标题 */
         .title {
             text-align: center;
+        }
+
+        /* 表格 */
+        .songs td {
+            font-size: 14px;
+            overflow: hidden;
+            max-width: 16rem;
+        }
+        .songs td.songsop {
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -113,7 +123,7 @@
                                 <tr v-for="song in songsFilter">
                                     <td>{{ song.artist }}</td>
                                     <td>{{ song.name }}</td>
-                                    <td>
+                                    <td class="songsop">
                                         <button @click="songop('play',song)">▶</button>
                                         <button @click="songop('add',song)">➕</button>
                                         <button @click="songop('down',song)">⬇</button>
