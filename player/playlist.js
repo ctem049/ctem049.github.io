@@ -35,7 +35,7 @@ function getSongs() {
     return result;
 }
 try {
-    var result = getPlaylist();
+    var result = getSongs();
     if (result) {
         songstxt = result;
     }
