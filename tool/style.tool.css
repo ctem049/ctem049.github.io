@@ -1,0 +1,100 @@
+:root {
+    --n-bg: black;
+    --n-theme: #80e4be;
+    --n-hlight: white;
+}
+
+body,
+input,
+textarea {
+    background-color: var(--n-bg);
+    color: var(--n-theme);
+    font-family: 'Consolas', 'sans-serif'
+}
+
+a {
+    color: var(--n-hlight);
+}
+
+input,
+button,
+select {
+    outline: none;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: var(--n-theme);
+    color: var(--n-hlight);
+    background-color: var(--n-bg);
+}
+
+input[type="submit"],
+button {
+    border-width: 1px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: var(--n-theme);
+}
+
+input[type="submit"]:active,
+button:active {
+    color: var(--n-theme);
+    background-color: var(--n-hlight);
+}
+
+input[type="submit"].n-clicking,
+button.n-clicking {
+    background-color: var(--n-theme);
+}
+
+textarea {
+    outline: none;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0.5px 0.5px 1px 0.5px;
+    border-color: var(--n-theme);
+    color: var(--n-hlight);
+    background-color: var(--n-bg);
+}
+
+div {
+    margin: 0 auto;
+}
+
+.y-title {
+    margin: 0 auto;
+}
+
+.y-container {
+    width: 96%;
+    max-width: 1280px;
+}
+
+@media (min-width: 600px) {
+    .y-container {
+        width: 94%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .y-container {
+        width: 92%;
+    }
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.y-block {}
+
+#y-encode textarea {
+    width: 15rem;
+    height: 10rem;
+}
+
+#y-hash textarea {
+    width: 15rem;
+    height: 3rem;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yitx's tool</title>
+    <!-- vue -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="style.tool.css">
+    <!-- Crypto -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/crypto-js/4.0.0/crypto-js.js"></script>
+</head>
+
+<body>
+    <div class="y-container">
+        <div id="app">
+            <div class="y-block">
+                <h2>Timestamp 时间戳</h2>
+                <button @click="timenow">Now</button> 时间戳: <input type="text" @input="timechange(true)" v-model="times"><span>&lt;-&gt;</span> 时间: <input type="text" @input="timechange(false)" v-model="timef">
+            </div>
+            <div class="y-block" id="y-encode">
+                <h2>Encode 编码转换</h2>
+                String: <textarea @input="enChange('string')" v-model="enString" ols="30" rows="10"></textarea> Base64:
+                <textarea @input="enChange('b64')" v-model="enB64" ols="30" rows="10"></textarea> Hex: <textarea @input="enChange('hex')" v-model="enHex" ols="30" rows="10"></textarea> UrlEncode: <textarea @input="enChange('url')" v-model="enUE" ols="30"
+                    rows="10"></textarea>
+            </div>
+            <div class="y-block" id="y-hash">
+                <h2>Hash 哈希函数</h2>
+                MD5: <textarea v-model="haMD5"></textarea> SHA-1: <textarea v-model="haSHA1"></textarea> SHA-256: <textarea v-model="haSHA256"></textarea> SHA-512: <textarea v-model="haSHA512"></textarea>
+            </div>
+        </div>
+    </div>
+    <!-- util -->
+    <script>
+        Date.prototype.format = function(fmt) {
+            var o = {
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "h+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds(), //秒
+                "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+                "S": this.getMilliseconds() //毫秒
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+    </script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                timeo: new Date(),
+                times: '',
+                timef: '',
+                enString: '',
+                enB64: '',
+                enHex: '',
+                enUE: '',
+                haMD5: '',
+                haSHA1: '',
+                haSHA256: '',
+                haSHA512: '',
+
+            },
+            methods: {
+                init() {
+                    this.timeupdate()
+                },
+                timenow() {
+                    this.timeo = new Date()
+                    this.timeupdate()
+                },
+                timeupdate() {
+                    this.times = this.timeo.getTime().toString()
+                    this.timef = this.timeo.format('yyyy-MM-dd hh:mm:ss')
+                },
+                timechange(dire) {
+                    if (dire) {
+                        this.timeo.setTime(parseInt(this.times))
+                        this.timef = this.timeo.format('yyyy-MM-dd hh:mm:ss')
+                    } else {
+                        this.timeo = new Date(this.timef)
+                        this.times = this.timeo.getTime().toString()
+                    }
+                },
+                enChange(type) {
+                    if (type == 'string') {
+                        this.eno = CryptoJS.enc.Utf8.parse(this.enString)
+                    } else if (type == 'b64') {
+                        this.eno = CryptoJS.enc.Base64.parse(this.enB64)
+                    } else if (type == 'hex') {
+                        this.eno = CryptoJS.enc.Hex.parse(this.enHex)
+                    } else if (type == 'url') {
+                        this.eno = CryptoJS.enc.Utf8.parse(decodeURI(this.enUE))
+                    }
+                    try {
+                        if (type != 'string') this.enString = CryptoJS.enc.Utf8.stringify(this.eno)
+                        if (type != 'url') this.enUE = encodeURI(this.enString)
+                    } catch (e) {
+                        if (type != 'string') this.enString = e
+                        if (type != 'url') this.enUE = e
+                    }
+                    if (type != 'hex') this.enHex = CryptoJS.enc.Hex.stringify(this.eno)
+                    if (type != 'b64') this.enB64 = CryptoJS.enc.Base64.stringify(this.eno)
+                    this.haUpdate()
+                },
+                haUpdate() {
+                    this.haMD5 = CryptoJS.MD5(this.eno).toString()
+                    this.haSHA1 = CryptoJS.SHA1(this.eno).toString()
+                    this.haSHA256 = CryptoJS.SHA256(this.eno).toString()
+                    this.haSHA512 = CryptoJS.SHA512(this.eno).toString()
+                }
+            },
+            watch: {},
+            mounted() {
+                this.init()
+            }
+        })
+    </script>
+</body>
+
+</html>

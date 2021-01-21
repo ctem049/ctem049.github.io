@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yiru's PlayList</title>
+    <title>Yitx's Player</title>
     <!-- vue -->
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
     <!-- crypto -->
@@ -21,11 +21,12 @@
         }
 
         .form {
-            max-width: 20rem;
+            text-align: center;
             margin: 0 auto;
         }
 
         .plname {
+            display: inline;
             cursor: pointer;
             transition: 0.5s;
         }
@@ -40,13 +41,37 @@
             grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
         }
 
-        .inputpass {
+        .c-input {
             max-width: 8rem;
+            height: 2rem;
+            font-size: 1.2rem;
+            box-sizing: border-box;
         }
 
         .selector {
             width: 6rem;
-            font-size: 1.5em;
+            height: 2rem;
+            font-size: 1.2rem;
+            box-sizing: border-box;
+        }
+
+        /* 内容容器 */
+        .container-content {
+            margin-top: 2rem;
+            border-top: 1px solid black;
+            padding-top: 1rem;
+            display: grid;
+            grid-gap: 4px;
+            grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        }
+
+        .c-border-right {
+            border-right: 1px solid rgba(0, 0, 0, .12);
+        }
+
+        /* 标题 */
+        .title {
+            text-align: center;
         }
     </style>
 </head>
@@ -54,22 +79,50 @@
 <body>
 
     <div class="container">
+        <h2 class="title">Yitx's Player</h2>
         <div id="aplayer" style="max-width: 1080px; margin: 0 auto;"></div>
         <div id="app">
-            <div class="form"><span v-show="!passtest">PassWord: <input class="inputpass" v-model="pass"
-                        type="password"></span><span v-if="passtest">Pass√</span>
-                <select class="selector" v-model="sor">
-                    <option v-for="o in this.urls" :value="o.title">{{o.title}}</option>
-                </select>
-            </div>
-            <div class="playlists">
-                <div v-for="pl in playlists" v-key="pl.name" class="playlist">
-                    <h3 class="plname" @click="play(pl.content)">{{ pl.name }}</h3>
-                    <ul>
-                        <li v-for="mu in pl.content">
-                            {{ mu.artist }} - {{ mu.name }}
-                        </li>
-                    </ul>
+            <div class="container-content">
+                <!-- 播放列表 -->
+                <div class="content c-border-right">
+                    <div class="playlists">
+                        <div v-for="pl in playlists" v-key="pl.name" class="playlist">
+                            <h3 class="plname" @click="play(pl.content)">🎵{{ pl.name }}</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- 全部歌曲筛选和表单 -->
+                <div class="content">
+                    <div class="form"><span v-show="!passtest">Pass: <input class="c-input" v-model="pass"
+                                type="password"></span><span v-if="passtest">Pass√</span>
+                        <select class="selector" v-model="sor">
+                            <option v-for="o in this.urls" :value="o.title">{{o.title}}</option>
+                        </select>
+                        Search: <input class="c-input" type="text" v-model="search">
+                    </div>
+                    <div class="songs">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>歌手</th>
+                                    <th>歌名</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr v-for="song in songsFilter">
+                                    <td>{{ song.artist }}</td>
+                                    <td>{{ song.name }}</td>
+                                    <td>
+                                        <button @click="songop('play',song)">▶</button>
+                                        <button @click="songop('add',song)">➕</button>
+                                        <button @click="songop('down',song)">⬇</button>
+                                        <button @click="songop('lrc',song)">📄</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,73 +131,7 @@
     <script src="./playlist.js"></script>
     <!-- APlayer -->
     <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    <script>
-        var debug
-        const ap = new APlayer({
-            container: document.getElementById('aplayer'),
-            // lrcType: 3,
-            audio: [/* {name: 'name', artist: 'artist', url: 'url.mp3', cover: 'cover.jpg'} */]
-        });
-    </script>
-    <script>
-        var uenc = 'U2FsdGVkX188RHqfd4WPXBGnBO6UccRJNs1nTJdTesAATRSjWm49jYR9M6Olyhg7hkTKizOvKm7zFbgLtW4OsGjOSvVqRivhlMk60ZcNxt/tlU7kJFBrMxGbCp5/Hmk+NNhzgjfpeyyb62q5n2UTbQoZcaNIn+Plgt3mnlffygg398w3g3GpYstpQVl3OEKI/qCIoRbKHA5qC6eTW9L6XeXz30tcL3uzSnHdIDmdwPO+SoWt6xNzGQJpO3s1kqnrY5FQ8HRT5EieJDeexjQv4iKLN8oLAuy8wX6DLNROBF0v3fxqMhINb5MueUR7kfoDzvnpDPknFG9KaBrt/EhM8Q1pzwg5chIwIAJHhGsXoi5G0W7tZRYWxlgvQ1zwLqFg8FhG4o+V8ZU/MbRViUVnLsQ0jooVOV4lBxCWqBlGzaf/JQgihY7bMjHcOVB6q+bLiiVvYvnFSRPPP74TuFSxLhFRMjfEITZ8QIIMIwFVWcxRBykooPzLbjMDBW3gKtFnBv/W9mTagioo+l+vOFHqRY+6wvcbWsCe+gdkYxJcs8Sj9ElZwTzjIkErVRVEYdV/HSBlNQCJGl3/3wGWQ9aZ1meIOr+/2smop2QeeZxjGsXhPtkAmaVHJieDNMax3Rm80h/yRWc2cuf5nf6ZXgUqHx7U1+bSsGGE7HxXX90jTQF6FzjBbpSYJEPx5k3e9qD7DpBwbmfKZZ9Pzj3uqcYt9+N6HtpVzhz+N8nm+KIvNj3kpjQCL9CMV9QA/EXntYbBFd8Loh3CWHNXAIGgJJsjgZDhZ1Ry4De3uI6+g9bE7JNz/SLeN20KbTqyvqjdk7GN+J0hwa1+0a+3kJ3pwdvvUW4glCTlZmza57ac9P3YFWZZWwwJzeg7I0/26jiS6JD3'
-        var app = new Vue({
-            el: "#app",
-            data: {
-                key: '',
-                keyaes: ['U2FsdGVkX1/qa5HqCSdaIEWPElruyFynRhFmEBhVeeE=', 'U2FsdGVkX19hTCkEb5fCD4XWAbcOKGP8ZUWnr2wGPHM='],
-                keymd5: '5e8aa4aa4f6a5cfe4e4849f203d39261',
-                urls: [],
-                pass: '',
-                deced: false,
-                playlists: playlists,
-                sor: ''
-            },
-            methods: {
-                dec() {
-                    console.log('PassOK', CryptoJS.HmacMD5(this.key, "ctem049").toString())
-                    this.urls = JSON.parse(CryptoJS.AES.decrypt(uenc, this.key).toString(CryptoJS.enc.Utf8))
-                    this.sor = this.urls[0].title
-                },
-                play(playlist) {
-                    if (!this.deced) return false
-                    var appl = []
-                    var u = this.urls.filter(v => v.title == this.sor)[0].urls
-                    playlist.map(v => {
-                        var s = { name: v.name, artist: v.artist, url: this.getFileUrl(encodeURI(v.filename), u), cover: v.cover }
-                        if (v.lyric != "") { s.lrc = this.getFileUrl(encodeURI(v.lyric), u) }
-                        appl.push(s)
-                    })
-                    ap.list.clear()
-                    ap.list.add(appl);
-                },
-                getFileUrl(filename, u) {
-                    var fsuf = filename.split('.').pop()
-                    var uurl = u.filter(v => v.type == fsuf)[0]
-                    return uurl.pre + filename + uurl.suf
-                }
-            },
-            computed: {
-                passtest() {
-                    if (this.deced) return true
-                    this.keyaes.map(v => {
-                        try { var keyl = CryptoJS.AES.decrypt(v, this.pass).toString(CryptoJS.enc.Utf8) }
-                        catch (e) { }
-                        if (CryptoJS.HmacMD5(keyl, "ctem049") == this.keymd5) {
-                            // if the key is right
-                            this.key = keyl
-                            this.dec()
-                            this.deced = true
-                            this.pass = ''
-                            return true
-                        }
-                    })
-                    if (this.deced) return true
-                    return false
-                }
-            }
-        });
-    </script>
+    <script src="./player.js"></script>
 </body>
 
 </html>

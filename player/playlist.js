@@ -1,28 +1,69 @@
+/**
+ * 获取songs.txt和playlist.md得到列表
+ * 列表格式：
+ * songs = [
+ * {name: '歌名', artist: '艺术家', url: '文件名', lrc:'歌词文件名', cover: '封面url'}
+ * playlists = []
+ * ]
+ */
+
 var playlistmd = `# 2010b
 
-|artist|name|filename|lyric|cover|
-|-----|-----|-----|-----|-----|
-|银临,云の泣|锦鲤抄|银临、云の泣 - 锦鲤抄.flac|银临、云の泣 - 锦鲤抄.lrc|https://y.gtimg.cn/music/photo_new/T002R300x300M000001ojbuJ1JoQA1_1.jpg|
-|李荣浩|不将就|李荣浩 - 不将就.flac|||
-|许美静|城里的月光|许美静 - 城里的月光.flac|||
-|周深|大鱼|周深 - 大鱼.flac|||
-|司南|冬眠|司南 - 冬眠.flac|||
-|欧得洋|孤单北半球|欧得洋 - 孤单北半球.flac|||
-|王菲|红豆|王菲 - 红豆.flac|||
-|霍尊|卷珠帘|霍尊 - 卷珠帘.flac|||
-|梁静茹|暖暖|梁静茹 - 暖暖.flac|||
-|王力宏|你不知道的事|王力宏 - 你不知道的事.flac|||
-|孙燕姿|逆光|孙燕姿 - 逆光.flac|||
-|桃十五&徐秉龙|青柠|徐秉龙、桃十五 - 青柠.flac|||
-|林俊杰|她说|林俊杰 - 她說.flac|||
-|许嵩/刘美麟|温泉|许嵩、刘美麟 - 温泉.flac|||
-|周杰伦&温岚|屋顶|周杰伦、温岚 - 屋顶.flac|||
-|杨沛宜|左手右手|杨沛宜 - 左手右手.flac|||`
+银临、云の泣 - 锦鲤抄.flac
+李荣浩 - 不将就.flac
+许美静 - 城里的月光.flac
+周深 - 大鱼.flac
+
+# test xu
+
+许嵩 - 我乐意.flac
+许嵩 - 我们的恋爱是对生命的严重浪费.flac`
+
+var songstxt = `许嵩 - 惊鸿一面.flac
+许嵩 - 想象之中Imagination.flac
+许嵩 - 我乐意.flac
+许嵩 - 我们的恋爱是对生命的严重浪费.flac
+许嵩 - 我想牵着你的手.flac
+许嵩 - 摆脱.flac`
+
+// 获取songs.txt
+function getSongs() {
+    var oReq = new XMLHttpRequest();
+    oReq.open("GET", "./songs.txt?" + new Date().getTime(), false);
+    oReq.send(null);
+    var result = oReq.responseText;
+    return result;
+}
+try {
+    var result = getPlaylist();
+    if (result) {
+        songstxt = result;
+    }
+} catch (e) {
+    console.log(e);
+}
+// 分割为songs
+var songs = [{ name: 'name', artist: 'artist', url: 'url.mp3', cover: 'cover.jpg', lrc: 'lrc.lrc' }] // songs模板
+songs = songscomp(songstxt)
+function songscomp(songstxt) {
+    var songs = []
+    songstxt.split('\n').forEach(v => {
+        var sp = v.split(/ - |\./) // 0歌手 1歌名 2后缀
+        var artist = sp[0].replace(/、/g, ',')
+        var name = sp[1]
+        var sp2 = v.split('.')
+        sp2[sp2.length - 1] = 'lrc'
+        var lrc = sp2.join('.')
+        var cover = '' // 暂不解决cover
+        songs.push({ name: name, artist: artist, url: v, cover: cover, lrc: lrc })
+    })
+    return songs
+}
 
 // 获取playlist.md
 function getPlaylist() {
     var oReq = new XMLHttpRequest();
-    oReq.open("GET", "./playlist.md?"+new Date().getTime(), false); // 同步请求
+    oReq.open("GET", "./playlist.md?" + new Date().getTime(), false); // 同步请求
     oReq.send(null);//发送数据需要自定义，这里发送的是JSON结构
     var result = oReq.responseText;//响应结果
     return result;
@@ -35,17 +76,13 @@ try {
 } catch (e) {
     console.log(e);
 }
-
+// 1 按行分割
 var mdsplit = playlistmd.split('\n')
 var playlists = [{
-    name: 'plname', content: [
-        { artist: '', name: '', filename: '', lyric: '', cover: '' }
-    ]
+    name: 'plname', content: ['filename']
 }]
-
-// md分割为播放列表
+// 2 分割为播放列表
 playlists = mdcomp(mdsplit)
-
 function mdcomp(mdsplit) {
     var inlist = false
     var intable = false
@@ -62,28 +99,8 @@ function mdcomp(mdsplit) {
             inlist = true
             list = { name: v.slice(2), content: [] }
         }
-        if (v.startsWith('|')) {
-            intable = true
-            if (tablestart) {
-                values = v.split('|')
-                values.shift(1)
-                var content = {}
-                keys.forEach((v,i)=>{
-                    content[v] = values[i]
-                })
-                // console.log(keys,values,content)
-                list.content.push(content)
-            } else {
-                if (v.startsWith('|-')) {
-                    tablestart = true
-                } else {
-                    keys = v.split('|').filter(Boolean)
-                    // console.log('keys', keys, v)
-                }
-            }
-        } else {
-            tablestart = false
-            intable = false
+        if (v.indexOf('.') >= 0) {
+            list.content.push(v)
         }
     })
     lists.push(list)
