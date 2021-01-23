@@ -97,7 +97,7 @@ function mdcomp(mdsplit) {
                 lists.push(list)
             }
             inlist = true
-            list = { name: v.slice(2), content: [] }
+            list = { name: v.slice(2), expand: false, content: [] }
         } else if (v.indexOf('.') >= 0) {
             list.content.push(v)
         }

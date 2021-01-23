@@ -54,6 +54,10 @@ var app = new Vue({
             ap.list.clear()
             ap.list.add(appl);
         },
+        /** 切换列表开关 */
+        switchList(pl) {
+            pl.expand = !pl.expand
+        },
         /** 获取音乐真实地址 */
         getFileUrl(filename, u) {
             var fsuf = filename.split('.').pop()

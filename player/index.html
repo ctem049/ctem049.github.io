@@ -41,6 +41,16 @@
             grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
         }
 
+        .playlists ul {
+            margin: 0 0;
+            padding-left: 2rem;
+        }
+
+        .playlists li {
+            list-style: none;
+            font-size: 0.8rem;
+        }
+
         .c-input {
             max-width: 8rem;
             height: 2rem;
@@ -62,7 +72,7 @@
             padding-top: 1rem;
             display: grid;
             grid-gap: 4px;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         }
 
         .c-border-right {
@@ -80,6 +90,7 @@
             overflow: hidden;
             max-width: 16rem;
         }
+
         .songs td.songsop {
             white-space: nowrap;
         }
@@ -97,7 +108,10 @@
                 <div class="content c-border-right">
                     <div class="playlists">
                         <div v-for="pl in playlists" v-key="pl.name" class="playlist">
-                            <h3 class="plname" @click="play(pl.content)">🎵{{ pl.name }}</h3>
+                            <h3 class="plname"><span @click="play(pl.content)">🎵</span><span @click="switchList(pl)">{{ pl.name }}</span></h3>
+                            <ul v-show="pl.expand">
+                                <li v-for="ct in pl.content">{{ ct.split('.')[0] }}</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
