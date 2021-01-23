@@ -15,6 +15,10 @@
             --c-hlight: pink;
         }
 
+        [v-cloak] {
+            display: none;
+        }
+
         .container {
             max-width: 1280px;
             margin: 5rem auto;
@@ -111,12 +115,13 @@
         <h2 class="title">Yitx's Player</h2>
         <div id="aplayer" style="max-width: 1080px; margin: 0 auto;"></div>
         <div id="app">
-            <div class="container-content">
+            <div v-cloak class="container-content">
                 <!-- 播放列表 -->
                 <div class="content c-border-right">
                     <div class="playlists">
                         <div v-for="pl in playlists" v-key="pl.name" class="playlist">
-                            <h3 class="plname"><span @click="play(pl.content)">🎵</span><span @click="switchList(pl)">{{ pl.name }}</span></h3>
+                            <h3 class="plname"><span @click="play(pl.content)">🎵</span><span @click="switchList(pl)">{{
+                                    pl.name }}</span></h3>
                             <ul v-show="pl.expand">
                                 <li v-for="ct in pl.content">{{ ct.split('.')[0] }}</li>
                             </ul>
