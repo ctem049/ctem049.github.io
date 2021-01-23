@@ -71,21 +71,26 @@ var app = new Vue({
             var u = this.urls.filter(v => v.title == this.sor)[0].urls
             var s = { name: song.name, artist: song.artist, url: this.getFileUrl(encodeURI(song.url), u), cover: song.cover }
             if (song.lrc != "") { song.lrc = this.getFileUrl(encodeURI(song.lrc), u) }
-
             if (action == 'play') {
-                // 添加到列表并播放
-                ap.list.add(s)
-                ap.list.switch(ap.list.audios.length - 1)
+                var t = ap.list.audios.findIndex(v => v.url == s.url)
+                if (t >= 0) {
+                    // 已存在，切换到此曲
+                    ap.list.switch(t)
+                } else {
+                    // 添加到列表并播放
+                    ap.list.add(s)
+                    ap.list.switch(ap.list.audios.length - 1)
+                }
                 ap.play()
                 ap.seek(0)
             }
-            else if (action = 'add') {
+            else if (action == 'add') {
                 ap.list.add(s)
             }
-            else if (action = 'down') {
+            else if (action == 'down') {
                 window.open(s.url)
             }
-            else if (action = 'lrc') {
+            else if (action == 'lrc') {
                 window.open(s.lrc)
             }
         }
