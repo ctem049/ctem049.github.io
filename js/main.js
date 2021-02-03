@@ -1,6 +1,6 @@
 var app = new Vue({
     el: '#app',
-    data: { data: data },
+    data: { data: data, logor: true },
     methods: {
         daf(value, fmt = 'yyyy.MM.dd') {
             return new Date(value).format(fmt);
