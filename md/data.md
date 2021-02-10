@@ -1,25 +1,26 @@
-- updateTime: 2021-01-19
+- updateTime: 2021-02-10
 
 # 最近在看
 
 - type: video
 
+* [2021-02-10] (视频) [当《1812序曲》音乐可视化后，享受到了视觉的刺激！](https://www.bilibili.com/video/BV1Et4y1Y7jn)
+* [2021-02-10] (视频) [谦 门 弄 术 【2021拜年纪情报】](https://www.bilibili.com/video/BV1fr4y1K7aR)
 * [2021-01-13] (视频) [马老师被弹幕奇葩提问搞到崩溃](https://www.bilibili.com/video/BV1Rp4y1x7YJ)
 * [2021-01-13] (电影) [天气之子.Weathering with You](https://movie.douban.com/subject/30402296/)
 * [2020-12-30] (直播) [神超 @虎牙](https://www.huya.com/102411) 云顶之弈
 * [2021-01-01] (电影) [拆弹专家2.Shock Wave 2](https://movie.douban.com/subject/30171424)
-* [2021-01-03] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
+* [2021-02-08] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
 * [2020-11-03] (视频) [【官方双语】汉明码Pa■t1，如何克服噪■](https://www.bilibili.com/video/BV1WK411N7kz?t=1183)
 * [2020-11-07] (视频) [Class 8《无限♾》龙亦瑞生日公演](https://live.48.cn/Index/invideo/club/3/id/3903)
-* [2020-09-24] (视频) [【snh48】轻松一刻II（1）](https://www.bilibili.com/video/BV1jz4y1Z7Ae?t=584)
 * [2021-01-03] (视频) [【逗鱼时刻】第283期 这就是信任和羁绊吗！](https://www.bilibili.com/video/BV1cv411x74c)
 * [2021-01-16] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
 * [2020-07-25] (电视剧) [隐秘的角落.The Bad Kids](https://www.iqiyi.com/v_2ffkws0bgr0.html)
 * [2020-07-23] (电视剧) [安家.I Will Find You a Better Home](https://v.qq.com/detail/i/ihhsfwvvhcm16nd.html)
-* [2021-01-03] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
+* [2021-02-09] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
 * [2020-08-20] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
-* [2020-08-25] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
-* [2021-01-17] (直播) [LPL 春季赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
+* [2021-02-10] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
+* [2021-02-06] (直播) [LPL 春季赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
 * [2020-11-01] (视频) [【星际老男孩】谐星语录之幸存者偏差](https://www.bilibili.com/video/BV1ay4y1m7Tf)
 * [2020-07-11] (视频) [【狼 人 杀 谈 判 专 家】](https://www.bilibili.com/video/BV1bD4y1S7hY)
 * [2020-06-23] (视频) [谋 权 篡 位 4](https://www.bilibili.com/video/BV1ug4y1q7YH)
@@ -29,6 +30,7 @@
 
 - type: music
 
+* [2021-02-06] [张杰 - 天下](https://y.qq.com/n/yqq/song/00041h1u3kgquE.html)
 * [2021-01-03] [本兮 - 下雪的季节](https://y.qq.com/n/yqq/song/003jfrVm0z7H1i.html)
 * [2020-11-22] [许嵩, 金莎 - 半城烟沙(合唱版)](https://music.163.com/#/song?id=1496833377)
 * [2020-11-05] [周深 - 化身孤岛的鲸](https://y.qq.com/n/yqq/song/0004adDk3wsULz.html)
@@ -53,7 +55,7 @@
 * [2021-01-10] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat
 * [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc.
 * [2021-01-12] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics
-* [2021-01-19] [英雄联盟](https://lol.qq.com) League of Legends
+* [2021-02-10] [英雄联盟](https://lol.qq.com) League of Legends
 * [2020-12-13] [我的世界](https://mc.163.com) Minecraft
 * [2021-01-02] [炉石传说](https://hs.blizzard.cn) Hearth Stone
 * [2020-12-15] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster
