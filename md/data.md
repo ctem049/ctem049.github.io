@@ -4,6 +4,8 @@
 
 - type: video
 
+* [2021-02-15] (直播) [逆推王道 @Bilibili](https://live.bilibili.com/799158) 英雄联盟
+* [2021-02-15] (直播) [风主教主解说 @Bilibili](https://live.bilibili.com/66688) 绝地求生
 * [2021-02-10] (视频) [当《1812序曲》音乐可视化后，享受到了视觉的刺激！](https://www.bilibili.com/video/BV1Et4y1Y7jn)
 * [2021-02-10] (视频) [谦 门 弄 术 【2021拜年纪情报】](https://www.bilibili.com/video/BV1fr4y1K7aR)
 * [2021-01-13] (视频) [马老师被弹幕奇葩提问搞到崩溃](https://www.bilibili.com/video/BV1Rp4y1x7YJ)
@@ -13,12 +15,12 @@
 * [2021-02-08] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
 * [2020-11-03] (视频) [【官方双语】汉明码Pa■t1，如何克服噪■](https://www.bilibili.com/video/BV1WK411N7kz?t=1183)
 * [2020-11-07] (视频) [Class 8《无限♾》龙亦瑞生日公演](https://live.48.cn/Index/invideo/club/3/id/3903)
-* [2021-01-03] (视频) [【逗鱼时刻】第283期 这就是信任和羁绊吗！](https://www.bilibili.com/video/BV1cv411x74c)
+* [2021-02-13] (视频) [【逗鱼时刻】逗鱼时刻2020 TOP50](https://www.bilibili.com/video/BV1eN411R7gp)
 * [2021-01-16] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
 * [2020-07-25] (电视剧) [隐秘的角落.The Bad Kids](https://www.iqiyi.com/v_2ffkws0bgr0.html)
 * [2020-07-23] (电视剧) [安家.I Will Find You a Better Home](https://v.qq.com/detail/i/ihhsfwvvhcm16nd.html)
 * [2021-02-09] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
-* [2020-08-20] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
+* [2021-02-15] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
 * [2021-02-10] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
 * [2021-02-06] (直播) [LPL 春季赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
 * [2020-11-01] (视频) [【星际老男孩】谐星语录之幸存者偏差](https://www.bilibili.com/video/BV1ay4y1m7Tf)
@@ -52,6 +54,7 @@
 
 - type: game
 
+* [2021-02-15] [和平精英](https://gp.qq.com/) Game For Peace
 * [2021-01-10] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat
 * [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc.
 * [2021-01-12] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics
@@ -65,6 +68,7 @@
 
 - type: text
 
+* [2021-01-22] [魔方与群论](https://zhuanlan.zhihu.com/p/75057811)
 * [2020-09-07] [苏菲的世界](https://book.douban.com/subject/2284311/)
 * [2020-08-24] [10 × 10 的正方形最多可放入多少个直径为 1 的圆？](https://www.zhihu.com/question/67716815/answer/402046172)
 * [2020-07-25] [π里包含了所有可能的数字组合吗？](https://www.guokr.com/article/439682/)
