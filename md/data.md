@@ -23,7 +23,7 @@
 * [2021-03-03] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
 * [2021-02-26] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
 * [2021-02-06] (直播) [LPL 春季赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
-* [2020-03-01] (视频) [【星际老男孩】谐星语录之计算器专业](https://www.bilibili.com/video/BV1ay4y1m7Tf)
+* [2021-03-01] (视频) [【星际老男孩】谐星语录之计算器专业](https://www.bilibili.com/video/BV1ay4y1m7Tf)
 * [2020-07-11] (视频) [【狼 人 杀 谈 判 专 家】](https://www.bilibili.com/video/BV1bD4y1S7hY)
 * [2020-06-23] (视频) [谋 权 篡 位 4](https://www.bilibili.com/video/BV1ug4y1q7YH)
 * [2020-09-07] (电影) [信条.Tenet](https://www.tenetfilm.net/)
