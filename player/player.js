@@ -118,10 +118,7 @@ var app = new Vue({
         songsFilter() {
             if (this.search == '') return this.songs
             else {
-                return this.songs.filter(v =>
-                    (v.name.indexOf(this.search) >= 0)
-                    || (v.artist.indexOf(this.search) >= 0)
-                )
+                return this.songs.filter(v => ((v.name.indexOf(this.search) >= 0) || (v.artist.indexOf(this.search) >= 0)))
             }
         }
     },
