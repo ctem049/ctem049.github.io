@@ -16,7 +16,7 @@
 * [2021-03-02] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
 * [2020-11-03] (视频) [【官方双语】汉明码Pa■t1，如何克服噪■](https://www.bilibili.com/video/BV1WK411N7kz?t=1183)
 * [2020-11-07] (视频) [Class 8《无限♾》龙亦瑞生日公演](https://live.48.cn/Index/invideo/club/3/id/3903)
-* [2020-03-20] (视频) [【GNZ48】20210320《最佳拍档》GNZ48专场第一场](https://www.bilibili.com/video/BV1o5411P7NX)
+* [2021-03-20] (视频) [【GNZ48】20210320《最佳拍档》GNZ48专场第一场](https://www.bilibili.com/video/BV1o5411P7NX)
 * [2021-02-13] (视频) [【逗鱼时刻】逗鱼时刻2020 TOP50](https://www.bilibili.com/video/BV1eN411R7gp) 炉石传说
 * [2021-03-22] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
 * [2020-07-25] (电视剧) [隐秘的角落.The Bad Kids](https://www.iqiyi.com/v_2ffkws0bgr0.html)
