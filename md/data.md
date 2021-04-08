@@ -1,30 +1,32 @@
-- updateTime: 2021-03-24
+- updateTime: 2021-04-08
 
 # 最近在看
 
 - type: video
 
-* [2021-03-20] (视频) [【真人炉石】兽人小姐姐向你发出对战邀请！](https://www.bilibili.com/video/BV1cN411X7aa) 炉石传说
+* [2021-03-31] (视频) [BanG Dream如何自制？超详细制谱教程来辣](https://www.bilibili.com/video/BV1N54y1X7Pj)
+* [2021-04-01] (视频) [【逗鱼时刻】第295期 我被困在这个时间段里面了](https://www.bilibili.com/video/BV1ob4y1S7rZ)
+* [2021-04-07] (直播) [LPL 春季赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
+* [2021-04-06] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
+* [2021-04-06] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
+* [2021-04-02] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
+* [2021-03-31] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
+* [2021-04-06] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
+* [2020-12-30] (直播) [神超 @虎牙](https://www.huya.com/102411) 云顶之弈
 * [2021-02-15] (直播) [逆推王道 @Bilibili](https://live.bilibili.com/799158) 英雄联盟
-* [2021-03-03] (直播) [风主教主解说 @Bilibili](https://live.bilibili.com/66688) 绝地求生
+* [2021-04-07] (直播) [风主教主解说 @Bilibili](https://live.bilibili.com/66688) 绝地求生
+* [2021-03-20] (视频) [【真人炉石】兽人小姐姐向你发出对战邀请！](https://www.bilibili.com/video/BV1cN411X7aa) 炉石传说
 * [2021-02-10] (视频) [当《1812序曲》音乐可视化后，享受到了视觉的刺激！](https://www.bilibili.com/video/BV1Et4y1Y7jn) 过山车之星
 * [2021-02-10] (视频) [谦 门 弄 术 【2021拜年纪情报】](https://www.bilibili.com/video/BV1fr4y1K7aR)
 * [2021-01-13] (视频) [马老师被弹幕奇葩提问搞到崩溃](https://www.bilibili.com/video/BV1Rp4y1x7YJ) 英雄联盟
 * [2021-01-13] (电影) [天气之子.Weathering with You](https://movie.douban.com/subject/30402296/)
-* [2020-12-30] (直播) [神超 @虎牙](https://www.huya.com/102411) 云顶之弈
 * [2021-01-01] (电影) [拆弹专家2.Shock Wave 2](https://movie.douban.com/subject/30171424)
-* [2021-03-02] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
 * [2020-11-03] (视频) [【官方双语】汉明码Pa■t1，如何克服噪■](https://www.bilibili.com/video/BV1WK411N7kz?t=1183)
 * [2020-11-07] (视频) [Class 8《无限♾》龙亦瑞生日公演](https://live.48.cn/Index/invideo/club/3/id/3903)
 * [2021-03-20] (视频) [【GNZ48】20210320《最佳拍档》GNZ48专场第一场](https://www.bilibili.com/video/BV1o5411P7NX)
 * [2021-02-13] (视频) [【逗鱼时刻】逗鱼时刻2020 TOP50](https://www.bilibili.com/video/BV1eN411R7gp) 炉石传说
-* [2021-03-22] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
 * [2020-07-25] (电视剧) [隐秘的角落.The Bad Kids](https://www.iqiyi.com/v_2ffkws0bgr0.html)
 * [2020-07-23] (电视剧) [安家.I Will Find You a Better Home](https://v.qq.com/detail/i/ihhsfwvvhcm16nd.html)
-* [2021-03-24] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
-* [2021-03-24] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
-* [2021-03-24] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
-* [2021-03-22] (直播) [LPL 春季赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
 * [2021-03-21] (视频) [【瞎β操作】 LPL春季赛第八周 把波比ban了](https://www.bilibili.com/video/BV1HU4y1a7cM) 英雄联盟
 * [2021-03-15] (视频) [【星际老男孩】谐星语录之我的野蛮同桌](https://www.bilibili.com/video/BV1Rh411Q7PX) 星际争霸2
 * [2020-07-11] (视频) [【狼 人 杀 谈 判 专 家】](https://www.bilibili.com/video/BV1bD4y1S7hY) 狼人杀
@@ -35,6 +37,7 @@
 
 - type: music
 
+* [2021-04-02] [林俊杰 - 美人鱼](https://y.qq.com/n/yqq/song/002ASCKm3ROw7t.html)
 * [2021-03-15] [周兴哲 - 永不失联的爱](https://y.qq.com/n/yqq/song/004c4CEB3jfz7a.html)
 * [2021-02-27] [周杰伦, Lara梁心颐 - 珊瑚海](https://y.qq.com/n/yqq/song/001K0AjL2huSxx.html)
 * [2021-02-06] [张杰 - 天下](https://y.qq.com/n/yqq/song/00041h1u3kgquE.html)
@@ -63,7 +66,7 @@
 * [2021-01-10] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat
 * [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc.
 * [2021-03-15] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics
-* [2021-03-24] [英雄联盟](https://lol.qq.com) League of Legends
+* [2021-04-07] [英雄联盟](https://lol.qq.com) League of Legends
 * [2020-12-13] [我的世界](https://mc.163.com) Minecraft
 * [2021-03-21] [炉石传说](https://hs.blizzard.cn) Hearth Stone
 * [2020-12-15] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster
@@ -73,6 +76,7 @@
 
 - type: text
 
+* [2021-03-30] [音游科普](https://www.bilibili.com/read/cv8050900/)
 * [2021-03-03] [Elliptic Curve Cryptography: a gentle introduction](https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/)
 * [2021-02-25] [Tetris AI – The (Near) Perfect Bot](https://codemyroad.wordpress.com/2013/04/14/tetris-ai-the-near-perfect-player/)
 * [2021-01-22] [魔方与群论](https://zhuanlan.zhihu.com/p/75057811)
