@@ -119,3 +119,13 @@ img.y-logo {
 .y-rorate{
     animation: rotation 10s linear infinite;
 }
+
+.y-icon-svg {
+    vertical-align: text-bottom;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.y-links {
+    font-size: 0.8rem;
+}
