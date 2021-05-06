@@ -1,20 +1,23 @@
-- updateTime: 2021-04-21
+- updateTime: 2021-05-06
 
 # 最近在看
 
 - type: video
 
+* [2021-05-01] (视频) [【星际老男孩】谐星语录之人设](https://www.bilibili.com/video/BV15B4y1c7w8)
+* [2021-04-29] (视频) [【逗鱼时刻】第299期 天才构筑奇迹术 旅店老板很忙碌](https://www.bilibili.com/video/BV1x64y1U7Ts) 炉石传说
+* [2021-04-23] (番剧) [citrus~柑橘味香气~](http://bgm.tv/subject/198098)
 * [2021-04-18] (番剧) [终将成为你.Yagate Kimi ni Naru](https://www.bilibili.com/bangumi/media/md138832)
-* [2021-04-16] (视频) [【逗鱼时刻】第297期 老师老师，你怎么又伏笔了？](https://www.bilibili.com/video/BV1rp4y187Qd)
+* [2021-04-16] (视频) [【逗鱼时刻】第297期 老师老师，你怎么又伏笔了？](https://www.bilibili.com/video/BV1rp4y187Qd) 炉石传说
 * [2021-04-18] (视频) [花5000块钱做体检，我查出了多少问题？](https://www.bilibili.com/video/BV1NV411J7pf)
 * [2021-03-31] (视频) [BanG Dream如何自制？超详细制谱教程来辣](https://www.bilibili.com/video/BV1N54y1X7Pj)
-* [2021-04-01] (视频) [【逗鱼时刻】第295期 我被困在这个时间段里面了](https://www.bilibili.com/video/BV1ob4y1S7rZ)
+* [2021-04-01] (视频) [【逗鱼时刻】第295期 我被困在这个时间段里面了](https://www.bilibili.com/video/BV1ob4y1S7rZ) 炉石传说
 * [2021-04-18] (直播) [LPL 春季赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
-* [2021-04-20] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
+* [2021-05-04] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
 * [2021-04-12] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
 * [2021-04-02] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
-* [2021-04-10] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
-* [2021-04-20] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
+* [2021-05-02] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
+* [2021-05-04] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
 * [2020-12-30] (直播) [神超 @虎牙](https://www.huya.com/102411) 云顶之弈
 * [2021-02-15] (直播) [逆推王道 @Bilibili](https://live.bilibili.com/799158) 英雄联盟
 * [2021-04-07] (直播) [风主教主解说 @Bilibili](https://live.bilibili.com/66688) 绝地求生
@@ -40,6 +43,7 @@
 
 - type: music
 
+* [2021-05-02] [Sweety - 樱花草](https://y.qq.com/n/yqq/song/000Tx0ZM2xaBhM.html)
 * [2021-04-02] [林俊杰 - 美人鱼](https://y.qq.com/n/yqq/song/002ASCKm3ROw7t.html)
 * [2021-03-15] [周兴哲 - 永不失联的爱](https://y.qq.com/n/yqq/song/004c4CEB3jfz7a.html)
 * [2021-02-27] [周杰伦, Lara梁心颐 - 珊瑚海](https://y.qq.com/n/yqq/song/001K0AjL2huSxx.html)
@@ -69,9 +73,9 @@
 * [2021-01-10] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat
 * [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc.
 * [2021-03-15] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics
-* [2021-04-20] [英雄联盟](https://lol.qq.com) League of Legends
+* [2021-05-05] [英雄联盟](https://lol.qq.com) League of Legends
 * [2020-12-13] [我的世界](https://mc.163.com) Minecraft
-* [2021-04-12] [炉石传说](https://hs.blizzard.cn) Hearth Stone
+* [2021-04-28] [炉石传说](https://hs.blizzard.cn) Hearth Stone
 * [2020-12-15] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster
 * [2020-12-02] [星际争霸](https://sc2.blizzard.cn) StarCraft II
 
