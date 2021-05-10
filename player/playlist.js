@@ -49,6 +49,7 @@ songs = songscomp(songstxt)
 function songscomp(songstxt) {
     var songs = []
     songstxt.split('\n').forEach(v => {
+        if (v=="") return
         var sp = v.split(/ - |\./) // 0歌手 1歌名 2后缀
         var artist = sp[0].replace(/、/g, ',')
         var name = sp[1]
