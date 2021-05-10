@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yitx's Player</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="ono.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="../ono.svg" type="image/svg+xml">
     <!-- vue -->
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script>
     <!-- crypto -->
@@ -79,12 +79,26 @@
             border-top: 1px solid black;
             padding-top: 1rem;
             display: grid;
-            grid-gap: 4px;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr) 300px);
+            column-gap: 4px;
+            row-gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
 
         .c-border-right {
-            border-right: 1px solid rgba(0, 0, 0, .12);
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, .12);
+        }
+
+        @media screen and (min-width: 960px) {
+            .c-border-right {
+                padding-bottom: 0;
+                border-bottom: none;
+                border-right: 1px solid rgba(0, 0, 0, .12);
+            }
+
+            .list {
+                grid-column: 2 / 4;
+            }
         }
 
         /* 标题 */
@@ -93,6 +107,12 @@
         }
 
         /* 表格 */
+        .songs table {
+            width: 100%;
+        }
+        .songs th {
+            text-align: left;
+        }
         .songs td {
             font-size: 14px;
             overflow: hidden;
@@ -133,7 +153,7 @@
                     </div>
                 </div>
                 <!-- 全部歌曲筛选和表单 -->
-                <div class="content">
+                <div class="content list">
                     <div class="form"><span v-show="!passtest">Pass: <input class="c-input" v-model="pass"
                                 type="password"></span><span v-if="passtest">Pass√</span>
                         <select class="selector" v-model="sor">

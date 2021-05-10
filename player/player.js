@@ -2,18 +2,18 @@ var debug
 // 加载播放器
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
-    // lrcType: 3,
+    lrcType: 3,
     audio: [/* {name: 'name', artist: 'artist', url: 'url.mp3', cover: 'cover.jpg'} */]
 });
 // 使用主密钥加密的地址前后缀(json)
-var uenc = 'U2FsdGVkX188RHqfd4WPXBGnBO6UccRJNs1nTJdTesAATRSjWm49jYR9M6Olyhg7hkTKizOvKm7zFbgLtW4OsGjOSvVqRivhlMk60ZcNxt/tlU7kJFBrMxGbCp5/Hmk+NNhzgjfpeyyb62q5n2UTbQoZcaNIn+Plgt3mnlffygg398w3g3GpYstpQVl3OEKI/qCIoRbKHA5qC6eTW9L6XeXz30tcL3uzSnHdIDmdwPO+SoWt6xNzGQJpO3s1kqnrY5FQ8HRT5EieJDeexjQv4iKLN8oLAuy8wX6DLNROBF0v3fxqMhINb5MueUR7kfoDzvnpDPknFG9KaBrt/EhM8Q1pzwg5chIwIAJHhGsXoi5G0W7tZRYWxlgvQ1zwLqFg8FhG4o+V8ZU/MbRViUVnLsQ0jooVOV4lBxCWqBlGzaf/JQgihY7bMjHcOVB6q+bLiiVvYvnFSRPPP74TuFSxLhFRMjfEITZ8QIIMIwFVWcxRBykooPzLbjMDBW3gKtFnBv/W9mTagioo+l+vOFHqRY+6wvcbWsCe+gdkYxJcs8Sj9ElZwTzjIkErVRVEYdV/HSBlNQCJGl3/3wGWQ9aZ1meIOr+/2smop2QeeZxjGsXhPtkAmaVHJieDNMax3Rm80h/yRWc2cuf5nf6ZXgUqHx7U1+bSsGGE7HxXX90jTQF6FzjBbpSYJEPx5k3e9qD7DpBwbmfKZZ9Pzj3uqcYt9+N6HtpVzhz+N8nm+KIvNj3kpjQCL9CMV9QA/EXntYbBFd8Loh3CWHNXAIGgJJsjgZDhZ1Ry4De3uI6+g9bE7JNz/SLeN20KbTqyvqjdk7GN+J0hwa1+0a+3kJ3pwdvvUW4glCTlZmza57ac9P3YFWZZWwwJzeg7I0/26jiS6JD3'
+var uenc = 'U2FsdGVkX18FflaDlCqlEya6KkG72nPRCVBdcoNOdHBTmT1+SigYsia9zJwKksM33t200HkbdSXp2tCZCpjvXQPiTmxVQ+VYLR+G5IKsIZntpCHhHOWaU8MPvHACiQxSCtYmUmD0Kp5XeMRmXayY/I2X0YVeT/dxWwcPtiHywOct6S5ap19Wsbv0ww6KFYMg+pWxHhDwlrtugYLM91ON509VjnGCYyLxMig1KSf334CrZDRNJ+0qnBioZBFA3ByC6IWSjHXQuE4XAwQ7oC5SjR42L5ylCj5rtNwCDQaEDhEbLL/+a1O2lKjvUI4yL4htQaU2al9a2U4I7a0KoLBMMYxmEA1dUYhTFcCs8j+2T2H5b4LgH4lKWdK6dwshPziEXv/9sGu1f1yv/iWDzjit8/efL4yjlgJOC2MLKAzKus88rOYb24fkDR5GhCNglhs4MZ9DpuhDdt3WFXzZ05vCHvDF0tMY4k+OI86yzxOHdXEiPq2f34oslVuc+pUsrlOcK10vF2QyXJubSQgjJ14+l1rroshXIi0y39PeE8/Rz6YLYASnTjYXGp8ejTAWV6wJoVjUmtPxnDTK2HV+95n+QCDanX7nQhU3KHFoVuT46zmVOKO56vEsXQ/cJrTc50yMgrkB/L8fugLsPVBOmotLykPOfv/QeH0VBNglc6lGO0r0eEXGdGuZcy+/NbDiRSXiXTwwLGb4Px44flmOIYV5MBQGJXr4lDZH3VWS+629o00joeWOu0Teia3+3voA923VSmZy89Q7gJ8KGXWC/HCHZgGQ4qUFrq5S2mz8qe/CJifdEgJty8RKODHZgWPesbncmDfNA1xhpMptKTc0kgoJo3VKaDcs/ZylpWFSoo3b6fSLr/errwEjGfdU4HFD5JICyNXgmcN3GdAo7Uk4iTT1c7z+ymGTGh6+h4bsGLWC2e0umDpcMP28HtvB6OW/xnQaIbMlJS3cQY47a0dAKxFYzkoh88y5rcis8g/P8T1+AXGrTjpTQDWF/W2jrreMRRvw'
 var app = new Vue({
     el: "#app",
     data: {
         /** 主密钥 */
         key: '',
         /** 主密钥AES */
-        keyaes: ['U2FsdGVkX1/qa5HqCSdaIEWPElruyFynRhFmEBhVeeE=', 'U2FsdGVkX19hTCkEb5fCD4XWAbcOKGP8ZUWnr2wGPHM='],
+        keyaes: ['U2FsdGVkX18NWsyvhkIvPHe+uGhT4Nb5BsJJoQ7nE88=', 'U2FsdGVkX181bmhfuvpR8c08fJ3OhH8qf6aA+sR7xS8='],
         /** 主密钥md5 */
         keymd5: '5e8aa4aa4f6a5cfe4e4849f203d39261',
         /** 解密后的urls */
@@ -70,7 +70,7 @@ var app = new Vue({
             // 获取歌曲信息
             var u = this.urls.filter(v => v.title == this.sor)[0].urls
             var s = { name: song.name, artist: song.artist, url: this.getFileUrl(encodeURI(song.url), u), cover: song.cover }
-            if (song.lrc != "") { song.lrc = this.getFileUrl(encodeURI(song.lrc), u) }
+            if (song.lrc != "") { s.lrc = this.getFileUrl(encodeURI(song.lrc), u) }
             if (action == 'play') {
                 var t = ap.list.audios.findIndex(v => v.url == s.url)
                 if (t >= 0) {

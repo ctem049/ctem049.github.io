@@ -19,7 +19,8 @@ var playlistmd = `# 2010b
 许嵩 - 我乐意.flac
 许嵩 - 我们的恋爱是对生命的严重浪费.flac`
 
-var songstxt = `许嵩 - 惊鸿一面.flac
+var songstxt = `七森中☆ごらく部 - ゆりゆららららゆるゆり大事件.flac
+许嵩 - 惊鸿一面.flac
 许嵩 - 想象之中Imagination.flac
 许嵩 - 我乐意.flac
 许嵩 - 我们的恋爱是对生命的严重浪费.flac
