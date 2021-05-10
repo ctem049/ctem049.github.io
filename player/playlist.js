@@ -9,9 +9,9 @@
 
 var playlistmd = `# 2010b
 
+七森中☆ごらく部 - ゆりゆららららゆるゆり大事件.flac
 银临、云の泣 - 锦鲤抄.flac
 李荣浩 - 不将就.flac
-许美静 - 城里的月光.flac
 周深 - 大鱼.flac
 
 # test xu
