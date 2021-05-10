@@ -34,7 +34,6 @@ Queen - We_Will_Rock_You.flac
 Richard Clayderman - Les premiers sourires de Vanessa (瓦妮莎的微笑).flac
 Richard Clayderman - MARIAGE D'AMOUR (梦中的婚礼).flac
 Richard Clayderman - Souvenirs D'enfance (童年的回忆).flac
-s.txt
 SNH48 - Mad_World.flac
 SNH48 - 人鱼.flac
 SNH48 - 以爱之名.flac
@@ -50,6 +49,7 @@ SNH48 - 月光下.flac
 SNH48 - 梦之河.flac
 SNH48 - 给未来的我们.flac
 Stephan_F - Astronomia_2K19(Radio_Edit).flac
+Sweety - 樱花草.flac
 Team G - Gravity.flac
 Team NII - BINGO！.flac
 Team NII - 以爱之名.flac
@@ -57,7 +57,7 @@ Team NII - 光之轨迹.flac
 TheFatRat - Unity.flac
 まふまふ - 病名は愛だった (Cover 鏡音リン_鏡音レン).flac
 ロマンスかくれんぼ(Inst)-Team_B-66611182.flac
-ロマンスかくれんぼ-AKB48-28582887.mp3
+七森中☆ごらく部 - ゆりゆららららゆるゆり大事件.flac
 不才 - 化身孤岛的鲸.flac
 五月天 - 恋爱ING.flac
 五月天 - 我不愿让你一个人.flac
@@ -73,6 +73,7 @@ TheFatRat - Unity.flac
 初音ミク - 千本桜.m4a
 华晨宇 - 易燃易爆炸 (live).flac
 司南 - 冬眠.flac
+周兴哲 - 永不失联的爱.flac
 周杰伦 - 七里香.flac
 周杰伦 - 东风破.flac
 周杰伦 - 兰亭序.flac
@@ -128,6 +129,7 @@ TheFatRat - Unity.flac
 林俊杰 - 她說.flac
 林俊杰 - 当你.flac
 林俊杰 - 江南.flac
+林俊杰 - 美人鱼.flac
 林俊杰 - 背對背擁抱.flac
 林俊杰 - 起床了.flac
 林俊杰 - 醉赤壁.flac
@@ -136,6 +138,8 @@ TheFatRat - Unity.flac
 梁静茹 - 孤单北半球.flac
 梁静茹 - 暖暖.flac
 欧得洋 - 孤单北半球.flac
+毛不易 - 消愁 (伴奏).flac
+毛不易 - 消愁.flac
 水木年华 - 一生有你.flac
 汪苏泷 - 千古.flac
 汪苏泷 - 年轮.flac
