@@ -27,7 +27,7 @@ GNZ48 - 就差一点点.flac
 HO2 - 月光下.flac
 Maksim - Flight of Bumble-bee (野蜂飞舞).flac
 Maksim - Kolibre (蜂鸟).flac
-Master_Byomei_Inst.wav
+Neru、鏡音レン、鏡音リン - 病名は愛だった(Inst).wav
 Neru、鏡音レン、鏡音リン - 病名は愛だった.flac
 Pianoboy - The Truth That You Leave (你离开的真相).flac
 Queen - We_Will_Rock_You.flac
@@ -56,7 +56,6 @@ Team NII - 以爱之名.flac
 Team NII - 光之轨迹.flac
 TheFatRat - Unity.flac
 まふまふ - 病名は愛だった (Cover 鏡音リン_鏡音レン).flac
-ロマンスかくれんぼ(Inst)-Team_B-66611182.flac
 七森中☆ごらく部 - ゆりゆららららゆるゆり大事件.flac
 不才 - 化身孤岛的鲸.flac
 五月天 - 恋爱ING.flac
@@ -66,11 +65,8 @@ TheFatRat - Unity.flac
 五月天 - 知足.flac
 五月天 - 突然好想你.flac
 五音Jw - 明月天涯.flac
-初音ミク - 千本桜 - 伴奏.m4a
 初音ミク - 千本桜 - 弦楽四重奏版.flac
-初音ミク - 千本桜 - 弦楽四重奏版.m4a
 初音ミク - 千本桜.flac
-初音ミク - 千本桜.m4a
 华晨宇 - 易燃易爆炸 (live).flac
 司南 - 冬眠.flac
 周兴哲 - 永不失联的爱.flac
@@ -144,6 +140,7 @@ TheFatRat - Unity.flac
 汪苏泷 - 千古.flac
 汪苏泷 - 年轮.flac
 汪苏泷 - 有点甜.flac
+洛天依、言和 - 达拉蹦吧(伴奏).wav
 牛奶咖啡 - 明天，你好.flac
 王力宏 - 你不知道的事.flac
 王力宏、谭维维 - 缘分一道桥.flac
@@ -251,7 +248,6 @@ TheFatRat - Unity.flac
 许嵩、刘美麟 - 温泉(伴奏).flac
 许嵩、刘美麟 - 温泉.flac
 许美静 - 城里的月光.flac
-达拉蹦吧伴奏.wav
 逃跑计划 - 星空中最亮的星.flac
 邓紫棋 - 后会无期.flac
 邓紫棋 - 喜欢你.flac
