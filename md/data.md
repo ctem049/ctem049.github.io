@@ -1,9 +1,16 @@
-- updateTime: 2021-05-20
+- updateTime: 2021-06-07
 
 # 最近在看
 
 - type: video
 
+* [2021-05-30] (视频) [光 学 隐 形，就是有点费手](https://www.bilibili.com/video/BV1u64y1y7AE)
+* [2021-05-31] (视频) [【恶霸提莫】上单征服者剑魔？就这](https://www.bilibili.com/video/BV1XQ4y1R7Wb)
+* [2021-05-24] (视频) [神秘斩杀！德鲁伊的终极奥义！【炉石骚套路 35】](https://www.bilibili.com/video/BV1v44y1r7B1)
+* [2021-06-06] (视频) [【逗鱼时刻】第304期 我一万年没打过鸡杂了！](https://www.bilibili.com/video/BV1q64y1k7Yu)
+* [2021-06-06] (视频) [【星际老男孩】谐星语录之甜的还是咸的【加更一期】](https://www.bilibili.com/video/BV1zV411x7J8)
+* [2021-06-06] (直播) [奶粉 @虎牙](https://www.huya.com/35399c) 炉石传说
+* [2021-05-28] (番剧) [摇曳百合 3☆High! ゆるゆり さん☆ハイ！](https://bgm.tv/subject/127573)
 * [2021-05-15] (番剧) [摇曳百合2 ゆるゆり♪♪](http://bgm.tv/subject/28900)
 * [2021-05-08] (番剧) [摇曳百合 ゆるゆり](http://bgm.tv/subject/14588)
 * [2021-05-16] (视频) [【GNZ48】20210516 Class 4 《Waiting 4（肆）》卢静、黄楚茵生日公演](https://www.bilibili.com/video/BV1SU4y1t7qp)
@@ -20,11 +27,11 @@
 * [2021-03-31] (视频) [BanG Dream如何自制？超详细制谱教程来辣](https://www.bilibili.com/video/BV1N54y1X7Pj)
 * [2021-04-01] (视频) [【逗鱼时刻】第295期 我被困在这个时间段里面了](https://www.bilibili.com/video/BV1ob4y1S7rZ) 炉石传说
 * [2021-04-18] (直播) [LPL 春季赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟
-* [2021-05-17] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
+* [2021-06-01] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说
 * [2021-04-12] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀
 * [2021-04-02] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀
-* [2021-05-14] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
-* [2021-05-19] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
+* [2021-06-05] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说
+* [2021-06-05] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说
 * [2020-12-30] (直播) [神超 @虎牙](https://www.huya.com/102411) 云顶之弈
 * [2021-02-15] (直播) [逆推王道 @Bilibili](https://live.bilibili.com/799158) 英雄联盟
 * [2021-04-07] (直播) [风主教主解说 @Bilibili](https://live.bilibili.com/66688) 绝地求生
@@ -50,6 +57,7 @@
 
 - type: music
 
+* [2021-05-26] [七森中☆ごらく部 - いぇす!ゆゆゆ☆ゆるゆり♪♪](https://y.qq.com/n/ryqq/songDetail/002QYqzw3eqKCO)
 * [2021-05-08] [七森中☆ごらく部 - ゆりゆららららゆるゆり大事件](https://y.qq.com/n/ryqq/songDetail/001wVIRv0rmoUb)
 * [2021-05-02] [Sweety - 樱花草](https://y.qq.com/n/yqq/song/000Tx0ZM2xaBhM.html)
 * [2021-04-02] [林俊杰 - 美人鱼](https://y.qq.com/n/yqq/song/002ASCKm3ROw7t.html)
@@ -81,9 +89,9 @@
 * [2021-01-10] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat
 * [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc.
 * [2021-03-15] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics
-* [2021-05-19] [英雄联盟](https://lol.qq.com) League of Legends
+* [2021-06-05] [英雄联盟](https://lol.qq.com) League of Legends
 * [2020-12-13] [我的世界](https://mc.163.com) Minecraft
-* [2021-05-19] [炉石传说](https://hs.blizzard.cn) Hearth Stone
+* [2021-06-06] [炉石传说](https://hs.blizzard.cn) Hearth Stone
 * [2020-12-15] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster
 * [2020-12-02] [星际争霸](https://sc2.blizzard.cn) StarCraft II
 
@@ -91,6 +99,7 @@
 
 - type: text
 
+* [2021-05-30] [科普向：OVA、OAD、SP和剧场版，他们究竟有何区别](https://www.bilibili.com/read/cv7433772/)
 * [2021-05-09] [Citrus~反传统的第一女主角](https://www.bilibili.com/read/cv188081)
 * [2021-03-30] [音游科普](https://www.bilibili.com/read/cv8050900/)
 * [2021-03-03] [Elliptic Curve Cryptography: a gentle introduction](https://andrea.corbellini.name/2015/05/17/elliptic-curve-cryptography-a-gentle-introduction/)
