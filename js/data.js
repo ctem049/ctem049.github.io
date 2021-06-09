@@ -126,11 +126,12 @@ function toJSO(mddata) {
             var upT = o.content.match(reg)[1];
             var con = md.renderInline(o.content.replace(reg, '').replace(/(^\s*)|(\s*$)/g, ""));
             // 移动图片位置
-            var imgreg = /<img.*?src=[\"|\']?(.*?)[\"|\']?\s.*?>/i
+            var imgreg = /<img.+?src=\"(.+?)\".*>/
+            // var imgreg = /<img.*?src=[\"|\']?(.*?)[\"|\']?\s.*?>/i
             var hrefreg = /<a.+?href=\"(.+?)\".*>/
             if (con.match(imgreg)) {
                 if (con.match(hrefreg)) {
-                    con = '<a href="' + con.match(hrefreg)[1] + '">' + con.match(imgreg)[0] + '</a>' + '<div class="y-box-text">' + con.replace(imgreg, "") + '</div>'
+                    con = '<a href="' + con.match(hrefreg)[1] + '"><img referrerpolicy="no-referrer" src="' + con.match(imgreg)[1] + '"></a>' + '<div class="y-box-text">' + con.replace(imgreg, "") + '</div>'
                 } else {
                     con = con.match(imgreg)[0] + '<div class="y-box-text">' + con.replace(imgreg, "") + '</div>'
                 }
