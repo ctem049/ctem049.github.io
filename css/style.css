@@ -129,3 +129,51 @@ img.y-logo {
 .y-links {
     font-size: 0.8rem;
 }
+
+.y-ctr { /* 箱容器 */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);/* 3列 */
+    /* grid-template-columns: repeat(auto-fill, minmax(8rem,1fr)); */ /* 多列 */
+    grid-template-rows: repeat(auto-fill, minmax(100px,1fr));/* 行数不定 */
+    gap: 0.8rem;/* 间隙 */
+}
+
+.y-box {/* 箱内容 */
+    position: relative;
+    height: 100%;
+    border-radius: 5px;/* 圆角边框 */
+    overflow: hidden;
+    box-shadow: 1px 1px 1px #888888;/* 阴影效果 */
+    background-color: rgb(255, 251, 252);
+}
+
+.y-box .y-date {/* 日期 */
+    top: 0;
+    left: 0;
+    font-size: 0.5rem;
+    padding: .5rem .75rem;
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 4px 0 0 0;
+    color: #eee;
+}
+
+.y-box .y-box-ct {/* 箱内含 */
+    height: 100%;
+}
+
+.y-box img {/* 箱图片 */
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 8rem;
+}
+
+.y-box .y-box-text {/* 箱文本 */
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+}
+
+.y-more {/* 加载更多 按钮 */
+    text-align: center;
+}

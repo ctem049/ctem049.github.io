@@ -25,6 +25,9 @@ var app = new Vue({
         },
         cacStyle(date) {
             return `hsl(200,${this.cacColor(date)},50%)`;
+        },
+        load(data) {
+            data.load = true;
         }
     },
     filters: {
