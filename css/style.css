@@ -138,6 +138,12 @@ img.y-logo {
     gap: 0.8rem;/* 间隙 */
 }
 
+@media screen and (max-width: 480px) {
+    .y-ctr {
+        grid-template-columns: repeat(2,1fr);/* 移动端只分2列 */
+    }
+}
+
 .y-box {/* 箱内容 */
     position: relative;
     height: 100%;

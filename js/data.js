@@ -126,13 +126,15 @@ function toJSO(mddata) {
             var upT = o.content.match(reg)[1];
             var con = md.renderInline(o.content.replace(reg, '').replace(/(^\s*)|(\s*$)/g, ""));
             // 移动图片位置
-            var imgreg = /<img.+?src=\"(.+?)\".*>/
+            var imgreg = /<img.+?src=\"(.+?)\".*>/ // 读取图片src
             // var imgreg = /<img.*?src=[\"|\']?(.*?)[\"|\']?\s.*?>/i
-            var hrefreg = /<a.+?href=\"(.+?)\".*>/
+            var hrefreg = /<a.+?href=\"(.+?)\".*>/ // 读取链接href
             if (con.match(imgreg)) {
                 if (con.match(hrefreg)) {
+                    // 图片加上no-referrer
                     con = '<a href="' + con.match(hrefreg)[1] + '"><img referrerpolicy="no-referrer" src="' + con.match(imgreg)[1] + '"></a>' + '<div class="y-box-text">' + con.replace(imgreg, "") + '</div>'
                 } else {
+                    // 无链接的情况
                     con = con.match(imgreg)[0] + '<div class="y-box-text">' + con.replace(imgreg, "") + '</div>'
                 }
             }
