@@ -16,6 +16,9 @@ a:hover {
     color: #ffc7c8;
 }
 
+[v-cloak]{/* vue */
+    display: none
+}
 
 /* top */
 
