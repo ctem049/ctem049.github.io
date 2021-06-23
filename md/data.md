@@ -1,15 +1,28 @@
-- updateTime: 2021-06-09
+- updateTime: 2021-06-23
 
 # 最近在看
 
 - type: video
 
+* [2021-06-14] (视频) [【LPL夏季赛】6月13日 饭堂周末夜](https://www.bilibili.com/video/BV1Gw411f7Kx) ![](http://i1.hdslb.com/bfs/archive/85ac685debc540a3a8fe13366ab305c275ffc75d.jpg)
+* [2021-06-15] (视频) [【星际老男孩】谐星语录之知识盲区【高考篇】](https://www.bilibili.com/video/BV1NQ4y1R782) ![](http://i2.hdslb.com/bfs/archive/05f8a36d484e7b7554e10207b6f105b7aeb0def3.png)
+* [2021-06-17] (视频) [【炉石骚套路 37】恶魔猎手最快乐诈骗流打法！](https://www.bilibili.com/video/BV1M54y1H75c) ![](http://i1.hdslb.com/bfs/archive/1f538bd3bda5de6336d66560ee7f11516510cafe.jpg)
+* [2021-06-17] (视频) [【逗鱼时刻】第306期 就你叫万甲德啊！](https://www.bilibili.com/video/BV1sw411f7aK) ![](http://i0.hdslb.com/bfs/archive/13b5596096118cf7c834b29828a3fc60f03879e2.jpg)
+* [2021-06-18] (视频) [子弹都打不碎的加强版鲁伯特之泪挑战液压机，结果怎么样呢？](https://www.bilibili.com/video/BV1Mv411V73d) ![](http://i2.hdslb.com/bfs/archive/2e5867770e317138bbf4e22b7358efbf31394819.jpg)
+* [2021-06-18] (视频) [【游戏王推理对局】用名推理会遇到的赌狗二三事](https://www.bilibili.com/video/BV1K84y1F7T3) ![](http://i2.hdslb.com/bfs/archive/ee8af56869b014519e36f95c6190ed4a2d293709.jpg)
+* [2021-06-19] (视频) [「歌词特效」摇曳百合 OP - いぇす!ゆゆゆ☆ゆるゆり♪♪ 【中日双语】](https://www.bilibili.com/video/BV19t4y1z7rE) ![](http://i2.hdslb.com/bfs/archive/b9839cf51f11810d21fc2f8d4d291f10e3b7cffc.jpg)
+* [2021-06-19] (视频) [【游戏王有趣的战局#68】陨石的正确用法](https://www.bilibili.com/video/BV1WJ411s74s) ![](http://i1.hdslb.com/bfs/archive/a90fecef477e5752745d0855a8ca64427d28b2d8.jpg)
+* [2021-06-20] (视频) [你的手牌没了！另一个我【阴间国服】](https://www.bilibili.com/video/BV1UU4y1L7ov) ![](http://i0.hdslb.com/bfs/archive/968df261e7b603e08d937596f6721fbe79916c59.jpg)
+* [2021-06-23] (视频) [炉石传说：【天天素材库】 第252期](https://www.bilibili.com/video/BV14g411g71y) ![](http://i2.hdslb.com/bfs/archive/d0215fdaa7752630741a4635f65b795f5f95619c.jpg)
+* [2021-06-23] (番剧) [迷你百合 みにゆり](https://bgm.tv/subject/285545) ![](https://lain.bgm.tv/pic/cover/l/ef/83/285545_8sL5s.jpg)
+* [2021-06-10] (番剧) [摇曳百合 暑假时光！+ ゆるゆり なちゅやちゅみ!+](https://bgm.tv/subject/136311) ![](https://lain.bgm.tv/pic/cover/l/6b/d7/136311_N51T6.jpg)
+* [2021-06-03] (番剧) [摇曳百合 暑假时光！ ゆるゆり なちゅやちゅみ!](https://bgm.tv/subject/99796) ![](https://lain.bgm.tv/pic/cover/l/cb/c2/99796_NV7tq.jpg)
 * [2021-05-30] (视频) [光 学 隐 形，就是有点费手](https://www.bilibili.com/video/BV1u64y1y7AE) ![](https://i2.hdslb.com/bfs/archive/d89d84f713d41e30c947d2b6c882c6e72a0e7114.jpg)
 * [2021-05-31] (视频) [【恶霸提莫】上单征服者剑魔？就这](https://www.bilibili.com/video/BV1XQ4y1R7Wb) ![](https://i1.hdslb.com/bfs/archive/2b585f3a9efd26223d15c25301b0c1dfab9c51b9.jpg)
 * [2021-05-24] (视频) [神秘斩杀！德鲁伊的终极奥义！【炉石骚套路 35】](https://www.bilibili.com/video/BV1v44y1r7B1) ![](https://i0.hdslb.com/bfs/archive/5ada0743c34d3c44f878e56879b14ae8a819c0c8.jpg)
 * [2021-06-06] (视频) [【逗鱼时刻】第304期 我一万年没打过鸡杂了！](https://www.bilibili.com/video/BV1q64y1k7Yu) ![](https://i0.hdslb.com/bfs/archive/725a99e8a7a077da724e7c164020800cbc8158b3.jpg)
 * [2021-06-06] (视频) [【星际老男孩】谐星语录之甜的还是咸的【加更一期】](https://www.bilibili.com/video/BV1zV411x7J8) ![](https://i2.hdslb.com/bfs/archive/05f8a36d484e7b7554e10207b6f105b7aeb0def3.png)
-* [2021-06-06] (直播) [奶粉 @虎牙](https://www.huya.com/35399c) 炉石传说 ![](https://ww1.sinaimg.cn/mw2000/006gWYb8jw8fd63t19ya3j30hs0hlaag.jpg)
+* [2021-06-17] (直播) [奶粉 @虎牙](https://www.huya.com/35399c) 炉石传说 ![](https://ww1.sinaimg.cn/mw2000/006gWYb8jw8fd63t19ya3j30hs0hlaag.jpg)
 * [2021-05-28] (番剧) [摇曳百合 3☆High! ゆるゆり さん☆ハイ！](https://bgm.tv/subject/127573) ![](https://lain.bgm.tv/pic/cover/l/3e/f2/127573_HfPRJ.jpg)
 * [2021-05-15] (番剧) [摇曳百合2 ゆるゆり♪♪](https://bgm.tv/subject/28900) ![](https://lain.bgm.tv/pic/cover/l/f2/9f/28900_PB3pC.jpg)
 * [2021-05-08] (番剧) [摇曳百合 ゆるゆり](https://bgm.tv/subject/14588) ![](https://lain.bgm.tv/pic/cover/l/43/d9/14588_bDB2r.jpg)
@@ -27,11 +40,11 @@
 * [2021-03-31] (视频) [BanG Dream如何自制？超详细制谱教程来辣](https://www.bilibili.com/video/BV1N54y1X7Pj) ![](https://i1.hdslb.com/bfs/archive/a7a5f209028b6d6fd75917a11502b433a38c80fc.jpg)
 * [2021-04-01] (视频) [【逗鱼时刻】第295期 我被困在这个时间段里面了](https://www.bilibili.com/video/BV1ob4y1S7rZ) 炉石传说 ![](https://i2.hdslb.com/bfs/archive/d6136f8822d6c428345d9f5e90f38875e029c226.jpg)
 * [2021-06-08] (直播) [LPL 夏季赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟 ![](https://i0.hdslb.com/bfs/activity-plat/static/35c2ba05f484990296b3289a28e77806/SGJkBB2DJb_w1920_h934.jpg)
-* [2021-06-01] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说 ![](https://wx1.sinaimg.cn/mw2000/006nX85Oly8fr0vyiv2hbj30oo0oot9g.jpg)
-* [2021-04-12] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀 ![](https://wx1.sinaimg.cn/mw2000/826992f7ly8gdi54zun57j20e80e83z1.jpg)
+* [2021-06-20] (直播) [老中医 @虎牙](https://www.huya.com/lastpriest) 炉石传说 ![](https://wx1.sinaimg.cn/mw2000/006nX85Oly8fr0vyiv2hbj30oo0oot9g.jpg)
+* [2021-06-15] (直播) [痒局长 @Bilibili](https://live.bilibili.com/528) 绝地求生 狼人杀 ![](https://wx1.sinaimg.cn/mw2000/826992f7ly8gdi54zun57j20e80e83z1.jpg)
 * [2021-04-02] (直播) [老骚豆腐 @Bilibili](https://live.bilibili.com/462) 第五人格 狼人杀 ![](https://wx1.sinaimg.cn/mw2000/734082d3ly8gdi7gzoupfj20n00n0q4b.jpg)
-* [2021-06-05] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说 ![](https://wx1.sinaimg.cn/mw2000/006e8vquly8fr7wlslfesj30e80dpaab.jpg)
-* [2021-06-05] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说 ![](https://apic.douyucdn.cn/upload/avanew/face/201804/81b0f04200aacbe5ced32113e1d02c16_big.jpg)
+* [2021-06-15] (直播) [异灵术 @斗鱼](https://www.douyu.com/93589) 炉石传说 ![](https://wx1.sinaimg.cn/mw2000/006e8vquly8fr7wlslfesj30e80dpaab.jpg)
+* [2021-06-20] (直播) [神棍老师 @斗鱼](https://www.douyu.com/4767111) 炉石传说 ![](https://apic.douyucdn.cn/upload/avanew/face/201804/81b0f04200aacbe5ced32113e1d02c16_big.jpg)
 * [2020-12-30] (直播) [神超 @虎牙](https://www.huya.com/102411) 云顶之弈 ![](https://wx1.sinaimg.cn/mw2000/005Tu53Bly8g4ntrdjhwmj30ku0ku3yw.jpg)
 * [2021-02-15] (直播) [逆推王道 @Bilibili](https://live.bilibili.com/799158) 英雄联盟 ![](https://i1.hdslb.com/bfs/face/3cc6d210c34528192d4c01a7031de3f0f0f42ac0.jpg@128w_128h_1o.webp)
 * [2021-04-07] (直播) [风主教主解说 @Bilibili](https://live.bilibili.com/66688) 绝地求生 ![](https://i1.hdslb.com/bfs/face/3de1fc3c0d39000550fa943bf575ce937cb3b05b.jpg@128w_128h_1o.webp)
@@ -57,6 +70,8 @@
 
 - type: music
 
+* [2021-06-17] [不才 - 寻常歌](https://music.163.com/#/song?id=1383011136) ![](http://p1.music.126.net/gg8utJDUGHfbyVd3tKXV_w==/109951164640667962.jpg)
+* [2021-06-22] [七森中☆ごらく部 - ゆるゆり、てんやわんや☆](https://music.163.com/#/song?id=1461143279) ![](http://p2.music.126.net/QtQritGFbIBcyCYy-4aUzw==/109951165120357045.jpg)
 * [2021-05-26] [七森中☆ごらく部 - いぇす!ゆゆゆ☆ゆるゆり♪♪](https://y.qq.com/n/ryqq/songDetail/002QYqzw3eqKCO) ![](https://y.qq.com/music/photo_new/T002R300x300M000000YmL3W31weXH_1.jpg?max_age=2592000)
 * [2021-05-08] [七森中☆ごらく部 - ゆりゆららららゆるゆり大事件](https://y.qq.com/n/ryqq/songDetail/001wVIRv0rmoUb) ![](https://y.qq.com/music/photo_new/T002R300x300M000003HNbwr0HJP5H_1.jpg?max_age=2592000)
 * [2021-05-02] [Sweety - 樱花草](https://y.qq.com/n/yqq/song/000Tx0ZM2xaBhM.html) ![](https://y.gtimg.cn/music/photo_new/T002R300x300M000000pKXff1doeOd_3.jpg?max_age=2592000)
@@ -72,12 +87,12 @@
 * [2020-09-12] [许嵩, 刘美麟 - 温泉](https://y.qq.com/n/yqq/song/001KQ3zX0N2rVR.html) ![](https://y.gtimg.cn/music/photo_new/T002R300x300M000000vKMVO0srdMF_1.jpg?max_age=2592000)
 * [2020-09-05] [许嵩 - 雨幕](https://y.qq.com/n/yqq/song/001BKGVe1BctBv.html) ![](https://y.gtimg.cn/music/photo_new/T002R300x300M0000000MTpQ2oaHON_1.jpg?max_age=2592000)
 * [2020-07-30] [霍尊 - 卷珠帘](https://y.qq.com/n/yqq/song/003BXELh0qM5bI.html) ![](https://y.gtimg.cn/music/photo_new/T002R300x300M000001MatF32fzOmn_3.jpg?max_age=2592000)
-* [2020-07-21] [音阙诗听, 锦零 - 空山新雨后](https://music.163.com/#/song?id=1352002513) ![](https://p1.music.126.net/-Ox3azW3BpHMpwyXrzqzsw==/109951163927362248.jpg?param=130y130)
-* [2020-07-22] [司南 - 冬眠](https://music.163.com/#/song?id=1398663411) ![](https://p2.music.126.net/4KDBaQXnQywQovmqvjx-8Q==/109951164444131697.jpg?param=130y130)
-* [2020-07-22] [徐秉龙, 桃十五 - 青柠](https://music.163.com/#/song?id=504624714) ![](https://p2.music.126.net/CFWxtFlJK3qs-Fx-TUfMnQ==/109951163020971473.jpg?param=130y130)
+* [2020-07-21] [音阙诗听, 锦零 - 空山新雨后](https://music.163.com/#/song?id=1352002513) ![](https://p1.music.126.net/-Ox3azW3BpHMpwyXrzqzsw==/109951163927362248.jpg)
+* [2020-07-22] [司南 - 冬眠](https://music.163.com/#/song?id=1398663411) ![](https://p2.music.126.net/4KDBaQXnQywQovmqvjx-8Q==/109951164444131697.jpg)
+* [2020-07-22] [徐秉龙, 桃十五 - 青柠](https://music.163.com/#/song?id=504624714) ![](https://p2.music.126.net/CFWxtFlJK3qs-Fx-TUfMnQ==/109951163020971473.jpg)
 * [2020-06-28] [椎名豪, 中川奈美 - 竈門炭治郎のうた](https://y.qq.com/n/yqq/song/001jyikY2o3FrL.html) ![](https://y.gtimg.cn/music/photo_new/T002R300x300M000001aXT2c0Z3IWn_1.jpg?max_age=2592000)
 * [2020-06-20] [曲锦楠 - 霞光](https://y.qq.com/n/yqq/song/003p3ky81zgV0H.html) ![](https://y.gtimg.cn/music/photo_new/T002R300x300M000004OdxJk0Hr08f_1.jpg?max_age=2592000)
-* [2020-06-18] [G2er, 黄诗扶, 国风堂 - 杨花落尽子规啼](https://music.163.com/#/song?id=1375935067) ![](https://p2.music.126.net/fpx5pqgjU8WSZsy0xkWbUA==/109951164192475628.jpg?param=130y130)
+* [2020-06-18] [G2er, 黄诗扶, 国风堂 - 杨花落尽子规啼](https://music.163.com/#/song?id=1375935067) ![](https://p2.music.126.net/fpx5pqgjU8WSZsy0xkWbUA==/109951164192475628.jpg)
 * [2020-06-24] [王力宏 - 缘分一道桥](https://y.qq.com/n/yqq/song/004NXwuk36ixAW.html) ![](https://y.gtimg.cn/music/photo_new/T002R300x300M000001z1OuX41cBAx_1.jpg?max_age=2592000)
 * [2020-05-19] [周深 - 大鱼](https://y.qq.com/n/yqq/song/004OQ5Mt0EmEzv.html) ![](https://y.gtimg.cn/music/photo_new/T002R300x300M000004Y7V4s3ug4cC_1.jpg?max_age=2592000)
 
