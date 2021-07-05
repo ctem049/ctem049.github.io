@@ -56,8 +56,12 @@ Team NII - 以爱之名.flac
 Team NII - 光之轨迹.flac
 TheFatRat - Unity.flac
 まふまふ - 病名は愛だった (Cover 鏡音リン_鏡音レン).flac
+わたてん☆5 - 気ままな天使たち.flac
+七森中☆ごらく部 - いぇす！ゆゆゆ☆ゆるゆり??.flac
 七森中☆ごらく部 - ゆりゆららららゆるゆり大事件.flac
+七森中☆ごらく部 - ゆるゆり、てんやわんや☆.flac
 不才 - 化身孤岛的鲸.flac
+不才 - 寻常歌.flac
 五月天 - 恋爱ING.flac
 五月天 - 我不愿让你一个人.flac
 五月天 - 拥抱.flac
@@ -111,6 +115,7 @@ TheFatRat - Unity.flac
 张韶涵 - 隐形的翅膀.flac
 徐佳莹 - 莉莉安 (Live).flac
 徐秉龙、桃十五 - 青柠.flac
+指出毬亜、長江里加、鬼頭明里、大和田仁美、大空直美 - 天使の眼差し Epilogue.flac
 本兮 - 下雪的季节.flac
 李健 - 贝加尔湖畔.flac
 李玉刚 - 刚好遇见你.flac
@@ -161,10 +166,12 @@ TheFatRat - Unity.flac
 许嵩 - 七夕.flac
 许嵩 - 不煽情.flac
 许嵩 - 不语.flac
+许嵩 - 乌鸦.flac
 许嵩 - 九月清晨.flac
 许嵩 - 亲情式的爱情.flac
 许嵩 - 伴虎.flac
 许嵩 - 你若成风.flac
+许嵩 - 假摔.flac
 许嵩 - 全世界最好的你.flac
 许嵩 - 全球变冷.flac
 许嵩 - 内线.flac
@@ -247,6 +254,7 @@ TheFatRat - Unity.flac
 许嵩、何曼婷 - 素颜.flac
 许嵩、刘美麟 - 温泉(伴奏).flac
 许嵩、刘美麟 - 温泉.flac
+许嵩、黄龄 - 冰柜.flac
 许美静 - 城里的月光.flac
 逃跑计划 - 星空中最亮的星.flac
 邓紫棋 - 后会无期.flac
@@ -256,6 +264,7 @@ TheFatRat - Unity.flac
 邓紫棋 - 泡沬.flac
 郁可唯 - 知否知否.flac
 银临、云の泣 - 锦鲤抄.flac
+長江里加、鬼頭明里、大和田仁美、大空直美 - 天使の眼差し Prologue.flac
 阿兰 - 一梦千寻.flac
 阿兰 - 三生石,三生路(《桜モダン 》 中文版 ).flac
 阿兰 - 千古.flac
