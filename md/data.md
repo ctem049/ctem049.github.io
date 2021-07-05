@@ -1,9 +1,19 @@
-- updateTime: 2021-06-23
+- updateTime: 2021-07-05
 
 # 最近在看
 
 - type: video
 
+* [2021-07-04] (视频) [死活题的千层套路：看看你在哪一层？](https://www.bilibili.com/video/BV1Y64y197ec) ![](http://i0.hdslb.com/bfs/archive/f3d5bef0e61bfd765d37836866156d9ca0f24ec3.jpg)
+* [2021-07-01] (番剧) [天使降临到我身边](https://www.bilibili.com/bangumi/play/ss26291) ![](https://i0.hdslb.com/bfs/bangumi/e1015a803ad97406f9eddfbc6ad608cc965f8b05.png)
+* [2021-07-01] (视频) [【星际老男孩】谐星语录之犬落平阳](https://www.bilibili.com/video/BV1FM4y1M7aD) ![](http://i0.hdslb.com/bfs/archive/02691720e4b46ffb83f271aeb78fbfd30f283598.jpg)
+* [2021-06-30] (视频) [【游戏王重坑对局】用重坑打牌会遇到的连锁二三事](https://www.bilibili.com/video/BV1XU4y1H7Dg) ![](http://i0.hdslb.com/bfs/archive/fc203244bb057a18af4b8cddcb8291b616fdd35b.jpg)
+* [2021-06-29] (视频) [【雀魂汪汪录】第135期 最高端的出牌 往往只需要最朴素的方式](https://www.bilibili.com/video/BV1Tb4y1C7B9) ![](http://i0.hdslb.com/bfs/archive/b0958c8b0c4339fada18df1cce4887e84b0870d4.jpg)
+* [2021-06-28] (视频) [【LPL夏季赛】6月27日 饭堂周末夜](https://www.bilibili.com/video/BV1464y197zG) ![](http://i0.hdslb.com/bfs/archive/cb18137072528e26f900883d94d2b0d2be9db367.jpg)
+* [2021-06-26] (视频) [【中文字幕】国际象棋陷阱教程：Tennison Gambit棋法的洲际导弹变种](https://www.bilibili.com/video/BV1zK4y1h7gk) ![](http://i1.hdslb.com/bfs/archive/902143e10682cdbb912610f0989e171bef0b2a4b.jpg)
+* [2021-06-25] (视频) [【逗鱼时刻】第307期 不如跳舞！画画不如跳舞！](https://www.bilibili.com/video/BV1kU4y1G7BF) ![](http://i2.hdslb.com/bfs/archive/c6b419ddf90de86ef07cc7bca9373db6c3493cb2.jpg)
+* [2021-06-24] (视频) [【瞎β操作】EZ很难吗？！ 2021LPL夏季赛第二周](https://www.bilibili.com/video/BV1mB4y1K7oe) ![](http://i0.hdslb.com/bfs/archive/eded6e09a558860905f58467a57181cad9cb1919.jpg)
+* [2021-06-24] (番剧) [みにゆり](https://bgm.tv/subject/285545) ![](https://lain.bgm.tv/pic/cover/l/ef/83/285545_8sL5s.jpg)
 * [2021-06-14] (视频) [【LPL夏季赛】6月13日 饭堂周末夜](https://www.bilibili.com/video/BV1Gw411f7Kx) ![](http://i1.hdslb.com/bfs/archive/85ac685debc540a3a8fe13366ab305c275ffc75d.jpg)
 * [2021-06-15] (视频) [【星际老男孩】谐星语录之知识盲区【高考篇】](https://www.bilibili.com/video/BV1NQ4y1R782) ![](http://i2.hdslb.com/bfs/archive/05f8a36d484e7b7554e10207b6f105b7aeb0def3.png)
 * [2021-06-17] (视频) [【炉石骚套路 37】恶魔猎手最快乐诈骗流打法！](https://www.bilibili.com/video/BV1M54y1H75c) ![](http://i1.hdslb.com/bfs/archive/1f538bd3bda5de6336d66560ee7f11516510cafe.jpg)
@@ -70,6 +80,8 @@
 
 - type: music
 
+* [2021-07-03] [長江里加、鬼頭明里、大和田仁美、大空直美 - 天使の眼差し Prologue] ![](https://y.qq.com/music/photo_new/T002R300x300M0000030yuqf3Os5o2_2.jpg?max_age=2592000)
+* [2021-07-01] [わたてん☆5 - 気ままな天使たち](https://y.qq.com/n/ryqq/songDetail/004EWcMb44h3tm) ![](https://y.qq.com/music/photo_new/T002R300x300M000003aEE9y2gyoHL_1.jpg?max_age=2592000)
 * [2021-06-17] [不才 - 寻常歌](https://music.163.com/#/song?id=1383011136) ![](http://p1.music.126.net/gg8utJDUGHfbyVd3tKXV_w==/109951164640667962.jpg)
 * [2021-06-22] [七森中☆ごらく部 - ゆるゆり、てんやわんや☆](https://music.163.com/#/song?id=1461143279) ![](http://p2.music.126.net/QtQritGFbIBcyCYy-4aUzw==/109951165120357045.jpg)
 * [2021-05-26] [七森中☆ごらく部 - いぇす!ゆゆゆ☆ゆるゆり♪♪](https://y.qq.com/n/ryqq/songDetail/002QYqzw3eqKCO) ![](https://y.qq.com/music/photo_new/T002R300x300M000000YmL3W31weXH_1.jpg?max_age=2592000)
@@ -100,13 +112,14 @@
 
 - type: game
 
+* [2021-06-30] [雀魂麻将](https://www.maj-soul.com) ![](https://www.maj-soul.com/homepage/img/background.jpg)
 * [2021-03-18] [和平精英](https://gp.qq.com/) Game For Peace ![](https://game.gtimg.cn/images/gp/public/logo.png)
 * [2021-01-10] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat ![](https://media.st.dl.pinyuncloud.com/steam/apps/477160/header_alt_assets_17.jpg)
 * [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc. ![](https://cdn.akamai.steamstatic.com/steam/apps/246620/header.jpg)
 * [2021-03-15] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics ![](https://game.gtimg.cn/images/lol/tft/content-site/logo-tft.png)
-* [2021-06-07] [英雄联盟](https://lol.qq.com) League of Legends ![](https:////game.gtimg.cn/images/lol/v3/logo-public.png)
+* [2021-07-05] [英雄联盟](https://lol.qq.com) League of Legends ![](https:////game.gtimg.cn/images/lol/v3/logo-public.png)
 * [2020-12-13] [我的世界](https://mc.163.com) Minecraft ![](https://webinput.nie.netease.com/img/mc/logo.png)
-* [2021-06-08] [炉石传说](https://hs.blizzard.cn) Hearth Stone ![](https://blz.nosdn.127.net/1/tm/hearthstone/activities/barrens/landing-logo-xresdftdds.png)
+* [2021-06-24] [炉石传说](https://hs.blizzard.cn) Hearth Stone ![](https://blz.nosdn.127.net/1/tm/hearthstone/activities/barrens/landing-logo-xresdftdds.png)
 * [2020-12-15] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster ![](https://media.st.dl.pinyuncloud.com/steam/apps/493340/header.jpg?t=1617973118)
 * [2020-12-02] [星际争霸](https://sc2.blizzard.cn) StarCraft II ![](https://sc2.nosdn.127.net/1/style/v4/landing/201804/logo.png)
 
