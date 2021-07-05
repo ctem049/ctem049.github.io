@@ -80,7 +80,7 @@
 
 - type: music
 
-* [2021-07-03] [長江里加、鬼頭明里、大和田仁美、大空直美 - 天使の眼差し Prologue] ![](https://y.qq.com/music/photo_new/T002R300x300M0000030yuqf3Os5o2_2.jpg?max_age=2592000)
+* [2021-07-03] [長江里加、鬼頭明里、大和田仁美、大空直美 - 天使の眼差し Prologue](https://y.qq.com/n/ryqq/songDetail/002Hy1ll4Ia6aw) ![](https://y.qq.com/music/photo_new/T002R300x300M0000030yuqf3Os5o2_2.jpg?max_age=2592000)
 * [2021-07-01] [わたてん☆5 - 気ままな天使たち](https://y.qq.com/n/ryqq/songDetail/004EWcMb44h3tm) ![](https://y.qq.com/music/photo_new/T002R300x300M000003aEE9y2gyoHL_1.jpg?max_age=2592000)
 * [2021-06-17] [不才 - 寻常歌](https://music.163.com/#/song?id=1383011136) ![](http://p1.music.126.net/gg8utJDUGHfbyVd3tKXV_w==/109951164640667962.jpg)
 * [2021-06-22] [七森中☆ごらく部 - ゆるゆり、てんやわんや☆](https://music.163.com/#/song?id=1461143279) ![](http://p2.music.126.net/QtQritGFbIBcyCYy-4aUzw==/109951165120357045.jpg)
