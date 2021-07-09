@@ -138,8 +138,7 @@
             <div class="y-row">
                 <div class="y-congird">
                     <div v-for="(c, i) in data.content" :class="{
-                    'y-content': true,
-                    'y-border-right': i%2==0 /* 索引为偶数时, 出现右边框 */
+                    'y-content': true
                 }">
                         <h4 class="y-title">{{ c.title }}</h4>
                         <ul v-if="c.type=='text'" class="y-ul">
