@@ -24,6 +24,7 @@ GNZ48 - Gravity.flac
 GNZ48 - NaCl.flac
 GNZ48 - 双面偶像.flac
 GNZ48 - 就差一点点.flac
+HITA - 赤伶.flac
 HO2 - 月光下.flac
 Maksim - Flight of Bumble-bee (野蜂飞舞).flac
 Maksim - Kolibre (蜂鸟).flac
@@ -58,8 +59,16 @@ TheFatRat - Unity.flac
 まふまふ - 病名は愛だった (Cover 鏡音リン_鏡音レン).flac
 わたてん☆5 - 気ままな天使たち.flac
 七森中☆ごらく部 - いぇす！ゆゆゆ☆ゆるゆり??.flac
+七森中☆ごらく部 - ゆりゆららららゆるゆり大事件(10周年Ver.).flac
+七森中☆ごらく部 - ゆりゆららららゆるゆり大事件(10周年Ver.[からおけ]).flac
+七森中☆ごらく部 - ゆりゆららららゆるゆり大事件-ストイックに歌ってみたVer.-.flac
 七森中☆ごらく部 - ゆりゆららららゆるゆり大事件.flac
 七森中☆ごらく部 - ゆるゆり、てんやわんや☆.flac
+七森中☆ごらく部 - リピってチャイム?.flac
+七森中☆ごらく部＆生徒会 - ゆりゆららららゆるゆり大事件(フルサイズ)ごらく部&生徒会Ver..flac
+七森中☆生徒会 - いぇす！ゆゆゆ☆ゆるゆり?? -生徒会ver.-.flac
+七森中☆生徒会 - ゆりゆららららゆるゆり大事件 -生徒会ver.-.flac
+七森中☆生徒会 - ゆりゆららららゆるゆり大事件-生徒会(10周年Ver.).flac
 不才 - 化身孤岛的鲸.flac
 不才 - 寻常歌.flac
 五月天 - 恋爱ING.flac
@@ -72,6 +81,7 @@ TheFatRat - Unity.flac
 初音ミク - 千本桜 - 弦楽四重奏版.flac
 初音ミク - 千本桜.flac
 华晨宇 - 易燃易爆炸 (live).flac
+南拳妈妈 - 下雨天.flac
 司南 - 冬眠.flac
 周兴哲 - 永不失联的爱.flac
 周杰伦 - 七里香.flac
@@ -97,7 +107,9 @@ TheFatRat - Unity.flac
 周杰伦、梁心颐 - 珊瑚海.flac
 周杰伦、温岚 - 屋顶.flac
 周深 - 化身孤岛的鲸.flac
+周深 - 大鱼(唱片版).flac
 周深 - 大鱼.flac
+周深 - 天地为念.flac
 周深 - 起风了.flac
 孙燕姿 - 逆光.flac
 宫崎骏 - 天空之城.flac
@@ -119,8 +131,11 @@ TheFatRat - Unity.flac
 本兮 - 下雪的季节.flac
 李健 - 贝加尔湖畔.flac
 李玉刚 - 刚好遇见你.flac
+李玉刚 - 赤伶.flac
 李荣浩 - 不将就.flac
 李荣浩 - 李白.flac
+李荣浩 - 爸爸妈妈.flac
+李荣浩 - 麻雀.flac
 杨沛宜 - 左手右手.flac
 林ゆうき - Cocoon.flac
 林俊杰 - 一千年以后.flac
@@ -154,6 +169,7 @@ TheFatRat - Unity.flac
 田馥甄 - 魔鬼中的天使.flac
 石进 - 夜的钢琴曲五.flac
 胡夏&郁可唯 - 知否知否.flac
+艾辰 - 错位时空.flac
 苏打绿 - 再遇见.flac
 苏打绿 - 小情歌.flac
 苏打绿 - 我好想你.flac
@@ -161,6 +177,7 @@ TheFatRat - Unity.flac
 萨顶顶 - 万物生(梵).flac
 萨顶顶 - 万物生.flac
 萨顶顶 - 左手指月.flac
+薛之谦 - 动物世界.flac
 袁娅维 - 说散就散.flac
 许嵩 - Play With Style.flac
 许嵩 - 七夕.flac
@@ -275,5 +292,6 @@ TheFatRat - Unity.flac
 霍尊 - 卷珠帘.flac
 鞠婧祎 - 叹云兮.flac
 鞠婧祎 - 缘尽世间.flac
+音阙诗听、锦零 - 空山新雨后.flac
 飞儿乐团 - 月牙湾.flac
 高至豪 - The truth that you leave.flac
