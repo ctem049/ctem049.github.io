@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yitx's tool</title>
+    <title>OnO's tool</title>
     <!-- vue -->
-    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script> -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <!-- style -->
     <link rel="stylesheet" href="style.tool.css">
     <!-- Crypto -->
-    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script> -->
-    <script src="https://cdn.bootcdn.net/ajax/libs/crypto-js/4.0.0/crypto-js.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.js"></script>
 </head>
 
 <body>
@@ -20,23 +20,39 @@
         <div id="app">
             <div class="y-block">
                 <h2>Timestamp 时间戳</h2>
-                <button @click="timenow">Now</button> 时间戳: <input type="text" @input="timechange(true)" v-model="times"><span>&lt;-&gt;</span> 时间: <input type="text" @input="timechange(false)" v-model="timef">
+                <button @click="timenow">Now</button> 时间戳: <input type="text" @input="timechange(true)"
+                    v-model="times"><span>&lt;-&gt;</span> 时间: <input type="text" @input="timechange(false)"
+                    v-model="timef">
             </div>
             <div class="y-block" id="y-encode">
-                <h2>Encode 编码转换</h2>
-                String: <textarea @input="enChange('string')" v-model="enString" ols="30" rows="10"></textarea> Base64:
-                <textarea @input="enChange('b64')" v-model="enB64" ols="30" rows="10"></textarea> Hex: <textarea @input="enChange('hex')" v-model="enHex" ols="30" rows="10"></textarea> UrlEncode: <textarea @input="enChange('url')" v-model="enUE" ols="30"
-                    rows="10"></textarea>
+                <h2>Encode 编码转换 (UTF-8)</h2>
+                String: <textarea @input="enChange('string')" v-model="enString" ols="30" rows="10"></textarea>
+                Base64: <textarea @input="enChange('b64')" v-model="enB64" ols="30" rows="10"></textarea>
+                Hex: <textarea @input="enChange('hex')" v-model="enHex" ols="30" rows="10"></textarea>
+                UrlEncode: <textarea @input="enChange('url')" v-model="enUE" ols="30" rows="10"></textarea>
+                Unicode(&#): <textarea @input="enChange('unicode')" v-model="enUni" ols="30" rows="10"></textarea>
+                Unicode(\u): <textarea @input="enChange('unicode2')" v-model="enUni2" ols="30" rows="10"></textarea>
             </div>
             <div class="y-block" id="y-hash">
                 <h2>Hash 哈希函数</h2>
-                MD5: <textarea v-model="haMD5"></textarea> SHA-1: <textarea v-model="haSHA1"></textarea> SHA-256: <textarea v-model="haSHA256"></textarea> SHA-512: <textarea v-model="haSHA512"></textarea>
+                MD5: <textarea v-model="haMD5"></textarea> SHA-1: <textarea v-model="haSHA1"></textarea> SHA-256:
+                <textarea v-model="haSHA256"></textarea> SHA-512: <textarea v-model="haSHA512"></textarea>
+            </div>
+            <div class="y-block" id="y-pass">
+                <h2>Pass 随机密码生成器</h2>
+                <input v-model="paNum" type="checkbox">数字
+                <input v-model="paLow" type="checkbox">小写字母
+                <input v-model="paUp" type="checkbox">大写字母
+                <input v-model="paSpc" type="checkbox">特殊符号!@#$%^&*
+                <input v-model="paLen" type="text" style="width: 2em;">位
+                <button @click="paGen">生成</button>
+                <textarea v-model="paString"></textarea>
             </div>
         </div>
     </div>
     <!-- util -->
     <script>
-        Date.prototype.format = function(fmt) {
+        Date.prototype.format = function (fmt) {
             var o = {
                 "M+": this.getMonth() + 1, //月份
                 "d+": this.getDate(), //日
@@ -63,11 +79,18 @@
                 enB64: '',
                 enHex: '',
                 enUE: '',
+                enUni: '',
+                enUni2: '',
                 haMD5: '',
                 haSHA1: '',
                 haSHA256: '',
                 haSHA512: '',
-
+                paNum: true,
+                paLow: true,
+                paUp: true,
+                paSpc: false,
+                paLen: 12,
+                paString: ''
             },
             methods: {
                 init() {
@@ -91,6 +114,7 @@
                     }
                 },
                 enChange(type) {
+                    // decoder
                     if (type == 'string') {
                         this.eno = CryptoJS.enc.Utf8.parse(this.enString)
                     } else if (type == 'b64') {
@@ -98,17 +122,43 @@
                     } else if (type == 'hex') {
                         this.eno = CryptoJS.enc.Hex.parse(this.enHex)
                     } else if (type == 'url') {
-                        this.eno = CryptoJS.enc.Utf8.parse(decodeURI(this.enUE))
+                        this.eno = CryptoJS.enc.Utf8.parse(decodeURIComponent(this.enUE))
+                    } else if (type == 'unicode') {
+                        this.eno = this.enUni.replace(/&#(\d+);/g, (match, dec) => String.fromCharCode(dec))
+                    } else if (type == 'unicode2') {
+                        this.eno = unescape(this.enUni2.replace(/\\/g, "%"))
                     }
+
+                    // encoder
                     try {
-                        if (type != 'string') this.enString = CryptoJS.enc.Utf8.stringify(this.eno)
-                        if (type != 'url') this.enUE = encodeURI(this.enString)
+                        if (type != 'string')
+                            this.enString = CryptoJS.enc.Utf8.stringify(this.eno)
+                        if (type != 'url')
+                            this.enUE = encodeURIComponent(this.enString)
+                        if (type != 'unicode') {
+                            this.enUni = (function (str) {
+                                let buf = [];
+                                for (let i = str.length - 1; i >= 0; i--) {
+                                    buf.unshift(['&#', str[i].charCodeAt(), ';'].join(''));
+                                }
+                                return buf.join('')
+                            })(this.enString)
+                        }
+                        if (type != 'unicode2') {
+                            this.enUni2 = (function (str) {
+                                let a = []
+                                for (let i = 0; i < str.length;) a[i] = ("00" + str.charCodeAt(i++).toString(16)).slice(- 4);
+                                return "\\u" + a.join("\\u")
+                            })(this.enString)
+                        }
                     } catch (e) {
                         if (type != 'string') this.enString = e
                         if (type != 'url') this.enUE = e
                     }
-                    if (type != 'hex') this.enHex = CryptoJS.enc.Hex.stringify(this.eno)
-                    if (type != 'b64') this.enB64 = CryptoJS.enc.Base64.stringify(this.eno)
+                    if (type != 'hex')
+                        this.enHex = CryptoJS.enc.Hex.stringify(this.eno)
+                    if (type != 'b64')
+                        this.enB64 = CryptoJS.enc.Base64.stringify(this.eno)
                     this.haUpdate()
                 },
                 haUpdate() {
@@ -116,6 +166,36 @@
                     this.haSHA1 = CryptoJS.SHA1(this.eno).toString()
                     this.haSHA256 = CryptoJS.SHA256(this.eno).toString()
                     this.haSHA512 = CryptoJS.SHA512(this.eno).toString()
+                },
+                /**
+                 * 生成随机密码
+                 */
+                paGen() {
+                    // 设定字符集
+                    const csNum = '123456789'
+                    const csLow = 'abcdefghijkmnopqrstuvwxyz'
+                    const csUp = 'ABCDEFGHJKLMNPQRSTUVWXYZ'
+                    const csSpc = '!@#$%^&*'
+                    var cs = '' + (this.paNum ? csNum : '') + (this.paLow ? csLow : '') + (this.paUp ? csUp : '') + (this.paSpc ? csSpc : '')
+                    if (cs.length == 0) {
+                        // 如果没有选取字符集，返回
+                        this.paString = ''
+                        return
+                    }
+                    var pa = ''
+                    for (var i = 0; i < this.paLen; i++) {
+                        pa += cs[this.RandomMinMax(0, cs.length)]
+                    }
+                    this.paString = pa
+                },
+                /**
+                 * 生成随机数 min<=x<max
+                 */
+                RandomMinMax(Min, Max) {
+                    var Range = Max - Min;
+                    var Rand = Math.random();
+                    var num = Min + Math.floor(Rand * Range); //舍去
+                    return num;
                 }
             },
             watch: {},

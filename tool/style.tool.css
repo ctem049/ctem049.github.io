@@ -51,6 +51,7 @@ button.n-clicking {
 textarea {
     outline: none;
     box-sizing: border-box;
+    vertical-align: bottom;
     border-style: solid;
     border-width: 0.5px 0.5px 1px 0.5px;
     border-color: var(--n-theme);
