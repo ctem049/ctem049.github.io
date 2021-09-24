@@ -1,9 +1,20 @@
-- updateTime: 2021-09-06
+- updateTime: 2021-09-24
 
 # 最近在看
 
 - type: video
 
+* [2021-09-22] (视频) [【黑琴】丨我想成为你手中的刃，永远向前的力量](https://www.bilibili.com/video/BV1da411w7mc) ![](https://i2.hdslb.com/bfs/archive/16c612751b6f3998e2b1d2c001f906ad4bda23ed.jpg)
+* [2021-09-22] (番剧) [某科学的超电磁炮](https://www.bilibili.com/bangumi/media/md425) ![](https://i0.hdslb.com/bfs/bangumi/image/aad797f1f0212aba5578a1ed1c992ef1b9ff7c4b.jpg)
+* [2021-09-21] (视频) [打了这么多年的麻将，知道麻将是如何洗麻将的么？](https://www.bilibili.com/video/BV1Tg411c7ow) ![](https://i2.hdslb.com/bfs/archive/d24d83712f8379e587f2f0e66fb0d5f900e0f25c.jpg)
+* [2021-09-20] (视频) [决战刘谦！魔术VS超高速摄影机，能拍到破绽吗？](https://www.bilibili.com/video/BV1Uh411p7r3) ![](https://i1.hdslb.com/bfs/archive/e0f95d6c5077d59fbfdb5937b2b5b8253353b2b3.jpg)
+* [2021-09-20] (视频) [《 阴 间 操 作 王 》](https://www.bilibili.com/video/BV1th411W7Wc) ![](https://i0.hdslb.com/bfs/archive/ee32228577b6868741bf1080ea6c7f02a21240c1.jpg)
+* [2021-09-18] (视频) [奎因海妖连招教学：2次普攻就能触发1次海妖！细节拉满！](https://www.bilibili.com/video/BV1ny4y1i76G) ![](https://i0.hdslb.com/bfs/archive/5198ccbaa57bad8a5f525466a3a69292d7d250ef.jpg)
+* [2021-09-16] (视频) [【卧槽向】耗时半年，我造出了《围攻》首台可编程计算机！besiege数电进入新时代！！！](https://www.bilibili.com/video/BV1Zh411H7mj) ![](https://i1.hdslb.com/bfs/archive/75df672b1041c2737ae273efd2f8a50cafce4934.jpg)
+* [2021-09-16] (视频) [为什么连杆可以画出所有曲线](https://www.bilibili.com/video/BV18h411W78v) ![](https://i0.hdslb.com/bfs/archive/9ed6543b36ca1cabdf3afc621a61451d8a932e8b.png)
+* [2021-09-13] (视频) [【炉石骚套路 45】牧师为什么是神？新版本任务牧最强形态！](https://www.bilibili.com/video/BV1x34y1Q7Ae) ![](https://i1.hdslb.com/bfs/archive/03db14dcb4aaef4c03f8591a24fa45ec1c7b38d7.jpg)
+* [2021-09-11] (视频) [坏掉的SSD不要扔，颗粒拆了做U盘速度起飞，隔壁小孩都馋哭啦](https://www.bilibili.com/video/BV1V44y1k7q3) ![](https://i2.hdslb.com/bfs/archive/41475d5827e8e3d4e3588db1959167c7562bdb39.jpg)
+* [2021-09-08] (视频) [兵堆里也能链中人！妖姬玩家必学E闪技巧](https://www.bilibili.com/video/BV1s3411q75Z) ![](https://i1.hdslb.com/bfs/archive/93b7374d0b01ba3e61476306b9bf23f1cf3dcbcc.jpg)
 * [2021-09-05] (视频) [【游戏王】为什么加速花龙错过了发动时机。召唤成功时和召唤成功的场合有什么不一样。](https://www.bilibili.com/video/BV1Kv411w7wd) ![](https://i2.hdslb.com/bfs/archive/6fe4904317055bd108fd88f620b70e55ae040625.jpg)
 * [2021-09-04] (视频) [懒 癌 快 乐 生 成 器](https://www.bilibili.com/video/BV1ZM4y157jb) ![](https://i2.hdslb.com/bfs/archive/4dad6d3d989c3baa5a22a2f7604ef9421fb9b18b.jpg)
 * [2021-09-03] (视频) [810975什么意思？|【逗鱼时刻317期】片尾单品](https://www.bilibili.com/video/BV11f4y1H7TJ) ![](https://i1.hdslb.com/bfs/archive/af24708c00686e1c4f617985dbe5a94b036818ff.jpg)
@@ -112,6 +123,8 @@
 
 - type: music
 
+* [2021-09-23] [陈壹千 - 追](https://music.163.com/#/song?id=1358848433) ![](https://p1.music.126.net/Ax-zrmAPBrASWxT92t3fdw==/109951164000242827.jpg)
+* [2021-09-20] [fripSide - only my railgun](https://music.163.com/#/song?id=725692) ![](https://p2.music.126.net/pviFxK7sGSdu3xmWRt9Lgw==/109951166296227310.jpg)
 * [2021-09-05] [南拳妈妈 - 下雨天](https://y.qq.com/n/ryqq/songDetail/000fCzhV29mdvP) ![](https://y.qq.com/music/photo_new/T002R300x300M000001nd5rE0UOHo5_1.jpg?max_age=2592000)
 * [2021-09-02] [HITA - 赤伶](https://y.qq.com/n/ryqq/songDetail/000yIhWc01tTEv) ![](https://y.qq.com/music/photo_new/T002R300x300M000003SElah4eQ41c_2.jpg?max_age=2592000)
 * [2021-08-14] [许嵩 - 七夕](https://y.qq.com/n/ryqq/songDetail/004YrWpR44shMm) ![](https://y.qq.com/music/photo_new/T002R300x300M000000lCG1q4EGdV4_1.jpg?max_age=2592000)
@@ -156,9 +169,9 @@
 * [2021-01-10] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat ![](https://media.st.dl.pinyuncloud.com/steam/apps/477160/header_alt_assets_17.jpg)
 * [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc. ![](https://cdn.akamai.steamstatic.com/steam/apps/246620/header.jpg)
 * [2021-03-15] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics ![](https://game.gtimg.cn/images/lol/tft/content-site/logo-tft.png)
-* [2021-09-04] [英雄联盟](https://lol.qq.com) League of Legends ![](https:////game.gtimg.cn/images/lol/v3/logo-public.png)
+* [2021-09-23] [英雄联盟](https://lol.qq.com) League of Legends ![](https:////game.gtimg.cn/images/lol/v3/logo-public.png)
 * [2020-12-13] [我的世界](https://mc.163.com) Minecraft ![](https://webinput.nie.netease.com/img/mc/logo.png)
-* [2021-09-02] [炉石传说](https://hs.blizzard.cn) Hearth Stone ![](https://blz.nosdn.127.net/1/tm/hearthstone/activities/barrens/landing-logo-xresdftdds.png)
+* [2021-09-20] [炉石传说](https://hs.blizzard.cn) Hearth Stone ![](https://blz.nosdn.127.net/1/tm/hearthstone/activities/barrens/landing-logo-xresdftdds.png)
 * [2020-12-15] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster ![](https://media.st.dl.pinyuncloud.com/steam/apps/493340/header.jpg?t=1617973118)
 * [2020-12-02] [星际争霸2](https://sc2.blizzard.cn) StarCraft II ![](https://sc2.nosdn.127.net/1/style/v4/landing/201804/logo.png)
 
