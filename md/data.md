@@ -1,9 +1,22 @@
-- updateTime: 2021-10-07
+- updateTime: 2021-10-20
 
 # 最近在看
 
 - type: video
 
+* [2021-10-19] (视频) [教你如何快速掌握“缝合文学”](https://www.bilibili.com/video/BV1hP4y1t7SE) ![](https://i1.hdslb.com/bfs/archive/3a643ddb13018b9bb50a79925bbf671f8d920e60.jpg)
+* [2021-10-18] (直播) [S11全球总决赛 @Bilibili](https://live.bilibili.com/6) 英雄联盟 ![](https://i0.hdslb.com/bfs/live/01941ebae465f17babce62caa3976af11f0beeed.png)
+* [2021-10-18] (视频) [室内系的TrackMaker 中文翻唱](https://www.bilibili.com/video/BV1FW411E77Y) ![](https://i1.hdslb.com/bfs/archive/89ae6085a9b5b4ba70801463ec3d20a4e9d057a3.jpg)
+* [2021-10-15] (视频) [世界顶级小提琴天才Chloe Chua蔡珂宜给双琴侠上课](https://www.bilibili.com/video/BV1fp4y1e76s) ![](https://i0.hdslb.com/bfs/archive/2e85c0894d1bfd6869b9658fede4c7e67c08d30c.jpg)
+* [2021-10-15] (视频) [我们为什么孤独？这个时代为何需要这本书？【狸解小王子5】](https://www.bilibili.com/video/BV1W34y1S7qF) ![](https://i0.hdslb.com/bfs/archive/eb2c9b365e2125657cd361a6391c9b3fe05c2de9.jpg)
+* [2021-10-14] (视频) [【逗鱼时刻】第322期 我的128强老婆](https://www.bilibili.com/video/BV1tT4y1o7tf) ![](https://i2.hdslb.com/bfs/archive/e187a7bfeda3b31e0d6c53a2684bf418688e0aad.jpg)
+* [2021-10-11] (视频) [【TwoSetViolin双琴侠】1% 钢琴技巧 + 99% 剪辑技巧](https://www.bilibili.com/video/BV1DW411U7a8) ![](https://i1.hdslb.com/bfs/archive/297b6e804f332d36cf36a3009d5bbc0c5183e35b.jpg)
+* [2021-10-10] (视频) [【S11】破防大会：不破防就不成立](https://www.bilibili.com/video/BV1344y1x7ZP) ![](https://i1.hdslb.com/bfs/archive/3905466ca3c9e4facc19228d7c59c952c708a3b0.jpg)
+* [2021-10-10] (视频) [省钱省到妈都不认识的桥梁工程师2#10](https://www.bilibili.com/video/BV1xf4y1c7HV) ![](https://i2.hdslb.com/bfs/archive/c22ed76975d5fe34f890e8cb3657fce6b1c85606.jpg)
+* [2021-10-08] (视频) [【真人炉石】瓦莉拉一行的大冒险！](https://www.bilibili.com/video/BV1VR4y1H7Xd) ![](https://i1.hdslb.com/bfs/archive/895c748e68df274f8f26687520025d0037adb0dc.jpg)
+* [2021-10-07] (视频) [UZI无限火力待遇：我队友选了四个加盾的，玩四保一我人傻了！](https://www.bilibili.com/video/BV1d64y187JU) ![](https://i1.hdslb.com/bfs/archive/af28529defc3c7357bdbb8d751c88376cc770a21.jpg)
+* [2021-10-07] (视频) [【炉石骚套路 46】诈骗流术士！让对面帮我们踢死自己！](https://www.bilibili.com/video/BV1Gh411J7dz) ![](https://i1.hdslb.com/bfs/archive/84a3123e769f8b0d2823748ff851bf588438a6ca.jpg)
+* [2021-10-07] (视频) [【4K画质】Only My Railgun - 南条爱乃](https://www.bilibili.com/video/BV1vW411Y7Fc) ![](https://i0.hdslb.com/bfs/archive/4e56de9bbfdbf9e4b9cde23a55309d2856a4edf2.jpg)
 * [2021-10-07] (视频) [王老菊教你当药水哥](https://www.bilibili.com/video/BV17U4y1w7EZ) ![](https://i1.hdslb.com/bfs/archive/8919a6fe2eef34a3f39bf68c909cbb92a1875334.jpg)
 * [2021-10-05] (视频) [【內部視頻】变魔术给魔术师看。那得表演什么魔术？](https://www.bilibili.com/video/BV1hq4y1V7mj) ![](https://i1.hdslb.com/bfs/archive/59a72f82fd3101ef7b89222f772cbad519b2b5ad.jpg)
 * [2021-10-05] (视频) [拉肚子时我秒选莉莉娅，享“挂机、防抢中路”特权](https://www.bilibili.com/video/BV1ZT4y1d7Bk) ![](https://i1.hdslb.com/bfs/archive/bf1818cfa6f2fbb8665c0630c70252048689ba71.jpg)
@@ -138,6 +151,8 @@
 
 - type: music
 
+* [2021-10-19] [Paganiniana](https://music.163.com/#/song?id=1876372026) ![](http://p1.music.126.net/GB6m1scejBOtBEiMWW5MKQ==/109951166365524579.jpg)
+* [2021-10-18] [Yunomi、nicamoq - インドア系ならトラックメイカー](https://music.163.com/#/song?id=424262056) ![](http://p2.music.126.net/F8QUlvMbIa5DG0Gu6wop_g==/3416182637666433.jpg)
 * [2021-09-26] [周深 - 和光同尘](https://y.qq.com/n/ryqq/songDetail/00081KVW1lL09U) ![](https://y.qq.com/music/photo_new/T002R300x300M000003CypGl0p7fek_1.jpg?max_age=2592000)
 * [2021-09-23] [陈壹千 - 追](https://music.163.com/#/song?id=1358848433) ![](https://p1.music.126.net/Ax-zrmAPBrASWxT92t3fdw==/109951164000242827.jpg)
 * [2021-09-20] [fripSide - only my railgun](https://music.163.com/#/song?id=725692) ![](https://p2.music.126.net/pviFxK7sGSdu3xmWRt9Lgw==/109951166296227310.jpg)
@@ -185,7 +200,7 @@
 * [2021-01-10] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat ![](https://media.st.dl.pinyuncloud.com/steam/apps/477160/header_alt_assets_17.jpg)
 * [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc. ![](https://cdn.akamai.steamstatic.com/steam/apps/246620/header.jpg)
 * [2021-03-15] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics ![](https://game.gtimg.cn/images/lol/tft/content-site/logo-tft.png)
-* [2021-10-06] [英雄联盟](https://lol.qq.com) League of Legends ![](https:////game.gtimg.cn/images/lol/v3/logo-public.png)
+* [2021-10-19] [英雄联盟](https://lol.qq.com) League of Legends ![](https:////game.gtimg.cn/images/lol/v3/logo-public.png)
 * [2020-12-13] [我的世界](https://mc.163.com) Minecraft ![](https://webinput.nie.netease.com/img/mc/logo.png)
 * [2021-10-04] [炉石传说](https://hs.blizzard.cn) Hearth Stone ![](https://blz.nosdn.127.net/1/tm/hearthstone/activities/barrens/landing-logo-xresdftdds.png)
 * [2020-12-15] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster ![](https://media.st.dl.pinyuncloud.com/steam/apps/493340/header.jpg?t=1617973118)
