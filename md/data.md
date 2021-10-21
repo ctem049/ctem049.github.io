@@ -214,6 +214,8 @@
 
 - type: text
 
+* [2021-10-19] [Derangement - Wikipedia](https://en.wikipedia.org/wiki/Derangement)
+* [2021-10-16] [贝叶斯定理厉害在哪里？](https://www.zhihu.com/question/61298823)
 * [2021-07-10] [《乌兹为什么是神》上](https://www.bilibili.com/read/cv10895232)
 * [2021-05-30] [科普向：OVA、OAD、SP和剧场版，他们究竟有何区别](https://www.bilibili.com/read/cv7433772/)
 * [2021-05-09] [Citrus~反传统的第一女主角](https://www.bilibili.com/read/cv188081)
