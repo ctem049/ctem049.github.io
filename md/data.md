@@ -1,9 +1,18 @@
-- updateTime: 2021-11-24
+- updateTime: 2021-12-01
 
 # 最近在看
 
 - type: video
 
+* [2021-11-30] (视频) [洛天依，言和 原创《得过且过的勇者》](https://www.bilibili.com/video/BV1Zb411j7vb) ![](https://i0.hdslb.com/bfs/archive/26d5cd253756afe3b593da983e2cf1534f80874c.jpg)
+* [2021-11-29] (视频) [玩个游戏还要掌握全国方言？](https://www.bilibili.com/video/BV19h411s7Xu) ![](https://i0.hdslb.com/bfs/archive/4dd18c21a606354f02e9cf82731380394b3fce17.jpg)
+* [2021-11-29] (视频) [干净又卫生！爆改绵羊A货工厂，特别奖励芦荟汁一杯！](https://www.bilibili.com/video/BV1bb4y1t7sF) ![](https://i1.hdslb.com/bfs/archive/d12322170e8418c609df9d3c6ee0fc2b667c50bd.jpg)
+* [2021-11-26] (视频) [从文学角度赏析《我好想做嘉然小姐的狗啊》](https://www.bilibili.com/video/BV1tq4y1g7S8) ![](https://i0.hdslb.com/bfs/archive/0ba742389f3cb1161beddbb1c97ce492e27ae163.jpg)
+* [2021-11-26] (视频) [编曲合成器Omnisphere教程【8集全】| 音乐人必备音源 | 最详细的中文教学！](https://www.bilibili.com/video/BV1Qa4y1E7dN) ![](https://i0.hdslb.com/bfs/archive/2404a0ac444cddfed19a28b95289ee2b64f70255.jpg)
+* [2021-11-25] (视频) [【逗鱼时刻】第328期 戴佳伟日记，下跪有惊喜！](https://www.bilibili.com/video/BV1944y1Y7m1) ![](https://i1.hdslb.com/bfs/archive/c7fed314dd72a81d84c8d70bacaf4cc1f381ba04.jpg)
+* [2021-11-25] (视频) [アイの庭 (オータムリーフ管弦楽団)](https://www.bilibili.com/video/BV1HR4y1p7ha) ![](https://i2.hdslb.com/bfs/archive/f5d77af9aa49a0fe46eaa706a30fa4f3506b7ae4.jpg)
+* [2021-11-25] (视频) [《 让 废 话 飞 》](https://www.bilibili.com/video/BV11q4y1u7Dv) ![](https://i0.hdslb.com/bfs/archive/96d86fded479441580b557c7d4ab18b8f3bf7a6b.jpg)
+* [2021-11-24] (视频) [不破不立](https://www.bilibili.com/bangumi/play/ss39849) ![](https://i0.hdslb.com/bfs/archive/15266a0bae3e1d6420b39d0e887757279901a83a.png)
 * [2021-11-23] (直播) [阳光男孩小丑熊](https://live.bilibili.com/22907643) ![](https://i0.hdslb.com/bfs/live/new_room_cover/23491a1643ef67f01d0d1832b68bebae961b2928.jpg)
 * [2021-11-20] (视频) [【30帧电纸书？】电纸书也能看视频？还想流畅丝滑？](https://www.bilibili.com/video/BV1DF411h7ZJ) ![](https://i0.hdslb.com/bfs/archive/5417e03261c1558d78f72e25b0628ae5d2727733.jpg)
 * [2021-11-20] (视频) [【黄龄】冬日原创饮料之 杨花落尽子规啼](https://www.bilibili.com/video/BV1A44y1v7xT) ![](https://i0.hdslb.com/bfs/archive/476ae8b17dd0666b7bd44be1091398e8c667a4e3.jpg)
@@ -185,6 +194,8 @@
 
 - type: music
 
+* [2021-11-30] [ilem、洛天依、言和 - 得过且过的勇者](https://music.163.com/#/song?id=1353168484) ![](http://p1.music.126.net/eMyCr0gv0kPGlew9XTNjyA==/109951163944178164.jpg)
+* [2021-11-25] [李袁杰 - 大天蓬](https://music.163.com/#/song?id=1417113061) ![](http://p1.music.126.net/miTzM36u_4Pfn5r6Nednog==/109951165408919662.jpg)
 * [2021-11-09] [Duca - アイの庭](https://music.163.com/#/song?id=565845) ![](http://p2.music.126.net/FiMHky6tkpWlxyXWvSJNhA==/913694162681970.jpg)
 * [2021-10-28] [Mili - world.execute (me) ;](https://music.163.com/#/song?id=435278010) ![](http://p2.music.126.net/-OxCLbGs-JxKtPaBCo1yuw==/18801648835570109.jpg)
 * [2021-10-19] [Paganiniana](https://music.163.com/#/song?id=1876372026) ![](http://p1.music.126.net/GB6m1scejBOtBEiMWW5MKQ==/109951166365524579.jpg)
@@ -246,6 +257,7 @@
 
 - type: text
 
+* [2021-11-25] [AI扒谱：GiantMIDI-Piano使用指南（win10）](https://www.bilibili.com/read/cv8223137)
 * [2021-10-19] [Derangement - Wikipedia](https://en.wikipedia.org/wiki/Derangement)
 * [2021-10-16] [贝叶斯定理厉害在哪里？](https://www.zhihu.com/question/61298823)
 * [2021-07-10] [《乌兹为什么是神》上](https://www.bilibili.com/read/cv10895232)
