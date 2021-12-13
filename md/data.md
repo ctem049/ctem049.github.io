@@ -1,9 +1,21 @@
-- updateTime: 2021-12-01
+- updateTime: 2021-12-13
 
 # 最近在看
 
 - type: video
 
+* [2021-12-13] (视频) [up主花费上百小时！深扒p2p下载器到底是什么来头](https://www.bilibili.com/video/BV1hS4y1R7Hu) ![](https://i2.hdslb.com/bfs/archive/a72dd3c8028f4600564114ee612718c261ef3421.jpg)
+* [2021-12-12] (视频) [【高原守】最近很火的规则类怪谈为什么恐怖？](https://www.bilibili.com/video/BV1Li4y1Z7UB) ![](https://i1.hdslb.com/bfs/archive/9de540921cfd74de69eb83dc80116af032b46366.jpg)
+* [2021-12-12] (视频) [烤串里究竟是什么肉？怒花2万，测完我就懵逼了【老爸评测】](https://www.bilibili.com/video/BV1Fq4y1z7xN) ![](https://i1.hdslb.com/bfs/archive/9edbbea5b6007272f653175867ce8fea9504c0b4.jpg)
+* [2021-12-09] (视频) [王VS猪—毁灭地球的对决](https://www.bilibili.com/video/BV1ms411W7tQ) ![](https://i0.hdslb.com/bfs/archive/12741c3f1a089549e5240e49fb5a982a0ddbb042.jpg)
+* [2021-12-03] (视频) [洛天依，原创《勾指起誓》](https://www.bilibili.com/video/BV1Jb411U7u2) ![](https://i0.hdslb.com/bfs/archive/7591c89704b448cd94a0cf749e65a39833c68d4f.png)
+* [2021-12-05] (视频) [【新卡试玩】狗贼新防战请求挨打？驴鸽王哥掏出“版本答案”脸都给他打歪了！](https://www.bilibili.com/video/BV12h411s7SW) ![](https://i1.hdslb.com/bfs/archive/af7c969931998aecb9b1485433b39e970ac7c32d.jpg)
+* [2021-12-06] (视频) [“需要在千位数上再努力”医保谈判再现灵魂砍价](https://www.bilibili.com/video/BV1Ug411A7PA) ![](https://i1.hdslb.com/bfs/archive/fa8306f3ed827138bfa1eb1713d92075ebf1e82d.jpg)
+* [2021-12-04] (视频) [【翻唱】《猫中毒》完整版PV/嘉然](https://www.bilibili.com/video/BV1FX4y1g7u8) ![](https://i1.hdslb.com/bfs/archive/d63e23b3693f494aaabba7cc7d80f3b374832b45.jpg)
+* [2021-12-03] (视频) [VOCALOID5与VOCALOID4的性能测（差）试（距）](https://www.bilibili.com/video/BV1Vs411n7GN) ![](https://i2.hdslb.com/bfs/archive/6f708e28a9907397608003224fc40d9087df5df5.jpg)
+* [2021-12-02] (视频) [【逗鱼时刻】第328期 戴佳伟日记，下跪有惊喜！](https://www.bilibili.com/video/BV1944y1Y7m1) ![](https://i1.hdslb.com/bfs/archive/c7fed314dd72a81d84c8d70bacaf4cc1f381ba04.jpg)
+* [2021-12-02] (视频) [【中英双语】硬核科普-机械表工作原理（自译字幕）](https://www.bilibili.com/video/BV1g741177Qx) ![](https://i1.hdslb.com/bfs/archive/1e524d8c579f65a7ebb7fb005991c85a49d09e14.jpg)
+* [2021-12-01] (视频) [GNZ48梁娇＆GNZ48梁乔《投壶挑战》](https://www.bilibili.com/video/BV1Hq4y1z7U9) ![](https://i2.hdslb.com/bfs/archive/5b8d4b8efe0787ea115467378e00a314f5316c6c.jpg)
 * [2021-11-30] (视频) [洛天依，言和 原创《得过且过的勇者》](https://www.bilibili.com/video/BV1Zb411j7vb) ![](https://i0.hdslb.com/bfs/archive/26d5cd253756afe3b593da983e2cf1534f80874c.jpg)
 * [2021-11-29] (视频) [玩个游戏还要掌握全国方言？](https://www.bilibili.com/video/BV19h411s7Xu) ![](https://i0.hdslb.com/bfs/archive/4dd18c21a606354f02e9cf82731380394b3fce17.jpg)
 * [2021-11-29] (视频) [干净又卫生！爆改绵羊A货工厂，特别奖励芦荟汁一杯！](https://www.bilibili.com/video/BV1bb4y1t7sF) ![](https://i1.hdslb.com/bfs/archive/d12322170e8418c609df9d3c6ee0fc2b667c50bd.jpg)
@@ -194,6 +206,7 @@
 
 - type: music
 
+* [2021-12-03] [ilem、洛天依 - 勾指起誓](https://music.163.com/#/song?id=1345872140) ![](http://p2.music.126.net/eMyCr0gv0kPGlew9XTNjyA==/109951163944178164.jpg)
 * [2021-11-30] [ilem、洛天依、言和 - 得过且过的勇者](https://music.163.com/#/song?id=1353168484) ![](http://p1.music.126.net/eMyCr0gv0kPGlew9XTNjyA==/109951163944178164.jpg)
 * [2021-11-25] [李袁杰 - 大天蓬](https://music.163.com/#/song?id=1417113061) ![](http://p1.music.126.net/miTzM36u_4Pfn5r6Nednog==/109951165408919662.jpg)
 * [2021-11-09] [Duca - アイの庭](https://music.163.com/#/song?id=565845) ![](http://p2.music.126.net/FiMHky6tkpWlxyXWvSJNhA==/913694162681970.jpg)
@@ -247,7 +260,7 @@
 * [2021-01-10] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat ![](https://media.st.dl.pinyuncloud.com/steam/apps/477160/header_alt_assets_17.jpg)
 * [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc. ![](https://cdn.akamai.steamstatic.com/steam/apps/246620/header.jpg)
 * [2021-03-15] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics ![](https://game.gtimg.cn/images/lol/tft/content-site/logo-tft.png)
-* [2021-11-23] [英雄联盟](https://lol.qq.com) League of Legends ![](https:////game.gtimg.cn/images/lol/v3/logo-public.png)
+* [2021-12-12] [英雄联盟](https://lol.qq.com) League of Legends ![](https:////game.gtimg.cn/images/lol/v3/logo-public.png)
 * [2020-10-30] [我的世界](https://mc.163.com) Minecraft ![](https://webinput.nie.netease.com/img/mc/logo.png)
 * [2021-10-04] [炉石传说](https://hs.blizzard.cn) Hearth Stone ![](https://blz.nosdn.127.net/1/tm/hearthstone/activities/barrens/landing-logo-xresdftdds.png)
 * [2020-12-15] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster ![](https://media.st.dl.pinyuncloud.com/steam/apps/493340/header.jpg?t=1617973118)
@@ -257,6 +270,7 @@
 
 - type: text
 
+* [2021-12-12] [动物园规则怪谈](https://adnmb3.com/t/44880434)
 * [2021-11-25] [AI扒谱：GiantMIDI-Piano使用指南（win10）](https://www.bilibili.com/read/cv8223137)
 * [2021-10-19] [Derangement - Wikipedia](https://en.wikipedia.org/wiki/Derangement)
 * [2021-10-16] [贝叶斯定理厉害在哪里？](https://www.zhihu.com/question/61298823)
