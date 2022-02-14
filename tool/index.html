@@ -48,6 +48,11 @@
                 <button @click="paGen">生成</button>
                 <textarea v-model="paString"></textarea>
             </div>
+            <div class="y-block" id="y-bvav">
+                <h2>BVAV bv号与av号转换</h2>
+                BV号: <input type="text" @input="bvchange(true)" v-model="bvBv"><span>&lt;-&gt;</span> AV号: <input
+                    type="text" @input="bvchange(false)" v-model="bvAv">
+            </div>
         </div>
     </div>
     <!-- util -->
@@ -90,7 +95,9 @@
                 paUp: true,
                 paSpc: false,
                 paLen: 12,
-                paString: ''
+                paString: '',
+                bvBv: '',
+                bvAv: ''
             },
             methods: {
                 init() {
@@ -196,6 +203,72 @@
                     var Rand = Math.random();
                     var num = Min + Math.floor(Rand * Range); //舍去
                     return num;
+                },
+                bvchange(type) {
+                    var value
+                    if (type) {
+                        var patt = /bv[\w]+/i
+                        var ex = patt.exec(this.bvBv) // 匹配bv号
+                        if (ex == null) { this.bvAv = 'av' } else {
+                            this.bvAv = this.bvavc(ex[0], type)
+                        }
+                    } else {
+                        if (!/^\d+$/.test(this.bvAv)) { // 是否纯数字
+                            var patt = /(?<=av)\d+/i
+                            var ex = patt.exec(this.bvAv) // 匹配av号
+                            if (ex == null) { this.bvBv = 'BV' } else {
+                                this.bvBv = this.bvavc(ex[0], type)
+                            }
+                        } else {
+                            this.bvBv = this.bvavc(this.bvAv, type) // 纯数字直接转换
+                        }
+                    }
+                },
+
+                /**
+                 * bv号转av号
+                 * @param type true为bv转av dec 
+                 */
+                bvavc(x, type = true) {
+                    const table = 'fZodR9XQDSUm21yCkr6zBqiveYah8bt4xsWpHnJE7jL5VG3guMTKNPAwcF'
+                    const tr = table.split('').reduce(
+                        (pre, v, i) => {
+                            pre[table[i]] = BigInt(i)
+                            return pre
+                        }, []
+                    )
+                    let s = [11, 10, 3, 8, 4, 6].map(i => BigInt(i))
+                    let xor = BigInt(177451812);
+                    let add = BigInt(8728348608)
+                    const NUM_58 = BigInt(58)
+                    if (type) {
+                        try {
+                            let r = BigInt(0);
+                            for (let i = 0; i < 6; i++) {
+                                r += tr[x[s[i]]] * NUM_58 ** BigInt(i);
+                            }
+                            let res = (r - add) ^ xor
+                            return 'av' + res.toString();
+                        }
+                        catch (e) {
+                            console.log(e)
+                            return 'av'
+                        }
+                    } else {
+                        try {
+                            x = BigInt(x)
+                            x = (x ^ xor) + add
+                            let r = 'BV1  4 1 7  '.split('')
+                            for (let i = 0; i < 6; i++) {
+                                r[s[i]] = table[x / NUM_58 ** BigInt(i) % NUM_58]
+                            }
+                            return r.join('')
+                        }
+                        catch (e) {
+                            console.log(e)
+                            return 'BV'
+                        }
+                    }
                 }
             },
             watch: {},
