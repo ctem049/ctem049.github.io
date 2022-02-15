@@ -256,8 +256,8 @@
 
 - type: music
 
-* [2022-01-30] [王贰浪 - 像鱼](https://music.163.com/#/song?id=1331819951)
-* [2022-01-04] [王贰浪 - 一直很安静](https://music.163.com/#/song?id=205274)
+* [2022-01-30] [王贰浪 - 像鱼](https://music.163.com/#/song?id=1331819951) ![](https://p1.music.126.net/ejEPGN6ulPSgCBXGq7dgqw==/109951163720047382.jpg)
+* [2022-01-04] [王贰浪 - 一直很安静](https://music.163.com/#/song?id=205274) ![](http://p2.music.126.net/mN9uAulDAUbmFleuAaUIRA==/109951165694514502.jpg)
 * [2021-12-03] [ilem、洛天依 - 勾指起誓](https://music.163.com/#/song?id=1345872140) ![](http://p2.music.126.net/eMyCr0gv0kPGlew9XTNjyA==/109951163944178164.jpg)
 * [2021-11-30] [ilem、洛天依、言和 - 得过且过的勇者](https://music.163.com/#/song?id=1353168484) ![](http://p1.music.126.net/eMyCr0gv0kPGlew9XTNjyA==/109951163944178164.jpg)
 * [2021-11-25] [李袁杰 - 大天蓬](https://music.163.com/#/song?id=1417113061) ![](http://p1.music.126.net/miTzM36u_4Pfn5r6Nednog==/109951165408919662.jpg)
