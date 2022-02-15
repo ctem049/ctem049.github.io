@@ -1,9 +1,28 @@
-- updateTime: 2022-01-22
+- updateTime: 2022-02-15
 
 # 最近在看
 
 - type: video
 
+* [2022-02-15] (视频) [《寒 假 作 业》｜iPhone 13 Pro Max拍摄【杜比视界·全景声】短片](https://www.bilibili.com/video/BV1EP4y1w7UF) ![](https://i2.hdslb.com/bfs/archive/18ba71b8dcd9e44b25241e217ab37a6a98910291.jpg)
+* [2022-02-13] (视频) [【TES】 穷 开 摆](https://www.bilibili.com/video/BV1pS4y1y7pe) ![](https://i1.hdslb.com/bfs/archive/921cfe64dcc792d81d16d1399211b4190bf4f957.jpg)
+* [2022-02-13] (视频) [【奇妙之旅晚会】许嵩《一直很安静》完整版，唯美走心已单曲循环](https://www.bilibili.com/video/BV1ih411b7Vm) ![](https://i1.hdslb.com/bfs/archive/59c63a7b5994e3dbaba3ea45705b5f93c81d8957.jpg)
+* [2022-02-13] (视频) [赚钱软件真的赚钱吗？up主以身试毒揭晓“赚钱软件”的秘密](https://www.bilibili.com/video/BV1bF411p7bB) ![](https://i2.hdslb.com/bfs/archive/87675b9b9e21c3da9188825a8c681868eb9127af.jpg)
+* [2022-02-12] (视频) [五分钟解决虚数所有疑惑](https://www.bilibili.com/video/BV1C5411o7xZ) ![](https://i0.hdslb.com/bfs/archive/9da8c9d87c216b61f011489ca83ec3c01bf04ed3.jpg)
+* [2022-02-10] (视频) [楚钧：如何对抗送死流塞恩？为什么高分段没有这个玩法？](https://www.bilibili.com/video/BV1vm4y1Z78w) ![](https://i2.hdslb.com/bfs/archive/82861e122c821b8a4318a0499500a9de450cfa1f.jpg)
+* [2022-02-10] (视频) [【真实复盘05】TES问题出在哪？埋藏已久的定时炸弹！](https://www.bilibili.com/video/BV1Xb4y1j7Hu) ![](https://i0.hdslb.com/bfs/archive/3114f2486cf43c71b976ac39c7539a26ed5f6f27.jpg)
+* [2022-02-10] (视频) [楚钧：低分段该怎么赢？纯纯的保姆级加里奥教学！](https://www.bilibili.com/video/BV1Y5411o7ob) ![](https://i0.hdslb.com/bfs/archive/307cda04fb6891927a0f2a2c471df4e690ca6b74.jpg)
+* [2022-02-09] (视频) [《诡术妖姬，一踩就寄》](https://www.bilibili.com/video/BV1bb4y1n738) ![](https://i1.hdslb.com/bfs/archive/9aeb09f16c583823d0f3bc95e48dfc3aa118165c.jpg)
+* [2022-02-07] (视频) [绝绝子千珏~](https://www.bilibili.com/video/BV13a411m7iv) ![](https://i0.hdslb.com/bfs/archive/f41264f95c394f256702df9d7c0854b70b9a5cf8.jpg)
+* [2022-02-05] (视频) [一玩爆牌，两眼发光，异灵术试玩雷矛爆牌贼，0费爆牌鱼恐怖如斯！](https://www.bilibili.com/video/BV1A34y1q7wz) ![](https://i2.hdslb.com/bfs/archive/928cd26418fd929fadf04fe2ad37d5e8755e8902.jpg)
+* [2022-02-01] (视频) [【星际老男孩】谐星语录之小丑皇](https://www.bilibili.com/video/BV1c44y1W79A) ![](https://i0.hdslb.com/bfs/archive/b8bdca18c796180f91a69d374459493fd7421997.jpg)
+* [2022-01-28] (视频) [【LPL春季赛】1月27日 饭堂除夕夜](https://www.bilibili.com/video/BV1d3411h7Tz) ![](https://i2.hdslb.com/bfs/archive/ca7d3f5934183f94e122011e99cd332d0ded2825.jpg)
+* [2022-01-25] (视频) [【真实复盘02】Theshy世一抓的秘密！真是因为好抓么？LOL的本质是什么？](https://www.bilibili.com/video/BV1jP4y17768) ![](https://i2.hdslb.com/bfs/archive/90e6f229781dc7a81b0fbdc0dd55a38a168b82a6.jpg)
+* [2022-01-25] (视频) [一局游戏减伤上万！无限火力“不死三件套”有多赖皮？](https://www.bilibili.com/video/BV1dL4y147BN) ![](https://i1.hdslb.com/bfs/archive/58a4e041b1753303f64f8eebf2b3ac789fe5aef5.jpg)
+* [2022-01-23] (视频) [2020年海尔智家最新TVC《新治家之道》完整版](https://www.bilibili.com/video/BV1H54y1U7m1) ![](https://i1.hdslb.com/bfs/archive/cf20b82571ff3cb5223b44e4f873b6fdfce85273.png)
+* [2022-01-22] (视频) [【苍穹翻唱】好听哭了！民族歌唱家苍穹卓玛深情演绎《天路》（cover:韩红）](https://www.bilibili.com/video/BV1gi4y1d7bb) ![](https://i2.hdslb.com/bfs/archive/0d96ce53e3f9bb2df3dd86992241976ade3514f1.jpg)
+* [2022-01-22] (视频) [【英雄联盟】天青色的伊泽瑞尔，一直在等烟雨拉克丝](https://www.bilibili.com/video/BV1da41127A8) ![](https://i0.hdslb.com/bfs/archive/278e5ad829dde2286de2df4e073838700c6ce888.jpg)
+* [2022-01-22] (视频) [TheShy阿卡丽对线锐雯“不好打”直接杀人戒出门！](https://www.bilibili.com/video/BV1vu411m7eM) ![](https://i2.hdslb.com/bfs/archive/fd34773be8453efcaa600d36b410debd148c20ed.jpg)
 * [2022-01-22] (视频) [【蜘蛛馍】不建议玩上单蜘蛛 因为太欺负人了！](https://www.bilibili.com/video/BV1zT4y1m76J) ![](https://i2.hdslb.com/bfs/archive/31986a62485c35ebc728cd9a79fde5c04715469a.jpg)
 * [2022-01-21] (视频) [【英雄联盟】天青色等烟雨 而我在等你](https://www.bilibili.com/video/BV1Xq4y1k7Df) ![](https://i1.hdslb.com/bfs/archive/4b0e6480bb8453aa1aeba2c97053e1da7bb985e6.jpg)
 * [2022-01-20] (视频) [不 心 动 挑 战 ！| 橘 里 橘 气](https://www.bilibili.com/video/BV1t341147pr) ![](https://i2.hdslb.com/bfs/archive/ad71afb12b7552f1149bed2f238479d54c1b33de.jpg)
@@ -237,6 +256,8 @@
 
 - type: music
 
+* [2022-01-30] [王贰浪 - 像鱼](https://music.163.com/#/song?id=1331819951)
+* [2022-01-04] [王贰浪 - 一直很安静](https://music.163.com/#/song?id=205274)
 * [2021-12-03] [ilem、洛天依 - 勾指起誓](https://music.163.com/#/song?id=1345872140) ![](http://p2.music.126.net/eMyCr0gv0kPGlew9XTNjyA==/109951163944178164.jpg)
 * [2021-11-30] [ilem、洛天依、言和 - 得过且过的勇者](https://music.163.com/#/song?id=1353168484) ![](http://p1.music.126.net/eMyCr0gv0kPGlew9XTNjyA==/109951163944178164.jpg)
 * [2021-11-25] [李袁杰 - 大天蓬](https://music.163.com/#/song?id=1417113061) ![](http://p1.music.126.net/miTzM36u_4Pfn5r6Nednog==/109951165408919662.jpg)
@@ -286,12 +307,12 @@
 
 - type: game
 
-* [2021-06-30] [雀魂麻将](https://www.maj-soul.com) ![](https://www.maj-soul.com/homepage/img/background.jpg)
+* [2022-02-14] [雀魂麻将](https://www.maj-soul.com) ![](https://www.maj-soul.com/homepage/img/background.jpg)
 * [2021-03-18] [和平精英](https://gp.qq.com/) Game For Peace ![](https://game.gtimg.cn/images/gp/public/logo.png)
 * [2021-01-10] [人类一败涂地](https://store.steampowered.com/app/477160/Human_Fall_Flat/) Human Fall Flat ![](https://media.st.dl.pinyuncloud.com/steam/apps/477160/header_alt_assets_17.jpg)
 * [2020-11-26] [瘟疫公司](https://store.steampowered.com/app/246620/Plague_Inc_Evolved) Plague Inc. ![](https://cdn.akamai.steamstatic.com/steam/apps/246620/header.jpg)
-* [2021-03-15] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics ![](https://game.gtimg.cn/images/lol/tft/content-site/logo-tft.png)
-* [2022-01-05] [英雄联盟](https://lol.qq.com) League of Legends ![](https:////game.gtimg.cn/images/lol/v3/logo-public.png)
+* [2022-02-15] [云顶之弈](https://lol.qq.com/tft/) Team Fight Tatics ![](https://game.gtimg.cn/images/lol/tft/content-site/logo-tft.png)
+* [2022-02-15] [英雄联盟](https://lol.qq.com) League of Legends ![](https:////game.gtimg.cn/images/lol/v3/logo-public.png)
 * [2020-10-30] [我的世界](https://mc.163.com) Minecraft ![](https://webinput.nie.netease.com/img/mc/logo.png)
 * [2021-12-30] [炉石传说](https://hs.blizzard.cn) Hearth Stone ![](https://blz.nosdn.127.net/1/tm/hearthstone/activities/barrens/landing-logo-xresdftdds.png)
 * [2020-12-15] [过山车之星](https://store.steampowered.com/app/493340/Planet_Coaster) Planet Coaster ![](https://media.st.dl.pinyuncloud.com/steam/apps/493340/header.jpg?t=1617973118)
@@ -300,7 +321,7 @@
 # 最近在读
 
 - type: text
-
+* [2022-02-14] [10897 如何不重复地枚举 24 点算式？（上）](https://zhuanlan.zhihu.com/p/33998387)
 * [2021-12-12] [动物园规则怪谈](https://adnmb3.com/t/44880434)
 * [2021-11-25] [AI扒谱：GiantMIDI-Piano使用指南（win10）](https://www.bilibili.com/read/cv8223137)
 * [2021-10-19] [Derangement - Wikipedia](https://en.wikipedia.org/wiki/Derangement)
