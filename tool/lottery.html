@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnO's tool - Lottery</title>
+    <!-- vue -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.min.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.6.11/vue.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="style.tool.css">
+    <!-- Crypto -->
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script> -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/crypto-js/4.0.0/crypto-js.js"></script>
+</head>
+
+<body>
+    <div class="y-container">
+        <div id="app">
+            <div class="y-block">
+                <h2>Lottery 公开抽奖</h2>
+                <p><button @click="genMD5">生成</button> 抽奖hash: <input type="text" v-model="lotMD5"> <button
+                        @click="checkMD5">验证</button> 公开hash: <input type="text" v-model="pubMD5"></input> <span
+                        v-if="checkMD5r">√</span><span v-else>×</span></p>
+                <p><button @click="addUser">添加</button> <button @click="empUser">清空</button> 用户id: <input type="text"
+                        v-model="newUserId"> <button @click="genUserMD5">生成</button> 用户hash: <input type="text"
+                        v-model="newUserMD5"></input></p>
+                <p v-for="(user, i) in users">
+                    编号{{ i }}: Id: {{ user.id }}, 用户hash: {{ user.hash }}, 抽奖hash: {{ user.ltHash }}
+                </p>
+                <p><button @click="lottery">抽奖</button></p>
+                <p><button @click="lotteryC">抽奖1000次验证</button></p>
+                <p v-html="lotInfo"></p>
+            </div>
+        </div>
+    </div>
+    <!-- util -->
+    <script>
+        Date.prototype.format = function (fmt) {
+            var o = {
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "h+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds(), //秒
+                "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+                "S": this.getMilliseconds() //毫秒
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+    </script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                lotMD5: '',
+                pubMD5: '',
+                checkMD5r: false,
+                newUserId: '',
+                newUserMD5: '',
+                users: [],
+                sumMD5: '',
+                lotResult: 0,
+                lotInfo: '',
+            },
+            methods: {
+                hash(x) {
+                    return CryptoJS.MD5(x)
+                },
+                randomhash() {
+                    var timeR = new Date().getTime().toString()
+                    var numR = Math.random().toString()
+                    return this.hash(CryptoJS.enc.Utf8.parse(timeR + numR)).toString()
+                },
+                genMD5() {
+                    var timeR = new Date().getTime().toString()
+                    var numR = Math.random().toString()
+                    this.lotMD5 = this.hash(CryptoJS.enc.Utf8.parse(timeR + numR)).toString()
+                    this.md5Change()
+                },
+                md5Change() {
+                    this.eno = CryptoJS.enc.Hex.parse(this.lotMD5)
+                    this.pubMD5 = this.hash(this.eno).toString()
+                },
+                checkMD5() {
+                    this.eno = CryptoJS.enc.Hex.parse(this.lotMD5)
+                    var check = this.hash(this.eno).toString()
+                    this.checkMD5r = (check == this.pubMD5)
+                },
+                addUser() {
+                    var user = {
+                        id: this.newUserId + "",
+                        hash: this.newUserMD5,
+                        ltHash: ''
+                    }
+                    this.users.push(user)
+                },
+                empUser() {
+                    this.users = []
+                },
+                genUserMD5() {
+                    var timeR = new Date().getTime().toString()
+                    var numR = Math.random().toString()
+                    this.newUserMD5 = this.hash(CryptoJS.enc.Utf8.parse(timeR + numR)).toString()
+                },
+                lottery() {
+                    var userN = this.users.length // 抽奖人数
+                    var sum = CryptoJS.enc.Hex.parse(this.lotMD5)
+                    if (this.hash(sum).toString() != this.pubMD5) {
+                        this.lotInfo = '抽奖hash不匹配'
+                        return
+                    }
+                    this.users.map(v => {
+                        var wd = this.hash(CryptoJS.enc.Utf8.parse(v.hash))
+                        wd.words.map((w, i) => {
+                            sum.words[i] = sum.words[i] ^ w // 按位异或相加
+                        })
+                        v.ltHash = wd.toString()
+                    })
+                    this.sumMD5 = sum.toString()
+
+                    // 取模
+                    var m = 0
+                    sum.words.map((v, i) => {
+                        m = ((v >>> 16) + m * 0x10000) % userN
+                        m = (((v >>> 0) & 0xffff) + m * 0x10000) % userN
+                    })
+                    this.lotInfo = `抽奖人数: ${userN}, 相加结果: ${this.sumMD5}, 取模结果: ${m}, 中奖用户id: ${this.users[m].id}`
+                    return m
+                },
+                lotteryC() {
+                    var l = []
+                    var md5s = []
+                    var ms = []
+                    for (var j = 0; j < 1000; j++) {
+                        var users = []
+                        for (var i = 0; i < 5; i++) {
+                            users.push({
+                                id: i,
+                                hash: this.randomhash(),
+                                ltHash: ''
+                            })
+                        }
+                        var userN = users.length // 抽奖人数
+                        var sum = CryptoJS.enc.Hex.parse(this.lotMD5)
+                        if (this.hash(sum).toString() != this.pubMD5) {
+                            this.lotInfo = '抽奖hash不匹配'
+                            return
+                        }
+                        users.map(v => {
+                            var wd = this.hash(CryptoJS.enc.Utf8.parse(v.hash))
+                            wd.words.map((w, i) => {
+                                sum.words[i] = sum.words[i] ^ w // 按位异或相加
+                            })
+                            v.ltHash = wd.toString()
+                        })
+                        this.sumMD5 = sum.toString()
+                        md5s.push(this.sumMD5)
+                        // 取模
+                        var m = 0
+                        sum.words.map((v, i) => {
+                            m = ((v >>> 16) + m * 0x10000) % userN
+                            m = (((v >>> 0) & 0xffff) + m * 0x10000) % userN
+                        })
+                        ms.push(m)
+                        l[m] = 1 + (l[m] ? l[m] : 0)
+                    }
+                    this.lotInfo = JSON.stringify(l)
+                }
+            },
+            watch: {}
+        })
+    </script>
+</body>
+
+</html>
