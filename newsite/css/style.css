@@ -3,6 +3,7 @@ body {
     font-family: "Microsoft Yahei", "PingFang SC", "Hiragino Sans GB", sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 /* menu */
@@ -84,6 +85,14 @@ body {
 }
 
 /* section 1 */
+
+#y-s1 {
+    background-image: url(../img/bg_star_2.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
 
 #y-s1-1 {
     width: 100%;
@@ -252,12 +261,15 @@ body {
     flex-direction: column;
 }
 
+/* s2-tab1 */
+
 .y-tab-content {
+    overflow: hidden;
     box-sizing: border-box;
     padding: 1rem;
     border: 1px solid #676b6b;
     flex-grow: 1;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .y-tab-card-container {
@@ -297,8 +309,6 @@ body {
     text-shadow: 0 0 1rem #87CEEB;
 }
 
-
-
 .y-tab-title {
     margin: 0.2rem 0;
     font-size: 1.5rem;
@@ -311,6 +321,16 @@ body {
     overflow-x: auto;
 }
 
+.y-card-container::-webkit-scrollbar {
+    width: 0.2rem;
+    height: 0.3rem;
+    background-color: #eee;
+}
+
+.y-card-container::-webkit-scrollbar-thumb {
+    background: #aaa;
+}
+
 .y-card {
     flex-shrink: 0;
     margin-right: 2rem;
@@ -319,11 +339,25 @@ body {
 .y-card-img {
     width: 8rem;
     height: 8rem;
+    overflow: hidden;
+    transition: all 2s;
+}
+
+.y-card-img:hover {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .y-card-img img {
     object-fit: cover;
     width: 100%;
+    position: relative;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.y-card-img img:hover {
+    transform: scale(1.3);
+
 }
 
 .y-card-text {
@@ -334,4 +368,182 @@ body {
     font-size: 0.8rem;
     font-weight: 300;
     word-break: break-all;
+}
+
+/* s2-tab2 */
+
+.y-card2-container {
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* resp */
+    row-gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .y-card2-container {
+        grid-template-columns: 1fr;/* 1列 */
+    }
+}
+
+.y-card2-container::-webkit-scrollbar {
+    width: 0.2rem;
+    height: 0.3rem;
+    background-color: #eee;
+}
+
+.y-card2-container::-webkit-scrollbar-thumb {
+    background: #aaa;
+}
+
+.y-card2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.y-card2-img,
+.y-card2-text {
+    flex: 0 1 50%;
+}
+
+.y-card2-img img {
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    /* border-radius: 1rem; */
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.y-card2-text {
+    margin-left: 3rem;
+}
+
+.y-card2-title {
+    margin: 0.2rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e9686b;
+}
+
+.y-card2-text p {
+    margin: 0.5rem 0;
+}
+
+.y-card2-text a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.y-card2-text a:hover {
+    color: #4169E1;
+    text-shadow: 0 0 1rem #87CEEB;
+}
+
+.y-tab2-title {
+    margin: 0.2rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e9686b;
+}
+
+/* s2-tab3 */
+
+/* section 3 */
+
+#y-s3 {
+    position: relative;
+}
+.y-s3-tab-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.y-s3-tab {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;left:0;
+}
+
+#y-s3-t1 {
+    background-image: url(../img/summonersrift.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* section 4 */
+
+.y-s4-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.y-s4-c2 {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.y-s4-img {
+    margin-top: 5rem;
+    margin-left: 7rem; /* resp */
+    position: relative;
+    width: fit-content; /* resp */
+    border: 5px solid #708de4;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem #87CEEB;
+    height: fit-content;
+}
+
+.y-s4-img img{
+    width: 100%;
+    object-fit: fill;
+}
+
+.y-s4-tab-container {
+    margin-bottom: 5rem;
+}
+
+.y-s4-text {
+    flex-basis: 40%;
+    padding-top: 5rem;
+    padding-right: 8rem;
+    box-sizing: border-box;
+    text-align: right;
+    font-family: '微软雅黑',sans-serif;
+}
+
+
+.y-s4-text-title {
+    color: #e9686b;
+    font-family: '幼圆','微软雅黑',sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    margin: 0;
+    margin-right: 4rem;
+}
+
+.y-s4-text-subtitle {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
+}
+
+.y-s4-text a {
+    text-decoration: none;
+    color: #4169E1;
+    transition: all 0.2s;
+}
+.y-s4-text a:hover {
+    text-shadow: 0 0 1rem #87CEEB;
+}
+
+.y-s4-text-links a {
+    margin-right: 2rem;
+    font-weight: bold;
 }

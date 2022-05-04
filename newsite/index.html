@@ -28,7 +28,7 @@
                 <a href="#">#二次元</a>
             </div>
         </div>
-        <div class="y-section" style="display: none;" id="y-s1">
+        <div class="y-section" id="y-s1">
             <div id="y-s1-1">
                 <div class="y-center">
                     <div class="y-logo">
@@ -164,53 +164,156 @@
         <div class="y-section" id="y-s2">
             <div class="y-container-m">
                 <div class="y-tab-menu">
-                    <div class="y-tab-menu-s y-tab-menu-s-active"><a href="#">听</a></div>
-                    <div class="y-tab-menu-s"><a href="#">唱</a></div>
-                    <div class="y-tab-menu-s"><a href="#">作</a></div>
+                    <div class="y-tab-menu-s" :class="{'y-tab-menu-s-active': s2tab==1}"><a
+                            @click.prevent="s2tabswitch(1)" href="#">听</a></div>
+                    <div class="y-tab-menu-s" :class="{'y-tab-menu-s-active': s2tab==2}"><a
+                            @click.prevent="s2tabswitch(2)" href="#">唱</a></div>
+                    <div class="y-tab-menu-s" :class="{'y-tab-menu-s-active': s2tab==3}"><a
+                            @click.prevent="s2tabswitch(3)" href="#">作</a></div>
                 </div>
-                <div class="y-tab-content y-tab-card-container" id="y-s2-tab1">
-                    <div class="y-tab-card">
-                        <p class="y-tab-title">流行</p>
+                <div class="y-tab-content y-tab-card-container" v-show="s2tab==1" id="y-s2-tab1">
+                    <div v-for="c in mcontent" class="y-tab-card">
+                        <p class="y-tab-title">{{ c.type }}</p>
                         <div class="y-card-container">
-                            <div class="y-card">
+                            <div v-for="s in c.songs" class="y-card">
                                 <div class="y-card-img">
-                                    <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000000vKMVO0srdMF_1.jpg"
-                                        alt="">
+                                    <img :src="s.img" alt="" referrerpolicy="no-referrer">
                                 </div>
                                 <div class="y-card-text">
-                                    いぇす!ゆゆゆ☆ゆるゆり♪♪
+                                    {{ s.name }}
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="y-tab-card">
-                        <p class="y-tab-title">古风</p>
-                        <div class="y-card-container">
-                            <div class="y-card">
-                                <div class="y-card-img">
-                                    <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000000vKMVO0srdMF_1.jpg"
-                                        alt="">
-                                </div>
-                                <div class="y-card-text">
-                                    いぇす!ゆゆゆ☆ゆるゆり♪♪
-                                </div>
+                </div>
+                <div class="y-tab-content" id="y-s2-tab2" v-show="s2tab==2">
+                    <div class="y-card2-container">
+                        <div class="y-card2">
+                            <div class="y-card2-img">
+                                <img src="./img/gzqs.jpg" alt="">
+                            </div>
+                            <div class="y-card2-text">
+                                <p class="y-card2-title">勾指起誓</p>
+                                <p><a href="https://www.bilibili.com/audio/au2747196" target="_blank">试听</a></p>
+                                <p><a href="https://www.bilibili.com/video/BV17R4y1s72N" target="_blank">MV</a></p>
+                                <p><a href="https://i.ctm49.com/diy/223.html" target="_blank">介绍</a></p>
+                            </div>
+                        </div>
+                        <div class="y-card2">
+                            <div class="y-card2-img">
+                                <img src="https://i0.hdslb.com/bfs/music/75e2264869d592a74e9384439ecf0991448e2786.jpg"
+                                    alt="">
+                            </div>
+                            <div class="y-card2-text">
+                                <p class="y-card2-title">刚好遇见你</p>
+                                <p><a href="https://www.bilibili.com/audio/au2747028" target="_blank">试听</a></p>
+                                <p><a href="https://www.bilibili.com/video/BV13M4y1w7BX" target="_blank">AMV (feat.
+                                        Citrus)</a></p>
+                                <p><a href="https://i.ctm49.com/diy/268.html" target="_blank">AMV 介绍</a></p>
+                            </div>
+                        </div>
+                        <div class="y-card2">
+                            <div class="y-card2-img">
+                                <img src="https://i0.hdslb.com/bfs/music/80a91fe255c8b7bceb8fe3615cde41fd4a07ca8f.jpg"
+                                    alt="">
+                            </div>
+                            <div class="y-card2-text">
+                                <p class="y-card2-title">得过且过的勇者</p>
+                                <p><a href="https://www.bilibili.com/audio/au2747099?type=1" target="_blank">试听</a></p>
+                            </div>
+                        </div>
+                        <div class="y-card2">
+                            <div class="y-card2-img">
+                                <img src="https://shp.qpic.cn/ttkg/0/8d51ebd7dd8d4fb9047e47ef83f9fafc59819fac/320?t=1&j=PiajxSqBRaEIf0bHhsJQ0QVoFSjos8ibuwib8icMibSGWGru7aj84uAW826V84GUk58dtqf27eKC51gRtLapYyjVa4icOW9DtbkRyqFefa2BdU4BntJRlAppjqVYzmjOpDN2PBNnmiaHWvMgB4"
+                                    alt="">
+                            </div>
+                            <div class="y-card2-text">
+                                <p class="y-card2-title">更多</p>
+                                <p><a href="https://kg.qq.com/node/personal?uid=61959e84252d3f83"
+                                        target="_blank">全民K歌</a></p>
                             </div>
                         </div>
                     </div>
-                    <div class="y-tab-card">
-                        <p class="y-tab-title">二次元</p>
-                        <div class="y-card-container">
-                            <div class="y-card">
-                                <div class="y-card-img">
-                                    <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000000vKMVO0srdMF_1.jpg"
-                                        alt="">
-                                </div>
-                                <div class="y-card-text">
-                                    いぇす!ゆゆゆ☆ゆるゆり♪♪
-                                </div>
+                </div>
+                <div class="y-tab-content" id="y-s2-tab3" v-show="s2tab==3">
+                    <div class="y-card2-container">
+                        <div class="y-card2">
+                            <div class="y-card2-img">
+                                <img src="https://i.ctm49.com/usr/uploads/2021/10/3036479227.jpg" alt="">
+                            </div>
+                            <div class="y-card2-text">
+                                <p class="y-card2-title">大鱼（翻弹）</p>
+                                <p><a href="https://www.bilibili.com/audio/au2346411" target="_blank">试听</a></p>
+                                <p><a href="https://www.bilibili.com/video/BV1D44y1z7Zc" target="_blank">视频</a></p>
+                                <p><a href="https://i.ctm49.com/diy/268.html" target="_blank">介绍</a></p>
+                            </div>
+                        </div>
+                        <div class="y-card2">
+                            <div class="y-card2-img">
+                                <img src="https://i2.hdslb.com/bfs/archive/f6e82a34819eb20cf774f42e4fbddf2955eefca2.jpg"
+                                    alt="">
+                            </div>
+                            <div class="y-card2-text">
+                                <p class="y-card2-title">アイの庭</p>
+                                <p><a href="https://www.bilibili.com/audio/au2684785" target="_blank">试听</a></p>
+                                <p><a href="https://www.bilibili.com/video/BV1Pf4y1T7M5" target="_blank">视频</a></p>
+                            </div>
+                        </div>
+                        <div class="y-card2">
+                            <div class="y-card2-img">
+                                <img src="https://i1.hdslb.com/bfs/archive/1612d378482792afabe0d35b9c855f156fd30ee5.jpg"
+                                    alt="">
+                            </div>
+                            <div class="y-card2-text">
+                                <p class="y-card2-title">ゆりゆららららゆるゆり大事件 - AI演奏</p>
+                                <p><a href="https://www.bilibili.com/video/BV11U4y1d7Sj/" target="_blank">视频</a></p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="y-section" id="y-s3">
+            <div class="y-s3-tab-container">
+                <div class="y-s3-tab" id="y-s3-t1">
+                    <div class="y-container-l">
+                        <div class="y-s3-logo">
+                            <img src="./img/logo_lol.png" alt="">
+                        </div>
+                        <div class="y-s3-text">
+                            <p class="y-s3-title">英雄联盟</p>
+                            <p>from 2013.8</p>
+                            <p>擅长英雄：</p>
+                            <p>提莫 乐芙兰 崔丝塔娜</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="y-section" id="y-s4">
+            <div class="y-s4-container">
+                <div class="y-s4-c2">
+                    <div class="y-s4-img">
+                        <img src="./img/yryr.jpg" alt="">
+                    </div>
+                    <div class="y-s4-tab-container">
+                        <div class="y-s4-tab">
+                            <div style="width: 5rem;height: 5rem;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="y-s4-text">
+                    <p class="y-s4-text-title">摇曳百合</p>
+                    <p class="y-s4-text-subtitle">ゆるゆり</p>
+                    <p>轻百合神作。</p>
+                    <p><a href="https://i.ctm49.com/others/188.html">《摇曳百合》——好看！好看！好看！</a></p>
+                    <p><a href="https://i.ctm49.com/others/162.html" target="_blank">《摇曳百合》十周年专辑&动漫</a></p>
+                    <p class="y-s4-text-links">
+                        <a href="https://yuruyuri.com/" target="_blank">官网</a> <a href="https://bgm.tv/subject/14588" target="_blank">bangumi</a> <a href="https://zh.moegirl.org.cn/%E6%91%87%E6%9B%B3%E7%99%BE%E5%90%88" target="_blank">萌娘百科</a>
+                    </p>
+
                 </div>
             </div>
         </div>
