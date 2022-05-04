@@ -16,16 +16,28 @@
 
 <body>
     <div id="y-container">
-        <div class="y-section" id="y-s1">
+        <div class="y-menu">
+            <div class="y-menu-logo">
+                <img class="y-menu-logo-img" src="./ono.svg">
+                <span class="y-menu-ptitle">OnO's World</span>
+            </div>
+            <div class="y-menu-links">
+                <a href="#">#首页</a>
+                <a href="#">#音乐</a>
+                <a href="#">#游戏</a>
+                <a href="#">#二次元</a>
+            </div>
+        </div>
+        <div class="y-section" style="display: none;" id="y-s1">
             <div id="y-s1-1">
                 <div class="y-center">
                     <div class="y-logo">
-                        <img class="y-logo-img" :class="{'y-rorate': logor}" @click="()=>{logor=!logor}"
+                        <img class="y-logo-img y-rorate" :class="{'y-paused': logor}" @click="()=>{logor=!logor}"
                             src="./ono.svg">
                         <h1 class="y-ptitle">OnO's World</h1>
                     </div>
                     <div class="y-social">
-                        <a href="https://i.ctm49.com">
+                        <a href="https://i.ctm49.com" target="_blank">
                             <svg t="1618968868325" class="y-icon-svg" viewBox="0 0 1024 1024" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" p-id="2308" width="200" height="200">
                                 <path
@@ -67,7 +79,7 @@
                             </svg>
                             <span class="y-social-text">Blog</span>
                         </a>
-                        <a href="https://space.bilibili.com/22288775">
+                        <a href="https://space.bilibili.com/22288775" target="_blank">
                             <svg class="y-icon-svg" t="1618534026526" viewBox="0 0 1024 1024" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" p-id="776">
                                 <path fill="#fc7299"
@@ -76,7 +88,7 @@
                             </svg>
                             <span class="y-social-text">b站</span>
                         </a>
-                        <a href="https://weibo.com/u/3628280351">
+                        <a href="https://weibo.com/u/3628280351" target="_blank">
                             <svg t="1618534942574" class="y-icon-svg" viewBox="0 0 1024 1024" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" p-id="1661" width="200" height="200">
                                 <path
@@ -94,7 +106,7 @@
                             </svg>
                             <span class="y-social-text">微博</span>
                         </a>
-                        <a href="https://music.163.com/#/user/home?id=423050615">
+                        <a href="https://music.163.com/#/user/home?id=423050615" target="_blank">
                             <svg t="1629082663482" class="y-icon-svg" viewBox="0 0 1024 1024" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" p-id="4534" width="200" height="200">
                                 <path
@@ -103,7 +115,7 @@
                             </svg>
                             <span class="y-social-text">网易云音乐</span>
                         </a>
-                        <a href="https://www.zhihu.com/people/azurecs">
+                        <a href="https://www.zhihu.com/people/azurecs" target="_blank">
                             <svg t="1618535015853" class="y-icon-svg" viewBox="0 0 1024 1024" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" p-id="1901" width="200" height="200">
                                 <path
@@ -112,7 +124,7 @@
                             </svg>
                             <span class="y-social-text">知乎</span>
                         </a>
-                        <a href="https://github.com/ctem049">
+                        <a href="https://github.com/ctem049" target="_blank">
                             <svg t="1618969163721" class="y-icon-svg" viewBox="0 0 1024 1024" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" p-id="4017" width="200" height="200">
                                 <path
@@ -149,6 +161,59 @@
             </div>
         </div>
 
+        <div class="y-section" id="y-s2">
+            <div class="y-container-m">
+                <div class="y-tab-menu">
+                    <div class="y-tab-menu-s y-tab-menu-s-active"><a href="#">听</a></div>
+                    <div class="y-tab-menu-s"><a href="#">唱</a></div>
+                    <div class="y-tab-menu-s"><a href="#">作</a></div>
+                </div>
+                <div class="y-tab-content y-tab-card-container" id="y-s2-tab1">
+                    <div class="y-tab-card">
+                        <p class="y-tab-title">流行</p>
+                        <div class="y-card-container">
+                            <div class="y-card">
+                                <div class="y-card-img">
+                                    <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000000vKMVO0srdMF_1.jpg"
+                                        alt="">
+                                </div>
+                                <div class="y-card-text">
+                                    いぇす!ゆゆゆ☆ゆるゆり♪♪
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="y-tab-card">
+                        <p class="y-tab-title">古风</p>
+                        <div class="y-card-container">
+                            <div class="y-card">
+                                <div class="y-card-img">
+                                    <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000000vKMVO0srdMF_1.jpg"
+                                        alt="">
+                                </div>
+                                <div class="y-card-text">
+                                    いぇす!ゆゆゆ☆ゆるゆり♪♪
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="y-tab-card">
+                        <p class="y-tab-title">二次元</p>
+                        <div class="y-card-container">
+                            <div class="y-card">
+                                <div class="y-card-img">
+                                    <img src="https://y.gtimg.cn/music/photo_new/T002R300x300M000000vKMVO0srdMF_1.jpg"
+                                        alt="">
+                                </div>
+                                <div class="y-card-text">
+                                    いぇす!ゆゆゆ☆ゆるゆり♪♪
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- ono.js -->
     <script src="./js/ono.js"></script>
