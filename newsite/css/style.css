@@ -91,7 +91,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    
+
 }
 
 #y-s1-1 {
@@ -119,6 +119,7 @@ body {
 .y-logo-img {
     width: 10rem;
     height: 10rem;
+    /* resp */
     padding: 0 0;
     border-radius: 3rem;
     margin-right: 2rem;
@@ -126,6 +127,18 @@ body {
     display: inline;
     user-drag: none;
     -webkit-user-drag: none;
+}
+
+@media (max-width: 768px) {
+    .y-logo {
+        padding-right: 0;
+    }
+
+    .y-logo-img {
+        width: 8rem;
+        height: 8rem;
+        margin-right: 1rem;
+    }
 }
 
 @keyframes rotation {
@@ -150,11 +163,20 @@ body {
 .y-ptitle {
     display: inline;
     font-size: 4.5rem;
+    /* resp */
     font-weight: 300;
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: .5rem;
     vertical-align: middle;
+}
+
+
+@media (max-width: 1280px) {
+    .y-ptitle {
+        font-size: 3rem;
+        /* resp */
+    }
 }
 
 /* social */
@@ -182,6 +204,13 @@ body {
     vertical-align: middle;
 }
 
+
+@media (max-width: 1280px) {
+    .y-social-text {
+        display: none;
+    }
+}
+
 .y-icon-svg {
     vertical-align: middle;
     width: 1.5em;
@@ -205,7 +234,15 @@ body {
     right: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* resp */
     margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .y-tags {
+        grid-template-columns: 1fr;
+        /* resp */
+    }
 }
 
 .y-tag {
@@ -231,7 +268,31 @@ body {
     }
 
     to {
-        font-size: 7rem;
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    @keyframes swing {
+        from {
+            font-size: 3rem;
+        }
+
+        to {
+            font-size: 5rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    @keyframes swing {
+        from {
+            font-size: 2rem;
+        }
+
+        to {
+            font-size: 3rem;
+        }
     }
 }
 
@@ -377,13 +438,15 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* resp */
+    grid-template-columns: 1fr 1fr;
+    /* resp */
     row-gap: 1rem;
 }
 
 @media (max-width: 1024px) {
     .y-card2-container {
-        grid-template-columns: 1fr;/* 1列 */
+        grid-template-columns: 1fr;
+        /* resp */
     }
 }
 
@@ -436,6 +499,7 @@ body {
     text-decoration: none;
     transition: all 0.5s;
 }
+
 .y-card2-text a:hover {
     color: #4169E1;
     text-shadow: 0 0 1rem #87CEEB;
@@ -455,16 +519,19 @@ body {
 #y-s3 {
     position: relative;
 }
+
 .y-s3-tab-container {
     position: relative;
     width: 100%;
     height: 100%;
 }
+
 .y-s3-tab {
     width: 100%;
     height: 100%;
     position: absolute;
-    top:0;left:0;
+    top: 0;
+    left: 0;
 }
 
 #y-s3-t1 {
@@ -490,16 +557,18 @@ body {
 
 .y-s4-img {
     margin-top: 5rem;
-    margin-left: 7rem; /* resp */
+    margin-left: 7rem;
+    /* resp */
     position: relative;
-    width: fit-content; /* resp */
+    width: fit-content;
+    /* resp */
     border: 5px solid #708de4;
     border-radius: 5px;
     box-shadow: 0 0 1rem #87CEEB;
     height: fit-content;
 }
 
-.y-s4-img img{
+.y-s4-img img {
     width: 100%;
     object-fit: fill;
 }
@@ -514,13 +583,13 @@ body {
     padding-right: 8rem;
     box-sizing: border-box;
     text-align: right;
-    font-family: '微软雅黑',sans-serif;
+    font-family: '微软雅黑', sans-serif;
 }
 
 
 .y-s4-text-title {
     color: #e9686b;
-    font-family: '幼圆','微软雅黑',sans-serif;
+    font-family: '幼圆', '微软雅黑', sans-serif;
     font-weight: bold;
     font-size: 4rem;
     margin: 0;
@@ -539,6 +608,7 @@ body {
     color: #4169E1;
     transition: all 0.2s;
 }
+
 .y-s4-text a:hover {
     text-shadow: 0 0 1rem #87CEEB;
 }
