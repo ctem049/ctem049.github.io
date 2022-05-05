@@ -33,7 +33,7 @@ var app = new Vue({
                     },
                 ]
             },
-            
+
             {
                 type: '中国风',
                 songs: [
@@ -64,7 +64,7 @@ var app = new Vue({
                     }
                 ]
             },
-            
+
             {
                 type: '二次元',
                 songs: [
@@ -101,7 +101,12 @@ var app = new Vue({
                 ]
             }
         ],
-        s2tab: 1
+        s2tab: 1,
+        s4tab: 1,
+        currentSection: 1,
+        scrolling: false,
+        timeId: 0,
+        lastScrolling: window.pageYOffset,
     },
     methods: {
         daf(value, fmt = 'yyyy.MM.dd') {
@@ -109,6 +114,82 @@ var app = new Vue({
         },
         s2tabswitch(tab) {
             this.s2tab = tab
+        },
+        s4tabswitch(tab) {
+            this.s4tab = tab
+        },
+
+        //改变左边side栏
+        /*         handleChangeLeftSide(index) {
+                    this.selectedMenuId = index;
+                    this.$el.querySelector(`#id${index}`).scrollIntoView({
+                        behavior: "smooth", // 平滑过渡
+                        block: "start", // 上边框与视窗顶部平齐。默认值
+                    });
+                    this.listBoxState = false; //在data中定义一个初始化值true
+        
+                    let timeId;
+                    clearTimeout(timeId);
+                    timeId = setTimeout(() => {
+                        this.listBoxState = true;
+                    }, 1000);
+                },
+         */
+        //滚动右侧事件
+        scrollToTop() {
+            var domHight = document.body.offsetHeight;
+            // dom滚动位置
+            // var scrollTop =
+            var scrollTop = window.pageYOffset
+            // if (window.pageYOffset != this.lastScrolling) return
+            // console.log(scrollTop)
+            //   window.pageYOffset ||
+            //   document.documentElement.scrollTop ||
+            //   document.body.scrollTop;
+            var currentOffsetTop = document.getElementById(`y-s${this.currentSection}`).offsetTop;
+            var currentScrollHeight = document.getElementById(`y-s${this.currentSection}`).scrollHeight;
+
+            // 如果滚动了至少 20%高度，则滚动到最近的窗口，否则回到原窗口
+            if ((((scrollTop - currentOffsetTop) * 5) > currentScrollHeight) || (((currentOffsetTop - scrollTop) * 5) > currentScrollHeight)) {
+                if ((scrollTop - currentOffsetTop) > 0) {
+                    if (document.getElementById(`y-s${this.currentSection + 1}`)) {
+                        this.scrollTo(this.currentSection + 1)
+                    } else {
+                        this.scrollTo(this.currentSection)
+                    }
+                } else {
+                    if (document.getElementById(`y-s${this.currentSection - 1}`)) {
+                        this.scrollTo(this.currentSection - 1)
+                    } else {
+                        this.scrollTo(this.currentSection)
+                    }
+                }
+            } else {
+                // console.log('<20%')
+                this.scrollTo(this.currentSection)
+            }
+        },
+        scrollTo(i) {
+            this.currentSection = i
+            console.log('scrolling to ', i)
+            document.getElementById(`y-s${i}`).scrollIntoView({
+                behavior: 'smooth'
+            })
         }
+    },
+    mounted() {
+        let timeId;
+        window.addEventListener(
+            "scroll",
+            () => {
+                // 页面滚动停止100毫秒后才会执行下面的函数。
+                clearTimeout(timeId);
+                timeId = setTimeout(() => {
+                this.scrollToTop();
+                }, 100);
+            },
+            true
+        );
     }
 })
+

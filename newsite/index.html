@@ -14,21 +14,21 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <div id="y-container">
+<body ref="body">
+    <div id="y-container" ref="container">
         <div class="y-menu">
             <div class="y-menu-logo">
                 <img class="y-menu-logo-img" src="./ono.svg">
                 <span class="y-menu-ptitle">OnO's World</span>
             </div>
             <div class="y-menu-links">
-                <a href="#">#首页</a>
-                <a href="#">#音乐</a>
-                <a href="#">#游戏</a>
-                <a href="#">#二次元</a>
+                <a @click.prevent="scrollTo(1)" :class="{'y-menu-links-active':currentSection==1}" href="#">#首页</a>
+                <a @click.prevent="scrollTo(2)" :class="{'y-menu-links-active':currentSection==2}" href="#">#音乐</a>
+                <a @click.prevent="scrollTo(3)" :class="{'y-menu-links-active':currentSection==3}" href="#">#游戏</a>
+                <a @click.prevent="scrollTo(4)" :class="{'y-menu-links-active':currentSection==4}" href="#">#二次元</a>
             </div>
         </div>
-        <div class="y-section" id="y-s1">
+        <div class="y-section" id="y-s1" ref="ys1">
             <div id="y-s1-1">
                 <div class="y-center">
                     <div class="y-logo">
@@ -149,19 +149,19 @@
             <div id="y-s1-2">
                 <div class="y-tags">
                     <div class="y-tag">
-                        <a href="#" class="">#音乐</a>
+                        <a @click.prevent="scrollTo(2)" href="#" class="">#音乐</a>
                     </div>
                     <div class="y-tag">
-                        <a href="#" class="">#游戏</a>
+                        <a @click.prevent="scrollTo(3)" href="#" class="">#游戏</a>
                     </div>
                     <div class="y-tag">
-                        <a href="#" class="">#二次元</a>
+                        <a @click.prevent="scrollTo(4)" href="#" class="">#二次元</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="y-section" id="y-s2">
+        <div class="y-section" id="y-s2" ref="ys2">
             <div class="y-container-m">
                 <div class="y-tab-menu">
                     <div class="y-tab-menu-s" :class="{'y-tab-menu-s-active': s2tab==1}"><a
@@ -274,7 +274,7 @@
             </div>
         </div>
 
-        <div class="y-section" id="y-s3">
+        <div class="y-section" id="y-s3" ref="ys3">
             <div class="y-s3-tab-container">
                 <div class="y-s3-tab" id="y-s3-t1">
                     <div class="y-container-l">
@@ -282,38 +282,92 @@
                             <img src="./img/logo_lol.png" alt="">
                         </div>
                         <div class="y-s3-text">
-                            <p class="y-s3-title">英雄联盟</p>
-                            <p>from 2013.8</p>
-                            <p>擅长英雄：</p>
-                            <p>提莫 乐芙兰 崔丝塔娜</p>
+                            <div class="y-s3-t1-title">擅长英雄</div>
+                            <div class="y-s3-t1-cc">
+                                <div class="y-s3-t1-c">
+                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Teemo.png" alt="">
+                                </div>
+                                <div class="y-s3-t1-c">
+                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Leblanc.png" alt="">
+                                </div>
+                                <div class="y-s3-t1-c">
+                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Ahri.png" alt="">
+                                </div>
+                                <div class="y-s3-t1-c">
+                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Zoe.png" alt="">
+                                </div>
+                                <div class="y-s3-t1-c">
+                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Kindred.png" alt="">
+                                </div>
+                                <div class="y-s3-t1-c">
+                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Quinn.png" alt="">
+                                </div>
+                                <div class="y-s3-t1-c">
+                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Lillia.png" alt="">
+                                </div>
+                                <div class="y-s3-t1-c">
+                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Neeko.png" alt="">
+                                </div>
+                                <div class="y-s3-t1-c">
+                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Tristana.png" alt="">
+                                </div>
+                                <div class="y-s3-t1-c">
+                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Shaco.png" alt="">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="y-section" id="y-s4">
+        <div class="y-section" id="y-s4" ref="ys4">
             <div class="y-s4-container">
                 <div class="y-s4-c2">
                     <div class="y-s4-img">
-                        <img src="./img/yryr.jpg" alt="">
+                        <img v-show="s4tab==1" id="y-s4-t1-img" src="./img/yryr.jpg" alt="">
+                        <img v-show="s4tab==2" id="y-s4-t2-img" src="./img/flyx.jpg" alt="">
+                        <img v-show="s4tab==3" id="y-s4-t2-img" src="./img/hsl.jpg" alt="">
                     </div>
                     <div class="y-s4-tab-container">
-                        <div class="y-s4-tab">
-                            <div style="width: 5rem;height: 5rem;"></div>
+                        <div class="y-s4-tab" :class="{'y-s4-tab-active': s4tab==1}" @click.prevent="s4tabswitch(1)">
+                            <img src="./img/yryr.jpg" alt="">
+                        </div>
+                        <div class="y-s4-tab" :class="{'y-s4-tab-active': s4tab==2}" @click.prevent="s4tabswitch(2)">
+                            <img src="./img/flyx.jpg" alt="">
+                        </div>
+                        <div class="y-s4-tab" :class="{'y-s4-tab-active': s4tab==3}" @click.prevent="s4tabswitch(3)">
+                            <img src="./img/hsl.jpg" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="y-s4-text">
-                    <p class="y-s4-text-title">摇曳百合</p>
-                    <p class="y-s4-text-subtitle">ゆるゆり</p>
+                <div class="y-s4-text" id="y-s4-t1" v-show="s4tab==1">
+                    <p class="y-s4-text-title y-font-mincho">ゆるゆり</p>
+                    <p class="y-s4-text-subtitle">摇曳百合</p>
                     <p>轻百合神作。</p>
-                    <p><a href="https://i.ctm49.com/others/188.html">《摇曳百合》——好看！好看！好看！</a></p>
+                    <p><a href="https://i.ctm49.com/others/188.html" target="_blank">《摇曳百合》——好看！好看！好看！</a></p>
                     <p><a href="https://i.ctm49.com/others/162.html" target="_blank">《摇曳百合》十周年专辑&动漫</a></p>
                     <p class="y-s4-text-links">
                         <a href="https://yuruyuri.com/" target="_blank">官网</a> <a href="https://bgm.tv/subject/14588" target="_blank">bangumi</a> <a href="https://zh.moegirl.org.cn/%E6%91%87%E6%9B%B3%E7%99%BE%E5%90%88" target="_blank">萌娘百科</a>
                     </p>
-
+                </div>
+                <div class="y-s4-text" id="y-s4-t2" v-show="s4tab==2">
+                    <p class="y-s4-text-title">风灵玉秀</p>
+                    <p class="y-s4-text-subtitle"></p>
+                    <p>国漫，深得我心。</p>
+                    <p><a href="https://i.ctm49.com/others/297.html" target="_blank">「风灵玉秀」——深得我心的第二好看的番</a></p>
+                    <p class="y-s4-text-links">
+                        <a href="https://www.bilibili.com/bangumi/media/md6038" target="_blank">b站正片</a> <a href="https://weibo.com/u/7546736360" target="_blank">官方微博</a> <a href="https://bgm.tv/subject/212333" target="_blank">bangumi</a>
+                    </p>
+                </div>
+                <div class="y-s4-text" id="y-s4-t3" v-show="s4tab==3">
+                    <p class="y-s4-text-title y-font-mincho" style="font-size: 2rem;">ハッピーシュガーライフ</p>
+                    <p class="y-s4-text-subtitle">Happy Sugar Life</p>
+                    <p>恐怖 猎奇 致郁</p>
+                    <p><a href="https://i.ctm49.com/others/301.html" target="_blank">《happy sugar life》：扭曲的世界，扭曲的爱</a></p>
+                    <p class="y-s4-text-links">
+                        <a href="https://archive.genco.co.jp/happysugarlife/" target="_blank">官网(镜像)</a> <a href="https://bgm.tv/subject/240828" target="_blank">bangumi</a> <a href="https://zh.moegirl.org.cn/Happy_Sugar_Life" target="_blank">萌娘百科</a>
+                    </p>
                 </div>
             </div>
         </div>
