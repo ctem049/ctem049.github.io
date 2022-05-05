@@ -24,6 +24,10 @@ body {
     }
 }
 
+[v-cloak] {
+    display: none;
+}
+
 /* menu */
 .y-menu {
     width: calc(100vw - 0.4rem);
