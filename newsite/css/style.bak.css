@@ -6,28 +6,10 @@ body {
     overflow-x: hidden;
 }
 
-@media (min-width: 1280px) {
-    html {
-        font-size: 18px;
-    }
-}
-
-@media (min-width: 1600px) {
-    html {
-        font-size: 24px;
-    }
-}
-
-@media (min-width: 2000px) {
-    html {
-        font-size: 32px;
-    }
-}
-
 /* menu */
 .y-menu {
     width: calc(100vw - 0.4rem);
-    height: 4rem;
+    height: 6rem;
     position: fixed;
     z-index: 1;
     padding-left: 7rem;
@@ -100,6 +82,7 @@ body {
 @media (max-width: 768px) {
     .y-menu {
         padding: 0;
+        height: 4rem;
     }
 
     .y-menu-logo {
@@ -182,10 +165,17 @@ html,
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    padding-top: 4rem;
+    padding-top: 6rem;
     /* margin-top: 20rem; */
     scroll-snap-align: start;
     scroll-snap-stop: always;
+}
+
+
+@media (max-width: 768px) {
+    .y-section {
+        padding-top: 4rem;
+    }
 }
 
 /* section 1 */
@@ -427,7 +417,6 @@ html,
     width: 100%;
     box-sizing: border-box;
     padding: 1rem 10rem;
-    padding-top: 0;
     /* resp */
     display: flex;
     flex-direction: column;
@@ -459,7 +448,7 @@ html,
     padding: 1rem;
     border: 1px solid #676b6b;
     flex-grow: 1;
-    /* margin-bottom: 1rem; */
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -490,7 +479,7 @@ html,
 
 .y-tab-menu a {
     font-family: '仿宋', '宋体', serif;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: #000;
     text-align: center;
     text-decoration: none;
@@ -523,7 +512,6 @@ html,
 .y-card-container {
     display: flex;
     overflow-x: auto;
-    overflow-y: hidden;
 }
 
 .y-card-container::-webkit-scrollbar {
@@ -538,15 +526,37 @@ html,
 
 .y-card {
     flex-shrink: 0;
-    /* margin-right: 0.5rem; */
+    margin-right: 2rem;
 }
 
 .y-card-img {
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
     overflow: hidden;
     transition: all 2s;
 }
+
+@media (max-height: 860px) {
+    .y-card-img {
+        width: 6rem;
+        height: 6rem;
+    }
+}
+
+@media (min-height: 1024px) {
+    .y-card-img {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media (min-height: 1280px) {
+    .y-card-img {
+        width: 14rem;
+        height: 14rem;
+    }
+}
+
 
 .y-card-img:hover {
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -568,9 +578,9 @@ html,
 .y-card-text {
     width: 8rem;
     height: 2rem;
-    padding: 0.1rem 0;
+    padding: 0.2rem 0;
     font-family: "等线", "微软雅黑", sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 300;
     word-break: break-all;
 }
@@ -906,7 +916,7 @@ html,
 
 .y-s4-tab {
     position: relative;
-    width: 12vw;
+    width: 20vw;
     margin-right: 0.5rem;
     /* box-sizing: content-box; */
     border: 2px solid rgba(0, 0, 0, 0);
