@@ -64,6 +64,11 @@ body {
     transform: scale(1.2);
 }
 
+.y-menu-logo a {
+    color: initial;
+    text-decoration: none;
+}
+
 .y-menu-logo,
 .y-menu-links {
     display: inline-block;
