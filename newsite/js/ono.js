@@ -107,6 +107,8 @@ var app = new Vue({
         scrolling: false,
         timeId: 0,
         lastScrolling: window.pageYOffset,
+        touchx: 0,
+        touchy: 0
     },
     methods: {
         daf(value, fmt = 'yyyy.MM.dd') {
@@ -137,44 +139,25 @@ var app = new Vue({
          */
         //滚动右侧事件
         scrollToTop() {
-            var domHight = document.body.offsetHeight;
-            // dom滚动位置
-            // var scrollTop =
-            var scrollTop = window.pageYOffset
-            // if (window.pageYOffset != this.lastScrolling) return
-            // console.log(scrollTop)
-            //   window.pageYOffset ||
-            //   document.documentElement.scrollTop ||
-            //   document.body.scrollTop;
-            var currentOffsetTop = document.getElementById(`y-s${this.currentSection}`).offsetTop;
-            var currentScrollHeight = document.getElementById(`y-s${this.currentSection}`).scrollHeight;
-
-            // 如果滚动了至少 20%高度，则滚动到最近的窗口，否则回到原窗口
-            if ((((scrollTop - currentOffsetTop) * 5) > currentScrollHeight) || (((currentOffsetTop - scrollTop) * 5) > currentScrollHeight)) {
-                if ((scrollTop - currentOffsetTop) > 0) {
-                    if (document.getElementById(`y-s${this.currentSection + 1}`)) {
-                        this.scrollTo(this.currentSection + 1)
-                    } else {
-                        this.scrollTo(this.currentSection)
-                    }
-                } else {
-                    if (document.getElementById(`y-s${this.currentSection - 1}`)) {
-                        this.scrollTo(this.currentSection - 1)
-                    } else {
-                        this.scrollTo(this.currentSection)
-                    }
+            var scrollTop = this.$refs.container.scrollTop
+            for (var i = 1; i < 5; i++) {
+                var offsetTop = document.getElementById(`y-s${i}`).offsetTop
+                var scrollHeight = document.getElementById(`y-s${i}`).scrollHeight
+                // console.log(i, scrollTop, offsetTop, scrollHeight)
+                if (scrollTop == offsetTop) {
+                    this.scrollTo(i)
+                    break
                 }
-            } else {
-                // console.log('<20%')
-                this.scrollTo(this.currentSection)
             }
         },
         scrollTo(i) {
             this.currentSection = i
-            console.log('scrolling to ', i)
-            document.getElementById(`y-s${i}`).scrollIntoView({
-                behavior: 'smooth'
-            })
+            // console.log('scrolling', i)
+        },
+        scrollSetTo(i) {
+            this.currentSection = i
+            // console.log('scrolling to ', i)
+            document.getElementById(`y-s${i}`).scrollIntoView()
         }
     },
     mounted() {
@@ -185,11 +168,21 @@ var app = new Vue({
                 // 页面滚动停止100毫秒后才会执行下面的函数。
                 clearTimeout(timeId);
                 timeId = setTimeout(() => {
-                this.scrollToTop();
+                    this.scrollToTop();
                 }, 100);
             },
             true
-        );
+        )
+        /* window.addEventListener('touchstart',(e)=>{
+            this.touchx = e.changedTouches[0].pageX;
+            this.touchy = e.changedTouches[0].pageY;
+        }) */
+        window.addEventListener('touch', () => {
+            clearTimeout(timeId);
+            timeId = setTimeout(() => {
+                this.scrollToTop();
+            }, 100);
+        })
     }
 })
 
