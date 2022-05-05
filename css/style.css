@@ -600,7 +600,11 @@ html,
     word-break: break-all;
 }
 
-@media (max-height: 860px) {
+@media (max-height: 720px) {
+    .y-card-img {
+        width: 5rem;
+        height: 5rem;
+    }
     .y-card-text {
         width: 6rem;
         font-size: 0.7rem;
