@@ -31,6 +31,16 @@ var app = new Vue({
                         img: 'https://p1.music.126.net/Ax-zrmAPBrASWxT92t3fdw==/109951164000242827.jpg',
                         url: 'https://music.163.com/#/song?id=1358848433'
                     },
+                    {
+                        name: '红玫瑰',
+                        img: 'http://p2.music.126.net/WJgLE2ImnLgqPPLQSlF7iQ==/114349209289440.jpg',
+                        url: 'https://music.163.com/#/song?id=65126'
+                    },
+                    {
+                        name: '就差一点点',
+                        img: 'http://p1.music.126.net/wZtz9KJcInYduyXjXLrLog==/109951163106300650.jpg',
+                        url: 'https://music.163.com/#/song?id=529814453'
+                    },
                 ]
             },
 
@@ -61,6 +71,21 @@ var app = new Vue({
                         name: '寻常歌',
                         img: 'http://p1.music.126.net/gg8utJDUGHfbyVd3tKXV_w==/109951164640667962.jpg',
                         url: 'https://music.163.com/#/song?id=1383011136'
+                    },
+                    {
+                        name: '牵丝戏',
+                        img: 'https://p1.music.126.net/Nd86SOcyCxU5Qu7jdZn_MQ==/7725168696876736.jpg',
+                        url: 'https://music.163.com/#/song?id=30352891'
+                    },
+                    {
+                        name: '吹灭小山河',
+                        img: 'http://p1.music.126.net/taWBQliW8wLh_pqXElAeww==/109951164923015271.jpg',
+                        url: 'https://music.163.com/#/song?id=1412559986'
+                    },
+                    {
+                        name: '年轮',
+                        img: 'http://p1.music.126.net/5D4hfLdRezRlax4OWiPgnw==/2899412164997218.jpg',
+                        url: 'https://music.163.com/#/song?id=32619064'
                     }
                 ]
             },
@@ -94,9 +119,29 @@ var app = new Vue({
                         url: 'https://music.163.com/#/song?id=725692'
                     },
                     {
+                        name: '勾指起誓',
+                        img: 'http://p1.music.126.net/eMyCr0gv0kPGlew9XTNjyA==/109951163944178164.jpg',
+                        url: 'https://music.163.com/#/song?id=1345872140'
+                    },
+                    {
                         name: 'world.execute (me) ;',
                         img: 'http://p1.music.126.net/-OxCLbGs-JxKtPaBCo1yuw==/18801648835570109.jpg',
                         url: 'https://music.163.com/#/song?id=435278010'
+                    },
+                    {
+                        name: 'アイの庭',
+                        img: 'http://p1.music.126.net/FiMHky6tkpWlxyXWvSJNhA==/913694162681970.jpg',
+                        url: 'https://music.163.com/#/song?id=565845'
+                    },
+                    {
+                        name: '「交织together」',
+                        img: 'http://p2.music.126.net/JBo0QEBpHlzUNpTd5P4zuw==/109951162861954189.jpg',
+                        url: 'https://music.163.com/#/song?id=460478768'
+                    },
+                    {
+                        name: 'Bad Apple!!',
+                        img: 'http://p2.music.126.net/NpC1cmlGABqAXyG6x9nENg==/109951166027157822.jpg',
+                        url: 'https://music.163.com/#/song?id=22645196'
                     }
                 ]
             }
