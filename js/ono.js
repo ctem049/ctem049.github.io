@@ -190,7 +190,7 @@ var app = new Vue({
             }
             this.currentSection = i
             // console.log('scrolling to ', i)
-            document.getElementById(`y-s${i}`).scrollIntoView()
+            this.$refs[`ys${i}`].scrollIntoView()
         }
     },
     mounted() {
