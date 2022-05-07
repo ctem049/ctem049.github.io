@@ -149,6 +149,7 @@ var app = new Vue({
         s2tab: 1,
         s4tab: 1,
         currentSection: 1,
+        targetSection: 1,
         scrolling: false,
         timeId: 0,
         lastScrolling: window.pageYOffset,
@@ -168,7 +169,17 @@ var app = new Vue({
         },
         scrollToTop() {
             // 滚动检测
-            var scrollTop = this.$refs.container.scrollTop
+            var scrollTop = this.$refs.ycontainer.scrollTop
+            // 菜单透明度
+            var topOT = this.$refs.ys1.offsetTop
+            var topSH = this.$refs.ys1.scrollHeight
+            if (scrollTop < topSH) {
+                var o = (scrollTop - topOT) / topSH
+                // console.log(o)
+                this.$refs.ymenu.style.opacity = o
+            } else {
+                this.$refs.ymenu.style.opacity = 1
+            }
             for (var i = 1; i < 5; i++) {
                 // var offsetTop = document.getElementById(`y-s${i}`).offsetTop
                 // var scrollHeight = document.getElementById(`y-s${i}`).scrollHeight
@@ -182,14 +193,16 @@ var app = new Vue({
         },
         scrollTo(i) {
             this.currentSection = i
-            // console.log('scrolling', i)
+            this.targetSection = i
+            console.log('scrolling', i)
         },
         scrollSetTo(i) {
             if ((i < 1) || (i > 4)) {
                 return
             }
-            this.currentSection = i
-            // console.log('scrolling to ', i)
+            // this.currentSection = i
+            console.log('scrolling to ', i)
+            this.targetSection = i
             this.$refs[`ys${i}`].scrollIntoView()
         }
     },
@@ -201,9 +214,10 @@ var app = new Vue({
             "wheel",
             (e) => {
                 e.preventDefault();
+                if (this.targetSection!=this.currentSection) return
                 if (e.deltaY > 0) {
                     this.scrollSetTo(this.currentSection + 1)
-                } else {
+                } else if (e.deltaY < 0) {
                     this.scrollSetTo(this.currentSection - 1)
                 }
             }, { passive: false, capture: 'bubble' }

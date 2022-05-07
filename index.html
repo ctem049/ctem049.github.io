@@ -17,8 +17,8 @@
 </head>
 
 <body ref="body">
-    <div id="y-container" v-cloak ref="container">
-        <div class="y-menu" :class="{'y-menu-hide': currentSection==1}">
+    <div id="y-container" v-cloak ref="ycontainer">
+        <div class="y-menu" ref="ymenu" style="opacity: 0">
             <div @click.prevent="scrollSetTo(1)" class="y-menu-logo">
                 <a href="https://w.ctm49.com">
                     <img class="y-menu-logo-img" src="./ono.svg">
