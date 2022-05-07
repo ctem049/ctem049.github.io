@@ -153,7 +153,8 @@ var app = new Vue({
         timeId: 0,
         lastScrolling: window.pageYOffset,
         touchx: 0,
-        touchy: 0
+        touchy: 0,
+        yss: []
     },
     methods: {
         daf(value, fmt = 'yyyy.MM.dd') {
@@ -165,31 +166,15 @@ var app = new Vue({
         s4tabswitch(tab) {
             this.s4tab = tab
         },
-
-        //改变左边side栏
-        /*         handleChangeLeftSide(index) {
-                    this.selectedMenuId = index;
-                    this.$el.querySelector(`#id${index}`).scrollIntoView({
-                        behavior: "smooth", // 平滑过渡
-                        block: "start", // 上边框与视窗顶部平齐。默认值
-                    });
-                    this.listBoxState = false; //在data中定义一个初始化值true
-        
-                    let timeId;
-                    clearTimeout(timeId);
-                    timeId = setTimeout(() => {
-                        this.listBoxState = true;
-                    }, 1000);
-                },
-         */
-        //滚动右侧事件
         scrollToTop() {
+            // 滚动检测
             var scrollTop = this.$refs.container.scrollTop
             for (var i = 1; i < 5; i++) {
-                var offsetTop = document.getElementById(`y-s${i}`).offsetTop
-                var scrollHeight = document.getElementById(`y-s${i}`).scrollHeight
+                // var offsetTop = document.getElementById(`y-s${i}`).offsetTop
+                // var scrollHeight = document.getElementById(`y-s${i}`).scrollHeight
                 // console.log(i, scrollTop, offsetTop, scrollHeight)
-                if (scrollTop == offsetTop) {
+                var offsetTop = this.$refs[`ys${i}`].offsetTop
+                if (((scrollTop - offsetTop) < 2) && ((offsetTop - scrollTop) < 2)) {
                     this.scrollTo(i)
                     break
                 }
@@ -200,34 +185,39 @@ var app = new Vue({
             // console.log('scrolling', i)
         },
         scrollSetTo(i) {
+            if ((i < 1) || (i > 4)) {
+                return
+            }
             this.currentSection = i
             // console.log('scrolling to ', i)
             document.getElementById(`y-s${i}`).scrollIntoView()
         }
     },
     mounted() {
-        let timeId;
         window.addEventListener(
-            "scroll",
-            () => {
-                // 页面滚动停止100毫秒后才会执行下面的函数。
-                clearTimeout(timeId);
-                timeId = setTimeout(() => {
-                    this.scrollToTop();
-                }, 100);
-            },
-            true
+            "scroll", this.scrollToTop, true
+        )
+        window.addEventListener(
+            "wheel",
+            (e) => {
+                e.preventDefault();
+                if (e.deltaY > 0) {
+                    this.scrollSetTo(this.currentSection + 1)
+                } else {
+                    this.scrollSetTo(this.currentSection - 1)
+                }
+            }, { passive: false, capture: 'bubble' }
         )
         /* window.addEventListener('touchstart',(e)=>{
             this.touchx = e.changedTouches[0].pageX;
             this.touchy = e.changedTouches[0].pageY;
         }) */
-        window.addEventListener('touch', () => {
+        /* window.addEventListener('touch', () => {
             clearTimeout(timeId);
             timeId = setTimeout(() => {
                 this.scrollToTop();
             }, 100);
-        })
+        }) */
     }
 })
 

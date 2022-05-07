@@ -1,118 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <script src="https://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
-</head>
-
-<body>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav1 {
-            display: block;
-            width: 40px;
-            height: 40px;
-            text-align: center;
-            line-height: 40px;
-            background: #eee;
-            margin: 10px 0;
-        }
-
-        .current {
-            color: #fff;
-            background: red;
-        }
-    </style>
-    <div class="container">
-        <div class="wrapper">
-            <div class="section" style="height:500px;width:100%" v-for="(item, index) in list" :key="index"
-                :style="{'height':index==0?'1000px':'500px'}">
-                <div style="width:100%;height:100%;font-size:30px;text-align:center;font-weight:bold;color:#fff;"
-                    :style="{'background':item.backgroundcolor}">{{item.name}}</div>
-            </div>
-        </div>
-        <div id="nac" style="height:500px;"></div>
-        <nav style="position:fixed;right:30px;top:300px;"><a class="nav1" v-for="(item, index) in navList" :key="index"
-                @click="jump(index)" :class="index==0?'current':''">{{item}}</a></nav>
-    </div>
-    <script>new Vue({
-            el: ".container",
-            data() {
-                return {
-                    scroll: '',
-                    list: [{
-                        name: "第一条",
-                        backgroundcolor: "#90B2A3"
-                    },
-                    {
-                        name: "第二条",
-                        backgroundcolor: "#A593B2"
-                    },
-                    {
-                        name: "第三条",
-                        backgroundcolor: "#A7B293"
-                    },
-                    {
-                        name: "第四条",
-                        backgroundcolor: "#0F2798"
-                    },
-                    {
-                        name: "第五条",
-                        backgroundcolor: "#0A464D"
-                    }],
-                    navList: [1, 2, 3, 4, 5]
-                }
-            },
-
-            methods: {
-                dataScroll: function () {
-                    this.scroll = document.documentElement.scrollTop || document.body.scrollTop;
-                },
-
-                jump(index) {
-                    let jump = document.getElementsByClassName('section');
-                    // 获取需要滚动的距离
-                    let total = jump[index].offsetTop;
-                    // Chrome
-                    document.body.scrollTop = total;
-                    // Firefox
-                    document.documentElement.scrollTop = total;
-                    // Safari
-                    window.pageYOffset = total;
-                    // $('html, body').animate({
-                    // 'scrollTop': total
-                    // }, 400);
-                },
-                loadSroll: function () {
-                    var self = this;
-                    var $navs = $(".nav1");
-                    var sections = document.getElementsByClassName('section');
-                    for (var i = sections.length - 1; i >= 0; i--) {
-                        if (self.scroll >= sections[i].offsetTop - 100) {
-                            $navs.eq(i).addClass("current").siblings().removeClass("current")
-                            break;
-                        }
-                    }
-                }
-            },
-            watch: {
-                scroll: function () {
-                    this.loadSroll()
-                }
-            },
-            mounted() {
-                window.addEventListener('scroll', this.dataScroll);
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> 鼠标滚动一屏-JavaScript </title>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
             }
-        })</script>
-</body>
-
+            html,body{
+                width: 100vw;
+                height: 100vh;
+                text-align: center;
+                font-size: 100px;
+                overflow: hidden;
+            }
+            .box{
+                width: 100vw;
+                height: 500vh;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+            .box div{
+                width: 100vw;
+                height: 100vh;
+            }
+            .box div.item1{
+                background: red;
+            }
+            .box div.item2{
+                background: yellow;
+            }
+            .box div.item3{
+                background: gold;
+            }
+            .box div.item4{
+                background: green;
+            }
+            .box div.item5{
+                background: blue;
+            }
+            #list{
+                width: 50px;
+                height: 250px;
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                margin-top: -125px;
+                font-size: 35px;
+            }
+            #list li{
+                width: 50px;
+                height: 50px;
+                list-style: none;
+                line-height: 50px;
+                text-align: center;
+                background-color: #E3E3E3;
+            }
+            #list li.active{
+                color: #FFF;
+                font-weight: 900;
+                background: greenyellow;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="box">
+            <div class="item1">屏幕01</div>
+            <div class="item2">屏幕02</div>
+            <div class="item3">屏幕03</div>
+            <div class="item4">屏幕04</div>
+            <div class="item5">屏幕05</div>
+        </div>
+        <ul id="list">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <script type="text/javascript">
+            var oBox = document.getElementById("box");
+            var oList = document.getElementById("list");
+            var oLi = oList.getElementsByTagName("li");
+//        var oLi = document.querySelectorAll("#list li");
+            
+            function on( obj,eventName,fn ){
+                if( obj.addEventListener ){
+                    obj.addEventListener(eventName,fn);
+                }else{
+                    obj.attachEvent(eventName,fn);
+                };
+            };
+            
+            function handler(ev){
+                var num = 0;
+                var ev = window.event || ev;
+                console.log(ev.deltaY)
+                if( ev.deltaY == -120 || ev.detail == 3 ){
+                    num ++;
+                    if( num > 4 ){
+                        num = 4;
+                    };
+                }else{
+                    num --;
+                    if( num < 0 ){
+                        num = 0;
+                    };
+                };
+                oBox.style.top = -num * 100 + "vh";
+                for( var i = 0,len = oLi.length;i < len;i ++ ){
+                    oLi[i].className = '';
+                }
+                oLi[num].className = 'active';
+            };
+            
+            on( document,'wheel',handler );
+            on( document,'DOMMouseScroll',handler );
+            
+        </script>
+    </body>
 </html>
