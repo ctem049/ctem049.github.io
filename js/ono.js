@@ -155,6 +155,7 @@ var app = new Vue({
         lastScrolling: window.pageYOffset,
         touchx: 0,
         touchy: 0,
+        isTop: true,
         yss: []
     },
     methods: {
@@ -168,8 +169,14 @@ var app = new Vue({
             this.s4tab = tab
         },
         scrollToTop() {
+            // window.requestAnimationFrame()
             // 滚动检测
             var scrollTop = this.$refs.ycontainer.scrollTop
+            if (scrollTop == 0) {
+                this.isTop = true
+            } else {
+                this.isTop = false
+            }
             // 菜单透明度
             var topOT = this.$refs.ys1.offsetTop
             var topSH = this.$refs.ys1.scrollHeight
@@ -185,7 +192,9 @@ var app = new Vue({
                 // var scrollHeight = document.getElementById(`y-s${i}`).scrollHeight
                 // console.log(i, scrollTop, offsetTop, scrollHeight)
                 var offsetTop = this.$refs[`ys${i}`].offsetTop
-                if (((scrollTop - offsetTop) < 2) && ((offsetTop - scrollTop) < 2)) {
+                // if (((scrollTop - offsetTop) < 1) && ((offsetTop - scrollTop) < 1)) {
+                if (scrollTop == offsetTop) {
+                    // console.log(offsetTop,scrollTop)
                     this.scrollTo(i)
                     break
                 }
@@ -194,34 +203,63 @@ var app = new Vue({
         scrollTo(i) {
             this.currentSection = i
             this.targetSection = i
-            console.log('scrolling', i)
+            // console.log('scrolling', i)
         },
         scrollSetTo(i) {
             if ((i < 1) || (i > 4)) {
                 return
             }
             // this.currentSection = i
-            console.log('scrolling to ', i)
+            // console.log('scrolling to ', i)
             this.targetSection = i
             this.$refs[`ys${i}`].scrollIntoView()
         }
     },
     mounted() {
-        window.addEventListener(
+        this.$refs.ycontainer.addEventListener(
             "scroll", this.scrollToTop, true
         )
-        window.addEventListener(
+        this.$refs.ycontainer.addEventListener(
             "wheel",
             (e) => {
-                e.preventDefault();
-                if (this.targetSection!=this.currentSection) return
+                e.preventDefault()
+                // console.log('cwheel,prevent', e)
+                if (this.targetSection != this.currentSection) return
+                // console.log('cwheel,prevent not return')
                 if (e.deltaY > 0) {
                     this.scrollSetTo(this.currentSection + 1)
                 } else if (e.deltaY < 0) {
                     this.scrollSetTo(this.currentSection - 1)
                 }
-            }, { passive: false, capture: 'bubble' }
+            }, { passive: false }
         )
+
+        for (var i = 1; i < 4; i++) {
+            this.$refs[`ys2t${i}`].addEventListener(
+                "wheel",
+                (e) => {
+                    var CH = e.currentTarget.clientHeight
+                    var ST = e.currentTarget.scrollTop
+                    var SH = e.currentTarget.scrollHeight
+                    // console.log(e.deltaY, CH, ST, SH)
+                    if (!(e.deltaY < 0 && ST == 0)) {
+                        if (!(e.deltaY > 0 && ((CH + ST - SH) < 2) && ((CH + ST - SH) > -2))) {
+                            if (this.currentSection == 2) {
+                                // console.log('stop')
+                                e.stopPropagation()
+                                return
+                            }
+                        } else {
+                            this.scrollToTop()
+                        }
+                    } else {
+                        this.scrollToTop()
+                    }
+                    e.preventDefault()
+                }, { passive: false }
+            )
+        }
+
         /* window.addEventListener('touchstart',(e)=>{
             this.touchx = e.changedTouches[0].pageX;
             this.touchy = e.changedTouches[0].pageY;

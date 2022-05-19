@@ -18,7 +18,7 @@
 
 <body ref="body">
     <div id="y-container" v-cloak ref="ycontainer">
-        <div class="y-menu" ref="ymenu" style="opacity: 0">
+        <div class="y-menu" ref="ymenu" v-show="!isTop" style="opacity: 0">
             <div @click.prevent="scrollSetTo(1)" class="y-menu-logo">
                 <a href="https://w.ctm49.com">
                     <img class="y-menu-logo-img" src="./ono.svg">
@@ -175,7 +175,7 @@
                     <div class="y-tab-menu-s" :class="{'y-tab-menu-s-active': s2tab==3}"><a
                             @click.prevent="s2tabswitch(3)" href="#">作</a></div>
                 </div>
-                <div class="y-tab-content y-tab-card-container" v-show="s2tab==1" id="y-s2-tab1">
+                <div class="y-tab-content y-tab-card-container" ref="ys2t1" v-show="s2tab==1" id="y-s2-tab1">
                     <div v-for="c in mcontent" class="y-tab-card">
                         <p class="y-tab-title">{{ c.type }}</p>
                         <div class="y-card-container">
@@ -190,7 +190,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="y-tab-content" id="y-s2-tab2" v-show="s2tab==2">
+                <div class="y-tab-content" id="y-s2-tab2" ref="ys2t2" v-show="s2tab==2">
                     <div class="y-card2-container">
                         <div class="y-card2">
                             <div class="y-card2-img">
@@ -224,7 +224,7 @@
                             </div>
                             <div class="y-card2-text">
                                 <p class="y-card2-title">得过且过的勇者</p>
-                                <p><a href="https://www.bilibili.com/audio/au2747099?type=1" target="_blank">🎧试听</a>
+                                <p><a href="https://www.bilibili.com/audio/au2747099" target="_blank">🎧试听</a>
                                 </p>
                             </div>
                         </div>
@@ -241,7 +241,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="y-tab-content" id="y-s2-tab3" v-show="s2tab==3">
+                <div class="y-tab-content" id="y-s2-tab3" ref="ys2t3" v-show="s2tab==3">
                     <div class="y-card2-container">
                         <div class="y-card2">
                             <div class="y-card2-img">
@@ -252,7 +252,7 @@
                                 <p class="y-card2-title">大鱼（翻弹）</p>
                                 <p><a href="https://www.bilibili.com/audio/au2346411" target="_blank">🎧试听</a></p>
                                 <p><a href="https://www.bilibili.com/video/BV1D44y1z7Zc" target="_blank">📽️视频</a></p>
-                                <p><a href="https://i.ctm49.com/diy/268.html" target="_blank">📰介绍</a></p>
+                                <p><a href="https://i.ctm49.com/diy/215.html" target="_blank">📰介绍</a></p>
                             </div>
                         </div>
                         <div class="y-card2">
@@ -274,6 +274,17 @@
                             <div class="y-card2-text">
                                 <p class="y-card2-title">ゆりゆららららゆるゆり大事件 - AI演奏</p>
                                 <p><a href="https://www.bilibili.com/video/BV11U4y1d7Sj/" target="_blank">📽️视频</a></p>
+                            </div>
+                        </div>
+                        <div class="y-card2">
+                            <div class="y-card2-img">
+                                <img src="https://i1.hdslb.com/bfs/archive/37e8f3ee7d871ce62ff2e1ba9873343950d73d2e.jpg"
+                                    referrerpolicy="no-referrer" alt="">
+                            </div>
+                            <div class="y-card2-text">
+                                <p class="y-card2-title">【弦卷真纪/重编曲】カナリア</p>
+                                <p><a href="https://www.bilibili.com/audio/au3000241" target="_blank">🎧试听</a></p>
+                                <p><a href="https://www.bilibili.com/video/BV1Zv4y1K7Y9" target="_blank">📽️视频</a></p>
                             </div>
                         </div>
                     </div>
