@@ -12,6 +12,11 @@ var app = new Vue({
                         url: 'https://y.qq.com/n/yqq/song/001KQ3zX0N2rVR.html'
                     },
                     {
+                        name: '和光同尘',
+                        img: 'https://p2.music.126.net/hM4falj0j0VhoCjk7u7Ddw==/109951165545333405.jpg',
+                        url: 'https://music.163.com/#/song?id=1804844437'
+                    },
+                    {
                         name: '美人鱼',
                         img: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000000y5gq7449K9I_1.jpg',
                         url: 'https://y.qq.com/n/yqq/song/002ASCKm3ROw7t.html'
@@ -35,6 +40,11 @@ var app = new Vue({
                         name: '红玫瑰',
                         img: 'http://p2.music.126.net/WJgLE2ImnLgqPPLQSlF7iQ==/114349209289440.jpg',
                         url: 'https://music.163.com/#/song?id=65126'
+                    },
+                    {
+                        name: '关键词',
+                        img: 'https://p2.music.126.net/CKcTyKux_UTt0sO_5VWR9w==/16561943649388272.jpg',
+                        url: 'https://music.163.com/#/song?id=40147554'
                     },
                     {
                         name: '就差一点点',
@@ -147,6 +157,7 @@ var app = new Vue({
             }
         ],
         s2tab: 1,
+        s3tab: 1,
         s4tab: 1,
         currentSection: 1,
         targetSection: 1,
@@ -165,6 +176,20 @@ var app = new Vue({
         s2tabswitch(tab) {
             this.s2tab = tab
         },
+        s3tabswitch(dir) {
+            var SL = this.$refs.ys3container.scrollLeft
+            var i = 1
+            for (i = 1; i < 3; i++) {
+                var OL = this.$refs[`ys3t${i}`].offsetLeft
+                if (SL == OL) break
+            }
+            i = i + dir
+            if ((i < 1) || (i > 2)) {
+                return
+            }
+            this.$refs[`ys3t${i}`].scrollIntoView()
+        }
+        ,
         s4tabswitch(tab) {
             this.s4tab = tab
         },
@@ -216,9 +241,7 @@ var app = new Vue({
         }
     },
     mounted() {
-        this.$refs.ycontainer.addEventListener(
-            "scroll", this.scrollToTop, true
-        )
+        this.$refs.ycontainer.addEventListener("scroll", this.scrollToTop, true)
         this.$refs.ycontainer.addEventListener(
             "wheel",
             (e) => {

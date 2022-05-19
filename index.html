@@ -293,8 +293,14 @@
         </div>
 
         <div class="y-section" id="y-s3" ref="ys3">
-            <div class="y-s3-tab-container">
-                <div class="y-s3-tab" id="y-s3-t1">
+            <div class="y-s3-left" @click="s3tabswitch(-1)">
+                <img src="./img/left.svg" alt="">
+            </div>
+            <div class="y-s3-right" @click="s3tabswitch(1)">
+                <img src="./img/right.svg" alt="">
+            </div>
+            <div class="y-s3-tab-container" ref="ys3container">
+                <div class="y-s3-tab" id="y-s3-t1" ref="ys3t1">
                     <div class="y-container-l">
                         <div class="y-s3-logo">
                             <img src="./img/logo_lol.png" alt="">
@@ -331,6 +337,27 @@
                                 </div>
                                 <div class="y-s3-t1-c">
                                     <img src="https://game.gtimg.cn/images/lol/act/img/champion/Shaco.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="y-s3-tab" id="y-s3-t2" ref="ys3t2">
+                    <div class="y-container-l">
+                        <div class="y-s3-logo">
+                            <img src="./img/logo_hs.png" alt="">
+                        </div>
+                        <div class="y-s3-text">
+                            <div class="y-s3-t1-title">擅长职业</div>
+                            <div class="y-s3-t1-cc">
+                                <div class="y-s3-t1-c">
+                                    <img src="./img/hs_mage.png" alt="">
+                                </div>
+                                <div class="y-s3-t1-c">
+                                    <img src="./img/hs_priest.png" alt="">
+                                </div>
+                                <div class="y-s3-t1-c">
+                                    <img src="./img/hs_warlock.png" alt="">
                                 </div>
                             </div>
                         </div>

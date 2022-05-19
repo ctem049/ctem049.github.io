@@ -720,17 +720,66 @@ p.y-card2-title {
 }
 
 .y-s3-tab-container {
-    position: relative;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.y-s3-tab-container::-webkit-scrollbar {
+    display: none;
 }
 
 .y-s3-tab {
     width: 100%;
     height: 100%;
-    position: absolute;
+    flex-shrink: 0;
+    /* position: relative;
     top: 0;
     left: 0;
+    bottom: 0;
+    right: 0; */
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.y-s3-left {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    bottom: 0;
+}
+
+.y-s3-right {
+    position: absolute;
+    top: 4rem;
+    right: 0.4rem;
+    bottom: 0;
+}
+.y-s3-left, .y-s3-right {
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    user-select: none;
+}
+.y-s3-left:hover, .y-s3-right:hover {
+    opacity: 1;
+}
+.y-s3-right:hover {
+    box-shadow: -20px -2px 15px -13px aqua inset;
+}
+.y-s3-left:hover {
+    box-shadow: 20px -2px 15px -13px aqua inset;
+}
+.y-s3-left img, .y-s3-right img {
+    align-self: center;
+    width: 5rem;
+    height: 5rem;
 }
 
 #y-s3-t1 {
@@ -856,6 +905,14 @@ p.y-card2-title {
     text-align: center;
     color: #fff5e0;
     box-shadow: 0 0 0.5rem #87CEEB;
+}
+
+/* y-s3-t2 */
+
+#y-s3-t2 {
+    background-image: url(../img/hs_wallpapaer.jpg);
+    background-position: center;
+    background-size: cover;    
 }
 
 /* section 4 */
