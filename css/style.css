@@ -512,9 +512,9 @@ html,
 }
 
 .y-tab-card-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
 }
 
 .y-tab-menu {
@@ -581,7 +581,7 @@ html,
 
 .y-card {
     flex-shrink: 0;
-    /* margin-right: 0.5rem; */
+    margin-right: 0.5rem;
 }
 
 .y-card-img {

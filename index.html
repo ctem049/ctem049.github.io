@@ -32,6 +32,7 @@
                 <a @click.prevent="scrollSetTo(4)" :class="{'y-menu-links-active':currentSection==4}" href="#">#二次元</a>
             </div>
         </div>
+        
         <div class="y-section" id="y-s1" ref="ys1">
             <div id="y-s1-1">
                 <div class="y-center">
@@ -181,7 +182,7 @@
                         <div class="y-card-container">
                             <div v-for="s in c.songs" class="y-card">
                                 <div class="y-card-img">
-                                    <img :src="s.img" alt="" referrerpolicy="no-referrer">
+                                    <a :href="s.url" target="_blank"><img :src="s.img" alt="" referrerpolicy="no-referrer"></a>
                                 </div>
                                 <div class="y-card-text">
                                     {{ s.name }}

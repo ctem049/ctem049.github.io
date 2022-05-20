@@ -8,47 +8,47 @@ var app = new Vue({
                 songs: [
                     {
                         name: '温泉',
-                        img: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000000vKMVO0srdMF_1.jpg',
+                        img: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000000vKMVO0srdMF_1.jpg?max_age=2592000',
                         url: 'https://y.qq.com/n/yqq/song/001KQ3zX0N2rVR.html'
                     },
                     {
                         name: '和光同尘',
-                        img: 'https://p2.music.126.net/hM4falj0j0VhoCjk7u7Ddw==/109951165545333405.jpg',
+                        img: 'https://p2.music.126.net/hM4falj0j0VhoCjk7u7Ddw==/109951165545333405.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=1804844437'
                     },
                     {
                         name: '美人鱼',
-                        img: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000000y5gq7449K9I_1.jpg',
+                        img: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000000y5gq7449K9I_1.jpg?max_age=2592000',
                         url: 'https://y.qq.com/n/yqq/song/002ASCKm3ROw7t.html'
                     },
                     {
                         name: '天下',
-                        img: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000000pVkCf3KsUQ9_1.jpg',
+                        img: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000000pVkCf3KsUQ9_1.jpg?max_age=2592000',
                         url: 'https://y.qq.com/n/yqq/song/00041h1u3kgquE.html'
                     },
                     {
                         name: '下雪的季节',
-                        img: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001631yH0x0x1z_1.jpg',
+                        img: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001631yH0x0x1z_1.jpg?max_age=2592000',
                         url: 'https://y.qq.com/n/yqq/song/003jfrVm0z7H1i.html'
                     },
                     {
                         name: '追',
-                        img: 'https://p1.music.126.net/Ax-zrmAPBrASWxT92t3fdw==/109951164000242827.jpg',
+                        img: 'https://p1.music.126.net/Ax-zrmAPBrASWxT92t3fdw==/109951164000242827.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=1358848433'
                     },
                     {
                         name: '红玫瑰',
-                        img: 'http://p2.music.126.net/WJgLE2ImnLgqPPLQSlF7iQ==/114349209289440.jpg',
+                        img: 'http://p2.music.126.net/WJgLE2ImnLgqPPLQSlF7iQ==/114349209289440.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=65126'
                     },
                     {
                         name: '关键词',
-                        img: 'https://p2.music.126.net/CKcTyKux_UTt0sO_5VWR9w==/16561943649388272.jpg',
+                        img: 'https://p2.music.126.net/CKcTyKux_UTt0sO_5VWR9w==/16561943649388272.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=40147554'
                     },
                     {
                         name: '就差一点点',
-                        img: 'http://p1.music.126.net/wZtz9KJcInYduyXjXLrLog==/109951163106300650.jpg',
+                        img: 'http://p1.music.126.net/wZtz9KJcInYduyXjXLrLog==/109951163106300650.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=529814453'
                     },
                 ]
@@ -59,42 +59,42 @@ var app = new Vue({
                 songs: [
                     {
                         name: '大鱼',
-                        img: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000004Y7V4s3ug4cC_1.jpg',
+                        img: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000004Y7V4s3ug4cC_1.jpg?max_age=2592000',
                         url: 'https://y.qq.com/n/yqq/song/004OQ5Mt0EmEzv.html'
                     },
                     {
                         name: '烟花易冷',
-                        img: 'https://y.qq.com/music/photo_new/T002R300x300M000000bviBl4FjTpO_1.jpg',
+                        img: 'https://y.qq.com/music/photo_new/T002R300x300M000000bviBl4FjTpO_1.jpg?max_age=2592000',
                         url: 'https://y.qq.com/n/ryqq/songDetail/004emQMs09Z1lz'
                     },
                     {
                         name: '庐州月',
-                        img: 'https://y.qq.com/music/photo_new/T002R300x300M000002CJON012PxwU_1.jpg',
+                        img: 'https://y.qq.com/music/photo_new/T002R300x300M000002CJON012PxwU_1.jpg?max_age=2592000',
                         url: 'https://y.qq.com/n/ryqq/songDetail/001LuLtP1LqITK'
                     },
                     {
                         name: '赤伶',
-                        img: 'https://y.qq.com/music/photo_new/T002R300x300M000003SElah4eQ41c_2.jpg',
+                        img: 'https://y.qq.com/music/photo_new/T002R300x300M000003SElah4eQ41c_2.jpg?max_age=2592000',
                         url: 'https://y.qq.com/n/ryqq/songDetail/000yIhWc01tTEv'
                     },
                     {
                         name: '寻常歌',
-                        img: 'http://p1.music.126.net/gg8utJDUGHfbyVd3tKXV_w==/109951164640667962.jpg',
+                        img: 'http://p1.music.126.net/gg8utJDUGHfbyVd3tKXV_w==/109951164640667962.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=1383011136'
                     },
                     {
                         name: '牵丝戏',
-                        img: 'https://p1.music.126.net/Nd86SOcyCxU5Qu7jdZn_MQ==/7725168696876736.jpg',
+                        img: 'https://p1.music.126.net/Nd86SOcyCxU5Qu7jdZn_MQ==/7725168696876736.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=30352891'
                     },
                     {
                         name: '吹灭小山河',
-                        img: 'http://p1.music.126.net/taWBQliW8wLh_pqXElAeww==/109951164923015271.jpg',
+                        img: 'http://p1.music.126.net/taWBQliW8wLh_pqXElAeww==/109951164923015271.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=1412559986'
                     },
                     {
                         name: '年轮',
-                        img: 'http://p1.music.126.net/5D4hfLdRezRlax4OWiPgnw==/2899412164997218.jpg',
+                        img: 'http://p1.music.126.net/5D4hfLdRezRlax4OWiPgnw==/2899412164997218.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=32619064'
                     }
                 ]
@@ -105,52 +105,52 @@ var app = new Vue({
                 songs: [
                     {
                         name: 'ゆりゆららららゆるゆり大事件',
-                        img: 'https://y.qq.com/music/photo_new/T002R300x300M000003HNbwr0HJP5H_1.jpg',
+                        img: 'https://y.qq.com/music/photo_new/T002R300x300M000003HNbwr0HJP5H_1.jpg?max_age=2592000',
                         url: 'https://y.qq.com/n/ryqq/songDetail/001wVIRv0rmoUb'
                     },
                     {
                         name: '有你的江湖',
-                        img: 'http://p1.music.126.net/HOQbKmwbX7rj_6R9Pcpm_Q==/109951162891624643.jpg',
+                        img: 'http://p1.music.126.net/HOQbKmwbX7rj_6R9Pcpm_Q==/109951162891624643.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=469440680'
                     },
                     {
                         name: 'カナリア',
-                        img: 'http://p2.music.126.net/9EphnmdLmzBeUS0J4sSvfw==/109951163521761071.jpg',
+                        img: 'http://p2.music.126.net/9EphnmdLmzBeUS0J4sSvfw==/109951163521761071.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=1305367564'
                     },
                     {
                         name: '気ままな天使たち',
-                        img: 'https://y.qq.com/music/photo_new/T002R300x300M000003aEE9y2gyoHL_1.jpg',
+                        img: 'https://y.qq.com/music/photo_new/T002R300x300M000003aEE9y2gyoHL_1.jpg?max_age=2592000',
                         url: 'https://y.qq.com/n/ryqq/songDetail/004EWcMb44h3tm'
                     },
                     {
                         name: 'only my railgun',
-                        img: 'https://p2.music.126.net/pviFxK7sGSdu3xmWRt9Lgw==/109951166296227310.jpg',
+                        img: 'https://p2.music.126.net/pviFxK7sGSdu3xmWRt9Lgw==/109951166296227310.jpg?max_age=2592000',
                         url: 'https://music.163.com/#/song?id=725692'
                     },
                     {
                         name: '勾指起誓',
-                        img: 'http://p1.music.126.net/eMyCr0gv0kPGlew9XTNjyA==/109951163944178164.jpg',
+                        img: 'http://p1.music.126.net/eMyCr0gv0kPGlew9XTNjyA==/109951163944178164.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=1345872140'
                     },
                     {
                         name: 'world.execute (me) ;',
-                        img: 'http://p1.music.126.net/-OxCLbGs-JxKtPaBCo1yuw==/18801648835570109.jpg',
+                        img: 'http://p1.music.126.net/-OxCLbGs-JxKtPaBCo1yuw==/18801648835570109.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=435278010'
                     },
                     {
                         name: 'アイの庭',
-                        img: 'http://p1.music.126.net/FiMHky6tkpWlxyXWvSJNhA==/913694162681970.jpg',
+                        img: 'http://p1.music.126.net/FiMHky6tkpWlxyXWvSJNhA==/913694162681970.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=565845'
                     },
                     {
                         name: '「交织together」',
-                        img: 'http://p2.music.126.net/JBo0QEBpHlzUNpTd5P4zuw==/109951162861954189.jpg',
+                        img: 'http://p2.music.126.net/JBo0QEBpHlzUNpTd5P4zuw==/109951162861954189.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=460478768'
                     },
                     {
                         name: 'Bad Apple!!',
-                        img: 'http://p2.music.126.net/NpC1cmlGABqAXyG6x9nENg==/109951166027157822.jpg',
+                        img: 'http://p2.music.126.net/NpC1cmlGABqAXyG6x9nENg==/109951166027157822.jpg?param=130y130',
                         url: 'https://music.163.com/#/song?id=22645196'
                     }
                 ]
