@@ -181,7 +181,7 @@ var app = new Vue({
             var i = 1
             for (i = 1; i < 3; i++) {
                 var OL = this.$refs[`ys3t${i}`].offsetLeft
-                if (SL == OL) break
+                if ((SL - OL) < 2 && (SL - OL) > -2) break
             }
             i = i + dir
             if ((i < 1) || (i > 2)) {
