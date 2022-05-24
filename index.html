@@ -373,7 +373,8 @@
                     <div class="y-s4-img">
                         <img v-show="s4tab==1" id="y-s4-t1-img" src="./img/yryr.jpg" alt="">
                         <img v-show="s4tab==2" id="y-s4-t2-img" src="./img/flyx.jpg" alt="">
-                        <img v-show="s4tab==3" id="y-s4-t2-img" src="./img/hsl.jpg" alt="">
+                        <img v-show="s4tab==3" id="y-s4-t3-img" src="./img/hsl.jpg" alt="">
+                        <img v-show="s4tab==4" id="y-s4-t4-img" src="./img/4_more.jpg" alt="">
                     </div>
                     <div class="y-s4-tab-container">
                         <div class="y-s4-tab" :class="{'y-s4-tab-active': s4tab==1}" @click.prevent="s4tabswitch(1)">
@@ -384,6 +385,9 @@
                         </div>
                         <div class="y-s4-tab" :class="{'y-s4-tab-active': s4tab==3}" @click.prevent="s4tabswitch(3)">
                             <img src="./img/hsl.jpg" alt="">
+                        </div>
+                        <div class="y-s4-tab" :class="{'y-s4-tab-active': s4tab==4}" @click.prevent="s4tabswitch(4)">
+                            <img src="./img/4_more.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -421,6 +425,19 @@
                         <a href="https://archive.genco.co.jp/happysugarlife/" target="_blank">官网(镜像)</a> <a
                             href="https://bgm.tv/subject/240828" target="_blank">bangumi</a> <a
                             href="https://zh.moegirl.org.cn/Happy_Sugar_Life" target="_blank">萌娘百科</a>
+                    </p>
+                </div>
+                <div class="y-s4-text" id="y-s4-t4" v-show="s4tab==4">
+                    <p class="y-s4-text-title">更多番剧</p>
+                    <p class="y-s4-text-subtitle">More...</p>
+                    <p>莉兹与青鸟</p>
+                    <p>安达与岛村</p>
+                    <p><a href="https://i.ctm49.com/others/129.html" target="_blank">📰说说《Citrus》</a>
+                    </p>
+                    <p>某科学的超电磁炮</p>
+                    <p>终将成为你</p>
+                    <p class="y-s4-text-links">
+                        <a href="https://bgm.tv/anime/list/630920" target="_blank">OnO's Bangumi</a>
                     </p>
                 </div>
             </div>
