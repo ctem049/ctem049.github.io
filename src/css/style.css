@@ -171,7 +171,7 @@ html,
 
 #y-container {
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
@@ -490,12 +490,12 @@ html,
     /* margin-bottom: 1rem; */
 }
 
-.y-tab-content {
+/* .y-tab-content {
     overflow-y: auto;
-}
+} */
 
 
-.y-tab-content::-webkit-scrollbar {
+/* .y-tab-content::-webkit-scrollbar {
     width: 0.2rem;
     height: 0.3rem;
     background-color: #eee;
@@ -503,7 +503,7 @@ html,
 
 .y-tab-content::-webkit-scrollbar-thumb {
     background: #aaa;
-}
+} */
 
 @media (max-width: 768px) {
     .y-tab-content {

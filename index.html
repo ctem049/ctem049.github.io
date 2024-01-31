@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OnO's World.</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="ono.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="./src/img/ono.svg" type="image/svg+xml">
     <!-- vue -->
     <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/vue/2.6.14/vue.min.js"></script>
     <!-- font-awesome -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css"> -->
     <!-- style -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 
 <body ref="body">
@@ -24,12 +24,6 @@
                     <img class="y-menu-logo-img" src="./ono.svg">
                     <span class="y-menu-ptitle">OnO's World</span>
                 </a>
-            </div>
-            <div class="y-menu-links">
-                <a @click.prevent="scrollSetTo(1)" :class="{'y-menu-links-active':currentSection==1}" href="#">#首页</a>
-                <a @click.prevent="scrollSetTo(2)" :class="{'y-menu-links-active':currentSection==2}" href="#">#音乐</a>
-                <a @click.prevent="scrollSetTo(3)" :class="{'y-menu-links-active':currentSection==3}" href="#">#游戏</a>
-                <a @click.prevent="scrollSetTo(4)" :class="{'y-menu-links-active':currentSection==4}" href="#">#二次元</a>
             </div>
         </div>
         
@@ -154,297 +148,21 @@
             <div id="y-s1-2">
                 <div class="y-tags">
                     <div class="y-tag">
-                        <a @click.prevent="scrollSetTo(2)" href="#" class="">#音乐</a>
+                        
                     </div>
                     <div class="y-tag">
-                        <a @click.prevent="scrollSetTo(3)" href="#" class="">#游戏</a>
+                        <a href="https://i.ctm49.com/about.html" class="">#关于我#</a>
                     </div>
                     <div class="y-tag">
-                        <a @click.prevent="scrollSetTo(4)" href="#" class="">#二次元</a>
+                        
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="y-section" id="y-s2" ref="ys2">
-            <div class="y-container-m">
-                <div class="y-tab-menu">
-                    <div class="y-tab-menu-s" :class="{'y-tab-menu-s-active': s2tab==1}"><a
-                            @click.prevent="s2tabswitch(1)" href="#">听</a></div>
-                    <div class="y-tab-menu-s" :class="{'y-tab-menu-s-active': s2tab==2}"><a
-                            @click.prevent="s2tabswitch(2)" href="#">唱</a></div>
-                    <div class="y-tab-menu-s" :class="{'y-tab-menu-s-active': s2tab==3}"><a
-                            @click.prevent="s2tabswitch(3)" href="#">作</a></div>
-                </div>
-                <div class="y-tab-content y-tab-card-container" ref="ys2t1" v-show="s2tab==1" id="y-s2-tab1">
-                    <div v-for="c in mcontent" class="y-tab-card">
-                        <p class="y-tab-title">{{ c.type }}</p>
-                        <div class="y-card-container">
-                            <div v-for="s in c.songs" class="y-card">
-                                <div class="y-card-img">
-                                    <a :href="s.url" target="_blank"><img :src="s.img" alt="" referrerpolicy="no-referrer"></a>
-                                </div>
-                                <div class="y-card-text">
-                                    {{ s.name }}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="y-tab-content" id="y-s2-tab2" ref="ys2t2" v-show="s2tab==2">
-                    <div class="y-card2-container">
-                        <div class="y-card2">
-                            <div class="y-card2-img">
-                                <img src="./img/gzqs.jpg" alt="">
-                            </div>
-                            <div class="y-card2-text">
-                                <p class="y-card2-title">勾指起誓</p>
-                                <p><a href="https://www.bilibili.com/audio/au2747196" target="_blank">🎧试听</a></p>
-                                <p><a href="https://www.bilibili.com/video/BV17R4y1s72N" target="_blank">📽️MV</a></p>
-                                <p><a href="https://i.ctm49.com/diy/223.html" target="_blank">📰介绍</a></p>
-                            </div>
-                        </div>
-                        <div class="y-card2">
-                            <div class="y-card2-img">
-                                <img src="https://i0.hdslb.com/bfs/music/75e2264869d592a74e9384439ecf0991448e2786.jpg"
-                                    referrerpolicy="no-referrer" alt="">
-                            </div>
-                            <div class="y-card2-text">
-                                <p class="y-card2-title">刚好遇见你</p>
-                                <p><a href="https://www.bilibili.com/audio/au2747028" target="_blank">🎧试听</a></p>
-                                <p><a href="https://www.bilibili.com/video/BV13M4y1w7BX" target="_blank">📽️</i>AMV
-                                        (feat.
-                                        Citrus)</a></p>
-                                <p><a href="https://i.ctm49.com/diy/268.html" target="_blank">📰AMV 介绍</a></p>
-                            </div>
-                        </div>
-                        <div class="y-card2">
-                            <div class="y-card2-img">
-                                <img src="https://i0.hdslb.com/bfs/music/80a91fe255c8b7bceb8fe3615cde41fd4a07ca8f.jpg"
-                                    referrerpolicy="no-referrer" alt="">
-                            </div>
-                            <div class="y-card2-text">
-                                <p class="y-card2-title">得过且过的勇者</p>
-                                <p><a href="https://www.bilibili.com/audio/au2747099" target="_blank">🎧试听</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="y-card2">
-                            <div class="y-card2-img">
-                                <img src="https://shp.qpic.cn/ttkg/0/8d51ebd7dd8d4fb9047e47ef83f9fafc59819fac/320?t=1&j=PiajxSqBRaEIf0bHhsJQ0QVoFSjos8ibuwib8icMibSGWGru7aj84uAW826V84GUk58dtqf27eKC51gRtLapYyjVa4icOW9DtbkRyqFefa2BdU4BntJRlAppjqVYzmjOpDN2PBNnmiaHWvMgB4"
-                                    referrerpolicy="no-referrer" alt="">
-                            </div>
-                            <div class="y-card2-text">
-                                <p class="y-card2-title">更多</p>
-                                <p><a href="https://kg.qq.com/node/personal?uid=61959e84252d3f83"
-                                        target="_blank">🎤全民K歌</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="y-tab-content" id="y-s2-tab3" ref="ys2t3" v-show="s2tab==3">
-                    <div class="y-card2-container">
-                        <div class="y-card2">
-                            <div class="y-card2-img">
-                                <img src="https://i.ctm49.com/usr/uploads/2021/10/3036479227.jpg"
-                                    referrerpolicy="no-referrer" alt="">
-                            </div>
-                            <div class="y-card2-text">
-                                <p class="y-card2-title">大鱼（翻弹）</p>
-                                <p><a href="https://www.bilibili.com/audio/au2346411" target="_blank">🎧试听</a></p>
-                                <p><a href="https://www.bilibili.com/video/BV1D44y1z7Zc" target="_blank">📽️视频</a></p>
-                                <p><a href="https://i.ctm49.com/diy/215.html" target="_blank">📰介绍</a></p>
-                            </div>
-                        </div>
-                        <div class="y-card2">
-                            <div class="y-card2-img">
-                                <img src="https://i2.hdslb.com/bfs/archive/f6e82a34819eb20cf774f42e4fbddf2955eefca2.jpg"
-                                    referrerpolicy="no-referrer" alt="">
-                            </div>
-                            <div class="y-card2-text">
-                                <p class="y-card2-title">アイの庭</p>
-                                <p><a href="https://www.bilibili.com/audio/au2684785" target="_blank">🎧试听</a></p>
-                                <p><a href="https://www.bilibili.com/video/BV1Pf4y1T7M5" target="_blank">📽️视频</a></p>
-                            </div>
-                        </div>
-                        <div class="y-card2">
-                            <div class="y-card2-img">
-                                <img src="https://i1.hdslb.com/bfs/archive/1612d378482792afabe0d35b9c855f156fd30ee5.jpg"
-                                    referrerpolicy="no-referrer" alt="">
-                            </div>
-                            <div class="y-card2-text">
-                                <p class="y-card2-title">ゆりゆららららゆるゆり大事件 - AI演奏</p>
-                                <p><a href="https://www.bilibili.com/video/BV11U4y1d7Sj/" target="_blank">📽️视频</a></p>
-                            </div>
-                        </div>
-                        <div class="y-card2">
-                            <div class="y-card2-img">
-                                <img src="https://i1.hdslb.com/bfs/archive/37e8f3ee7d871ce62ff2e1ba9873343950d73d2e.jpg"
-                                    referrerpolicy="no-referrer" alt="">
-                            </div>
-                            <div class="y-card2-text">
-                                <p class="y-card2-title">【弦卷真纪/重编曲】カナリア</p>
-                                <p><a href="https://www.bilibili.com/audio/au3000241" target="_blank">🎧试听</a></p>
-                                <p><a href="https://www.bilibili.com/video/BV1Zv4y1K7Y9" target="_blank">📽️视频</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="y-section" id="y-s3" ref="ys3">
-            <div class="y-s3-left" @click="s3tabswitch(-1)">
-                <img src="./img/left.svg" alt="">
-            </div>
-            <div class="y-s3-right" @click="s3tabswitch(1)">
-                <img src="./img/right.svg" alt="">
-            </div>
-            <div class="y-s3-tab-container" ref="ys3container">
-                <div class="y-s3-tab" id="y-s3-t1" ref="ys3t1">
-                    <div class="y-container-l">
-                        <div class="y-s3-logo">
-                            <img src="./img/logo_lol.png" alt="">
-                        </div>
-                        <div class="y-s3-text">
-                            <div class="y-s3-t1-title">擅长英雄</div>
-                            <div class="y-s3-t1-cc">
-                                <div class="y-s3-t1-c">
-                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Teemo.png" alt="">
-                                </div>
-                                <div class="y-s3-t1-c">
-                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Leblanc.png" alt="">
-                                </div>
-                                <div class="y-s3-t1-c">
-                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Ahri.png" alt="">
-                                </div>
-                                <div class="y-s3-t1-c">
-                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Zoe.png" alt="">
-                                </div>
-                                <div class="y-s3-t1-c">
-                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Kindred.png" alt="">
-                                </div>
-                                <div class="y-s3-t1-c">
-                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Quinn.png" alt="">
-                                </div>
-                                <div class="y-s3-t1-c">
-                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Lillia.png" alt="">
-                                </div>
-                                <div class="y-s3-t1-c">
-                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Neeko.png" alt="">
-                                </div>
-                                <div class="y-s3-t1-c">
-                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Tristana.png" alt="">
-                                </div>
-                                <div class="y-s3-t1-c">
-                                    <img src="https://game.gtimg.cn/images/lol/act/img/champion/Shaco.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="y-s3-tab" id="y-s3-t2" ref="ys3t2">
-                    <div class="y-container-l">
-                        <div class="y-s3-logo">
-                            <img src="./img/logo_hs.png" alt="">
-                        </div>
-                        <div class="y-s3-text">
-                            <div class="y-s3-t1-title">擅长职业</div>
-                            <div class="y-s3-t1-cc">
-                                <div class="y-s3-t1-c">
-                                    <img src="./img/hs_mage.png" alt="">
-                                </div>
-                                <div class="y-s3-t1-c">
-                                    <img src="./img/hs_priest.png" alt="">
-                                </div>
-                                <div class="y-s3-t1-c">
-                                    <img src="./img/hs_warlock.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="y-section" id="y-s4" ref="ys4">
-            <div class="y-s4-container">
-                <div class="y-s4-c2">
-                    <div class="y-s4-img">
-                        <img v-show="s4tab==1" id="y-s4-t1-img" src="./img/yryr.jpg" alt="">
-                        <img v-show="s4tab==2" id="y-s4-t2-img" src="./img/flyx.jpg" alt="">
-                        <img v-show="s4tab==3" id="y-s4-t3-img" src="./img/hsl.jpg" alt="">
-                        <img v-show="s4tab==4" id="y-s4-t4-img" src="./img/4_more_s.jpg" alt="">
-                    </div>
-                    <div class="y-s4-tab-container">
-                        <div class="y-s4-tab" :class="{'y-s4-tab-active': s4tab==1}" @click.prevent="s4tabswitch(1)">
-                            <img src="./img/yryr.jpg" alt="">
-                        </div>
-                        <div class="y-s4-tab" :class="{'y-s4-tab-active': s4tab==2}" @click.prevent="s4tabswitch(2)">
-                            <img src="./img/flyx.jpg" alt="">
-                        </div>
-                        <div class="y-s4-tab" :class="{'y-s4-tab-active': s4tab==3}" @click.prevent="s4tabswitch(3)">
-                            <img src="./img/hsl.jpg" alt="">
-                        </div>
-                        <div class="y-s4-tab" :class="{'y-s4-tab-active': s4tab==4}" @click.prevent="s4tabswitch(4)">
-                            <img src="./img/4_more_s.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="y-s4-text" id="y-s4-t1" v-show="s4tab==1">
-                    <p class="y-s4-text-title y-font-mincho">ゆるゆり</p>
-                    <p class="y-s4-text-subtitle">摇曳百合</p>
-                    <p>轻百合神作。</p>
-                    <p><a href="https://i.ctm49.com/others/188.html" target="_blank">📰《摇曳百合》——好看！好看！好看！</a></p>
-                    <p><a href="https://i.ctm49.com/others/162.html" target="_blank">📰《摇曳百合》十周年专辑&动漫</a></p>
-                    <p class="y-s4-text-links">
-                        <a href="https://yuruyuri.com/" target="_blank">官网</a> <a href="https://bgm.tv/subject/14588"
-                            target="_blank">bangumi</a> <a
-                            href="https://zh.moegirl.org.cn/%E6%91%87%E6%9B%B3%E7%99%BE%E5%90%88"
-                            target="_blank">萌娘百科</a>
-                    </p>
-                </div>
-                <div class="y-s4-text" id="y-s4-t2" v-show="s4tab==2">
-                    <p class="y-s4-text-title">风灵玉秀</p>
-                    <p class="y-s4-text-subtitle"></p>
-                    <p>国漫，深得我心。</p>
-                    <p><a href="https://i.ctm49.com/others/297.html" target="_blank">📰「风灵玉秀」——深得我心的第二好看的番</a></p>
-                    <p class="y-s4-text-links">
-                        <a href="https://www.bilibili.com/bangumi/media/md6038" target="_blank">b站正片</a> <a
-                            href="https://weibo.com/u/7546736360" target="_blank">官方微博</a> <a
-                            href="https://bgm.tv/subject/212333" target="_blank">bangumi</a>
-                    </p>
-                </div>
-                <div class="y-s4-text" id="y-s4-t3" v-show="s4tab==3">
-                    <p class="y-s4-text-title y-font-mincho" style="font-size: 2rem;">ハッピーシュガーライフ</p>
-                    <p class="y-s4-text-subtitle">Happy Sugar Life</p>
-                    <p>恐怖 猎奇 致郁</p>
-                    <p><a href="https://i.ctm49.com/others/301.html" target="_blank">📰《happy sugar life》：扭曲的世界，扭曲的爱</a>
-                    </p>
-                    <p class="y-s4-text-links">
-                        <a href="https://archive.genco.co.jp/happysugarlife/" target="_blank">官网(镜像)</a> <a
-                            href="https://bgm.tv/subject/240828" target="_blank">bangumi</a> <a
-                            href="https://zh.moegirl.org.cn/Happy_Sugar_Life" target="_blank">萌娘百科</a>
-                    </p>
-                </div>
-                <div class="y-s4-text" id="y-s4-t4" v-show="s4tab==4">
-                    <p class="y-s4-text-title">更多番剧</p>
-                    <p class="y-s4-text-subtitle">More...</p>
-                    <p>莉兹与青鸟</p>
-                    <p>安达与岛村</p>
-                    <p><a href="https://i.ctm49.com/others/129.html" target="_blank">📰说说《Citrus》</a>
-                    </p>
-                    <p>某科学的超电磁炮</p>
-                    <p>终将成为你</p>
-                    <p class="y-s4-text-links">
-                        <a href="https://bgm.tv/anime/list/630920" target="_blank">OnO's Bangumi</a>
-                    </p>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- ono.js -->
-    <script src="./js/ono.js"></script>
+    <script src="./src/js/ono.js"></script>
 </body>
 
 </html>
